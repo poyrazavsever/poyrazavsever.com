@@ -27,7 +27,7 @@ const DropdownMenu = () => {
     <div className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="transition hover:text-black cursor-pointer"
+        className="transition hover:text-black dark:hover:text-white cursor-pointer"
       >
         Diğerleri
       </button>
@@ -39,18 +39,18 @@ const DropdownMenu = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-2 z-50 bg-white border border-gray-200 shadow-xl rounded-lg p-4 grid grid-cols-2 gap-4 w-[500px]"
+            className="absolute right-0 mt-2 z-50 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-900 shadow-xl rounded-lg p-4 grid grid-cols-2 gap-4 w-[500px]"
           >
             {items.map(({ label, href, description }) => (
               <Link
                 key={label}
                 href={href}
-                className="group block p-2 rounded-lg hover:bg-gray-50 transition"
+                className="group block p-2 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition"
               >
-                <p className="text-sm font-semibold text-gray-800 group-hover:text-black">
+                <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-neutral-300">
                   {label}
                 </p>
-                <p className="text-xs text-gray-500">{description}</p>
+                <p className="text-xs text-neutral-500">{description}</p>
               </Link>
             ))}
           </motion.div>
