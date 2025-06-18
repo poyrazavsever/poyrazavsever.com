@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const HeroSection = () => {
@@ -18,14 +17,8 @@ const HeroSection = () => {
             Eğer benimle bir konu hakkında konuşmak isterseniz;
           </p>
 
-          <Link href="/contact">
-            <motion.button
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full bg-neutral-600 text-white px-4 py-2 rounded-md text-sm shadow hover:bg-neutral-800 transition cursor-pointer"
-            >
+          <Link href="/contact" className="w-full block text-center bg-neutral-600 text-white px-4 py-2 rounded-md text-sm hover:bg-neutral-800 transition cursor-pointer">
               İletişime Geç
-            </motion.button>
           </Link>
         </div>
       </div>
