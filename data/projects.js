@@ -2,7 +2,7 @@ export const projects = [
     {
         image: "/project/patitekno.png",
         title: "Pati Tekno",
-        desc: "Pati Tekno, insanlar güncel teknolojileri ve tasarım trendlerini takip edebileceği sosyal mecralar ve web platformudur.",
+        desc: "Pati Tekno, insanlar güncel teknolojileri, tasarım trendlerini ve yazılım araçlarını kolay bir şekilde takip edebileceği sosyal mecralar ve web platformudur.",
         populer: true,
     },
     {
