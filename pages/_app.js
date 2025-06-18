@@ -6,12 +6,10 @@ export const metadata = {
   description: 'Portfolio website',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ Component, pageProps }) {
   return (
-    <html lang="en">
-      <body>
-        <Layout>{children}</Layout>
-      </body>
-    </html>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
