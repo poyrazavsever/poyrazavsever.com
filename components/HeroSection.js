@@ -10,12 +10,12 @@ const HeroSection = () => {
         {/* Sağdaki Metin Alanı */}
         <div className="text-center sm:text-left space-y-3">
           <h1 className="text-2xl sm:text-3xl font-bold text-neutral-800">
-            Hi, I'm Poyraz
+            Selam, Ben Poyraz!
           </h1>
           <p className="text-sm text-neutral-600 leading-relaxed">
-            I am Poyraz. I have been interested in UI/UX design and software development. 
-            I use Next.js and Tailwind in frontend development.
-            If you'd like to talk to me about something;
+            Teknolojiye meraklı bir insanım. UI/UX tasarımı ve yazılım geliştirme konularına ilgi duyuyorum.
+            Frontend geliştirmede Next.js ve Tailwind kullanıyorum.
+            Eğer benimle bir konu hakkında konuşmak isterseniz;
           </p>
 
           <Link href="/contact">
@@ -24,7 +24,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.98 }}
               className="w-full bg-neutral-600 text-white px-4 py-2 rounded-md text-sm shadow hover:bg-neutral-800 transition cursor-pointer"
             >
-              Get in touch
+              İletişime Geç
             </motion.button>
           </Link>
         </div>
