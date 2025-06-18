@@ -2,13 +2,12 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import DropdownMenu from './DropdownMenu';
 import ProfileMenu from './ProfileMenu';
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-white border-b border-neutral-200 py-3 flex justify-between items-center">
+    <nav className="sticky top-0 left-0 z-50 w-full bg-white border-b border-neutral-200 py-3 flex justify-between items-center">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <div className="w-3 h-3 bg-black rounded-sm" />
