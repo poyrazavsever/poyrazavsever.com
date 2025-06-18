@@ -13,7 +13,7 @@ const ProjectCard = ({ imageSrc, title, description}) => {
       </div>
       <div className="mt-4">
         <h3 className="text-sm text-gray-800 font-semibold">{title}</h3>
-        <p className="text-sm text-neutral-600 mt-1">{description}</p>
+        <p className="text-sm text-neutral-600 mt-1 line-clamp-4">{description}</p>
         <a className="mt-3 text-sm text-sky-500 hover:text-sky-800 transition-all cursor-pointer">
             İncele
         </a>

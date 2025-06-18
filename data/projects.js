@@ -4,5 +4,11 @@ export const projects = [
         title: "Pati Tekno",
         desc: "Pati Tekno, insanlar güncel teknolojileri ve tasarım trendlerini takip edebileceği sosyal mecralar ve web platformudur.",
         populer: true,
+    },
+    {
+        image: "/project/marslar.png",
+        title: "Marşlarımızın Anlamı",
+        desc: "Marşlarımızın Anlamı, Türkiye Cumhuriyetine ait marşların hikayelerini ve marşta geçen kelimelerin anlamlarına kolaylıkla ulaşabileceğiniz bir web platformudur. ",
+        populer: true,
     }
 ]
