@@ -8,7 +8,7 @@ import ProfileMenu from './ProfileMenu';
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-white border-b border-neutral-200 px-6 py-3 flex justify-between items-center">
+    <nav className="w-full bg-white border-b border-neutral-200 py-3 flex justify-between items-center">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <div className="w-3 h-3 bg-black rounded-sm" />
