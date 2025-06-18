@@ -1,5 +1,6 @@
 import HeroSection from '@/components/HeroSection';
 import ProjectCard from '@/components/shared/ProjectCard';
+import TechStack from '@/components/TechStack';
 import { projects } from '@/data/projects'; // path'ini doğru ayarla
 import Link from 'next/link';
 
@@ -33,6 +34,14 @@ export default function Home() {
         </div>
       )}
 
+      {/* Tech Stack*/}
+      <div className='flex flex-col items-start gap-8 w-full py-24'>
+
+        <h2 className="text-xl font-semibold text-neutral-800">Kullandığım Teknolojiler</h2>
+
+        <TechStack />
+
+      </div>
 
     </div>
   );
