@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaArrowDown } from 'react-icons/fa';
 import Link from 'next/link';
 
 const items = [
@@ -15,6 +16,8 @@ const items = [
   { label: 'Referanslar', href: '/references', description: 'Hakkımda söylenenler' },
   { label: 'Medium Yazılarım', href: '/medium', description: 'Medium’da yayımlanan yazılarım' },
   { label: 'Toplantı Ayarla', href: '/meeting', description: 'Benimle toplantı planlayın' },
+  { label: 'Gönüllü Çalışmalar', href: '/volunteer', description: 'Gönüllü çalıştığım organizasyonlar' },
+  { label: 'Diğerleri', href: '/others/all', description: 'Bütün linkleri görüntüle' },  
 ];
 
 const DropdownMenu = () => {

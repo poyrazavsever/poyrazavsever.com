@@ -2,8 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaLinkedin, FaInstagram, FaMedium, FaYoutube, FaBehance } from 'react-icons/fa';
-import { BsGlobe2 } from 'react-icons/bs';
+import { FaLinkedin, FaInstagram, FaMedium, FaYoutube, FaBehance, FaMailBulk } from 'react-icons/fa';
 import { PiCoffeeBold } from 'react-icons/pi';
 import Image from 'next/image';
 
@@ -15,6 +14,7 @@ const socialLinks = [
   { href: 'http://youtube.com/@patitekno', icon: <FaYoutube />, label: '@PatiTekno' },
   { href: 'https://www.behance.net/slayeras', icon: <FaBehance />, label: 'Behance' },
   { href: 'https://www.buymeacoffee.com/poyrazavsever', icon: <PiCoffeeBold />, label: 'Buy Me a Coffee' },
+  { href: 'info@poyrazavsever.com', icon: <FaMailBulk />, label: 'E-Posta' },
 ];
 
 const ProfileMenu = () => {
