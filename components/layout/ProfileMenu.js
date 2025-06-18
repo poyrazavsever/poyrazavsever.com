@@ -42,7 +42,7 @@ const ProfileMenu = () => {
           alt="profile"
           width={32}
           height={32}
-          className="rounded-full border"
+          className="rounded-full border dark:grayscale"
         />
       </div>
 
@@ -53,7 +53,7 @@ const ProfileMenu = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-3 z-50 bg-white border border-neutral-200 rounded-xl shadow-xl p-4 grid grid-cols-2 gap-4 w-64"
+            className="absolute right-0 mt-3 z-50 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-900 rounded-xl shadow-xl p-4 grid grid-cols-2 gap-4 w-64"
           >
             {socialLinks.map((item, idx) => (
               <a
@@ -61,7 +61,7 @@ const ProfileMenu = () => {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-neutral-500 hover:text-black transition-colors"
+                className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-200 hover:text-black dark:hover:text-neutral-400 transition-colors"
               >
                 <span className="text-xl">{item.icon}</span>
                 <span className="truncate">{item.label}</span>
