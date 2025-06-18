@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import DropdownMenu from './dropDownMenu';
 
 const Navbar = () => {
   return (
@@ -14,18 +17,17 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-5">
-        {['Home', 'Projects', 'About', "Other's", 'Contact'].map((item) => (
-          <Link
-            key={item}
-            href={`/${item === 'Home' ? '' : item.toLowerCase()}`}
-            className="transition-colors duration-200 text-sm text-neutral-600 hover:text-black"
-          >
-            {item}
-          </Link>
-        ))}
+      <div className="flex items-center gap-5 text-sm text-neutral-600">
+        <Link href="/" className="hover:text-black transition-colors duration-200">Home</Link>
+        <Link href="/projects" className="hover:text-black transition-colors duration-200">Projects</Link>
+        <Link href="/about" className="hover:text-black transition-colors duration-200">About</Link>
 
-        <button className="px-3 py-1 text-sm text-neutral-500 bg-neutral-100 rounded-full hover:bg-neutral-200 hover:text-neutral-800 hover:scale-[1.01] transition-all duration-200  hover:shadow-xs cursor-pointer">
+        {/* Dropdown */}
+        <DropdownMenu />
+
+        <Link href="/contact" className="hover:text-black transition-colors duration-200">Contact</Link>
+
+        <button className="px-3 py-1 bg-neutral-100 rounded-full text-neutral-500 hover:bg-neutral-200 hover:text-neutral-800 hover:scale-[1.01] transition-all duration-200 shadow-sm hover:shadow-md">
           Resume
         </button>
 
