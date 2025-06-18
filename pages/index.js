@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ProjectCard from '@/components/shared/ProjectCard';
+import { projects } from '@/data/projects'; // path'ini doğru ayarla
 
 export default function Home() {
-  return (
-    <div className="w-full flex items-center justify-center">
+  const populerProjects = projects.filter(project => project.populer);
 
-      {/* Hero Section */ }
+  return (
+    <div className="w-full flex flex-col items-center justify-center">
+
+      {/* Hero Section */}
       <div className="my-4 sm:my-24 px-6 sm:p-0 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center justify-between max-w-6xl w-full">
-        
         <img src="/hero/1.png" alt="hero section 1" className='rounded-xl'/>
 
         {/* Sağdaki Metin Alanı */}
@@ -32,7 +35,25 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      
+
+      {/* Popüler Projeler */}
+      {populerProjects.length > 0 && (
+        <div className="my-10 max-w-6xl w-full">
+          <h2 className="text-xl font-semibold mb-8 text-neutral-800">Popüler Projelerim</h2>
+
+          <div className="flex flex-wrap gap-6 justify-center sm:justify-start">
+            {populerProjects.map((project, idx) => (
+              <ProjectCard
+                key={idx}
+                imageSrc={project.image}
+                title={project.title}
+                description={project.desc}
+              />
+            ))}
+          </div>
+
+        </div>
+      )}
     </div>
   );
 }
