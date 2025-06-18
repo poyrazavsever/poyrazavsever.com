@@ -7,14 +7,14 @@ import Link from 'next/link';
 const items = [
   { label: 'Blog', href: '/blog', description: 'Kişisel yazılarım ve notlarım' },
   { label: 'Galeri', href: '/gallery', description: 'Çektiğim fotoğraf ve videolar' },
-  { label: 'Sertifikalar', href: '/certificates', description: 'Eğitim ve başarı belgelerim' },
-  { label: 'UI/UX Çalışmalarım', href: '/designs', description: 'Arayüz ve deneyim tasarımlarım' },
+  { label: 'Sertifikalar', href: '/certificates', description: 'Eğitim ve Başarı belgelerim' },
+  { label: 'UI/UX Çalışmalarım', href: '/designs', description: 'Arayüz tasarımlarım' },
   { label: 'Ekipmanlarım', href: '/gear', description: 'Kullandığım donanım ve yazılımlar' },
   { label: 'Bookmarklarım', href: '/bookmarks', description: 'Favori bağlantılarım' },
   { label: 'Teknoloji Yığınım', href: '/stack', description: 'Projelerde kullandığım teknolojiler' },
   { label: 'Referanslar', href: '/references', description: 'Hakkımda söylenenler' },
   { label: 'Medium Yazılarım', href: '/medium', description: 'Medium’da yayımlanan yazılarım' },
-  { label: 'Toplantı Ayarla', href: '/meeting', description: 'Benimle görüşme planlayın' },
+  { label: 'Toplantı Ayarla', href: '/meeting', description: 'Benimle toplantı planlayın' },
 ];
 
 const DropdownMenu = () => {
@@ -24,9 +24,9 @@ const DropdownMenu = () => {
     <div className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="transition hover:text-black"
+        className="transition hover:text-black cursor-pointer"
       >
-        Other's
+        Diğerleri
       </button>
 
       <AnimatePresence>
