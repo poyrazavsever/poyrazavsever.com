@@ -8,7 +8,7 @@ const Designs = () => {
   const designProjects = projects.filter((project) => project.category === 'design');
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-16 text-neutral-800 dark:text-neutral-200">
+    <div className="w-full flex flex-col items-center justify-center py-4 md:py-24 text-neutral-800 dark:text-neutral-200">
       
       {/* Hero Section */}
       <div className="max-w-6xl w-full flex flex-col sm:flex-row items-center gap-10 mb-16">
@@ -26,6 +26,9 @@ const Designs = () => {
           <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
             UI/UX tasarımı, sadece güzel görünen değil, aynı zamanda sezgisel ve etkili kullanıcı deneyimleri sunan arayüzler oluşturma sürecidir. Farklı projelerde bu alanda fikir üretmeyi ve tasarlamayı seviyorum.
           </p>
+          <Link href="/contact" className="w-full block text-center bg-neutral-600 text-white px-4 py-2 rounded-md text-sm hover:bg-neutral-800 dark:hover:bg-neutral-700 transition cursor-pointer">
+              İletişime Geç
+          </Link>
         </div>
       </div>
 

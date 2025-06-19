@@ -7,7 +7,7 @@ const HeroSection = () => {
   const {t} = useTranslation('common')
 
   return (
-    <div className="my-4 sm:my-24 px-6 sm:p-0 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center justify-between max-w-6xl w-full">
+    <div className="my-4 sm:my-24 sm:p-0 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center justify-between max-w-6xl w-full">
         <img src="/hero/1.png" alt="hero section 1" className='rounded-xl'/>
 
         {/* Sağdaki Metin Alanı */}
