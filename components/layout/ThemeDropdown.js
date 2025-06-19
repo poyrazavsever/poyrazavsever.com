@@ -72,8 +72,8 @@ const ThemeDropdown = () => {
                   selected === theme.id ? 'text-black dark:text-white bg-neutral-200 dark:bg-neutral-700 font-semibold' : 'text-neutral-600 dark:text-neutral-300'
                 }`}
               >
-                <span className="text-lg">{theme.icon}</span>
-                <span>{theme.label}</span>
+                <span>{theme.icon}</span>
+                <span className='text-sm'>{theme.label}</span>
               </div>
             ))}
           </motion.div>

@@ -1,8 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaArrowDown } from 'react-icons/fa';
 import Link from 'next/link';
 
 const items = [
@@ -17,14 +16,32 @@ const items = [
   { label: 'Medium Yazılarım', href: '/medium', description: 'Medium’da yayımlanan yazılarım' },
   { label: 'Toplantı Ayarla', href: '/meeting', description: 'Benimle toplantı planlayın' },
   { label: 'Gönüllü Çalışmalar', href: '/volunteer', description: 'Gönüllü çalıştığım organizasyonlar' },
-  { label: 'Diğerleri', href: '/others/all', description: 'Bütün linkleri görüntüle' },  
+  { label: 'Diğerleri', href: '/others/all', description: 'Bütün linkleri görüntüle' },
 ];
 
 const DropdownMenu = () => {
   const [open, setOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Dış tıklamayı dinle
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [open]);
 
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
         className="transition hover:text-black dark:hover:text-white cursor-pointer"
