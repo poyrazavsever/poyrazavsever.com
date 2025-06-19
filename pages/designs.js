@@ -31,7 +31,7 @@ const Designs = () => {
 
       {/* Design Projects */}
       {designProjects.length > 0 && (
-        <div className="max-w-6xl w-full flex flex-col gap-6">
+        <div className="max-w-6xl w-full flex flex-col gap-6 mt-16">
           <h2 className="text-xl font-semibold">UI/UX Projelerim</h2>
 
           <div className="flex flex-wrap gap-6 justify-center sm:justify-between">
