@@ -33,14 +33,20 @@ const gears = [
     image: '/gear/mic.png',
     text: 'Fifine T683 USB Microphone',
   },
+  {
+    image: '/gear/webcam.png',
+    text: 'Logitech C920 HD Pro Webcam',
+  },
 ];
 
 const Gear = () => {
   return (
     <div className="py-16">
-      <h1 className="text-2xl font-semibold mb-10 text-neutral-800 dark:text-neutral-100">
+      <h1 className="text-2xl font-semibold mb-8 text-neutral-800 dark:text-neutral-100">
         Kullandığım Ekipmanlar
       </h1>
+
+      <img src='/gear/hero.jpg' alt='hero for gear' className='w-full h-96 object-cover object-center my-8 rounded-xl border border-neutral-300 dark:border-none'/>
 
       <div className="grid gap-10 sm:grid-cols-2">
         {gears.map((gear, idx) => (
@@ -50,7 +56,7 @@ const Gear = () => {
                 src={gear.image}
                 alt={gear.text}
                 fill
-                className="object-cover border border-neutral-300 dark:border-none rounded-xl"
+                className="object-cover border border-neutral-300 dark:border-none rounded-xl relative"
               />
             </div>
             <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
