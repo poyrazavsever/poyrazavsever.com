@@ -6,9 +6,8 @@ import DropdownMenu from './DropdownMenu';
 import ProfileMenu from './ProfileMenu';
 
 // System
-import { FaLanguage } from "react-icons/fa6";
 import ThemeDropdown from './ThemeDropdown';
-
+import LanguageDropdown from './LanguageDropdown';
 
 const Navbar = () => {
   return (
@@ -16,7 +15,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center gap-4">
         <ThemeDropdown/>
-        <FaLanguage className='text-neutral-700 dark:text-neutral-300 cursor-pointer hover:text-neutral-600 dark:hover:text-neutral-100'/>
+        <LanguageDropdown/>
       </div>
 
       {/* Navigation Links */}
