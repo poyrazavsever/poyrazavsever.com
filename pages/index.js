@@ -26,6 +26,7 @@ export default function Home() {
                 imageSrc={project.image}
                 title={project.title}
                 description={project.desc}
+                slug={project.slug}
               />
             ))}
           </div>
