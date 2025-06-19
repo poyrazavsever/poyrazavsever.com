@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 import toast from 'react-hot-toast';
 import { supabase } from '@/lib/supabaseClient';
@@ -17,6 +17,8 @@ const Meeting = () => {
 
   const [token, setToken] = useState('');
   const captchaRef = useRef(null);
+  const [captchaTheme, setCaptchaTheme] = useState('light');
+
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -25,6 +27,21 @@ const Meeting = () => {
   const handleVerify = (token) => {
     setToken(token);
   };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const localTheme = localStorage.getItem('theme');
+      console.log(localTheme);
+      if (localTheme === 'dark') {
+        setCaptchaTheme('dark');
+        console.log(captchaTheme);
+        
+      } else {
+        // "light" ya da "system" varsa veya hiç yoksa "light"
+        setCaptchaTheme('light');
+      }
+    }
+  }, []);
 
   const validateEmail = (email) =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -204,7 +221,7 @@ const Meeting = () => {
               sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
               onVerify={handleVerify}
               ref={captchaRef}
-              theme="dark"
+              theme={captchaTheme}
             />
           </div>
 
