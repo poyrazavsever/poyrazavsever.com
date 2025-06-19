@@ -29,9 +29,9 @@ const Navbar = () => {
 
         <Link href="/contact" className="hover:text-black dark:hover:text-neutral-50 transition-colors duration-200">İletişim</Link>
 
-        <button className="px-2 py-1 text-sm bg-neutral-100 dark:bg-neutral-700 rounded-full text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-900 hover:text-neutral-800 dark:hover:text-neutral-300 transition-all duration-200 cursor-pointer">
+        <Link href="/ozgecmis.pdf" download={true} className="px-2 py-1 text-sm bg-neutral-100 dark:bg-neutral-700 rounded-full text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-900 hover:text-neutral-800 dark:hover:text-neutral-300 transition-all duration-200 cursor-pointer">
           Özgeçmiş
-        </button>
+        </Link>
 
         <ProfileMenu />
       </div>
