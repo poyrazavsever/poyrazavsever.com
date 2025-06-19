@@ -4,7 +4,7 @@ export const projects = [
         title: "Pati Tekno",
         desc: "Pati Tekno, insanlar güncel teknolojileri, tasarım trendlerini ve yazılım araçlarını kolay bir şekilde takip edebileceği sosyal mecralar ve web platformudur.",
         slug:"patitekno",
-        content: "patitekno.md",
+        contentFolder: "patitekno",
         populer: true,
     },
     {
@@ -12,7 +12,7 @@ export const projects = [
         title: "Marşlarımızın Anlamı",
         desc: "Marşlarımızın Anlamı, Türkiye Cumhuriyetine ait marşların hikayelerini ve marşta geçen kelimelerin anlamlarına kolaylıkla ulaşabileceğiniz bir web platformudur. ",
         slug:"marslarimizinanlami",
-        content:"",
+        contentFolder:"",
         populer: true,
     },
     {
@@ -20,7 +20,7 @@ export const projects = [
         title: "Athena Şifa",
         desc: "Athena Şifa, bir müşterime yaptığım fullstack bir web uygulamasıdır. Admin panelinden sayfa istatistiklerini görüntüleyebilir,blog yazısı ekleyip düzenleyebilinir.",
         slug:"athenasifa",
-        content:"",
+        contentFolder:"",
         populer: true,
     },
 ]

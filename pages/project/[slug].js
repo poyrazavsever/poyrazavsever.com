@@ -4,9 +4,9 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import Link from 'next/link';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import fs from 'fs';
 import path from 'path';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ProjectDetail = ({ project }) => {
 
@@ -45,23 +45,34 @@ const ProjectDetail = ({ project }) => {
   );
 };
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
+  const paths = [];
+
+  locales.forEach((locale) => {
+    projects.forEach((project) => {
+      paths.push({
+        params: { slug: project.slug },
+        locale,
+      });
+    });
+  });
+
   return {
-    paths: projects.map((project) => ({
-      params: { slug: project.slug },
-    })),
-    fallback: false, 
+    paths,
+    fallback: false,
   };
 }
 
+
 export async function getStaticProps({ params, locale }) {
   const projectMeta = projects.find((p) => p.slug === params.slug);
-
   let markdownContent = '';
 
-  if (projectMeta?.content) {
-    const filePath = path.join(process.cwd(), 'content', projectMeta.content);
-    markdownContent = fs.readFileSync(filePath, 'utf8');
+  if (projectMeta?.contentFolder) {
+    const filePath = path.join(process.cwd(), 'content', projectMeta.contentFolder, `${locale}.md`);
+    if (fs.existsSync(filePath)) {
+      markdownContent = fs.readFileSync(filePath, 'utf8');
+    }
   }
 
   return {
