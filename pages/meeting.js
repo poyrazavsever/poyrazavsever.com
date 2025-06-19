@@ -1,19 +1,83 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
+import toast from 'react-hot-toast';
+import { supabase } from '@/lib/supabaseClient';
 
 const Meeting = () => {
   const [form, setForm] = useState({
-    name: '',
+    full_name: '',
     phone: '',
     email: '',
     reason: '',
-    date: '',
-    time: '',
+    meeting_date: '',
+    meeting_time_slot: '',
   });
+
+  const [token, setToken] = useState('');
+  const captchaRef = useRef(null);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleVerify = (token) => {
+    setToken(token);
+  };
+
+  const validateEmail = (email) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const validatePhone = (phone) =>
+    /^\+?\d{10,15}$/.test(phone.replace(/\s+/g, ''));
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { full_name, phone, email, reason, meeting_date, meeting_time_slot } = form;
+
+    // Validasyonlar
+    if (!full_name || !phone || !email || !reason || !meeting_date || !meeting_time_slot) {
+      toast.error('Lütfen tüm alanları doldurun.');
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      toast.error('Geçerli bir e-posta adresi girin.');
+      return;
+    }
+
+    if (!validatePhone(phone)) {
+      toast.error('Geçerli bir telefon numarası girin.');
+      return;
+    }
+
+    if (!token) {
+      toast.error('Lütfen doğrulamayı tamamlayın.');
+      return;
+    }
+
+    const { error } = await supabase.from('meetings').insert([
+      { full_name, phone, email, reason, meeting_date, meeting_time_slot }
+    ]);
+
+    if (error) {
+      toast.error('Veri kaydedilirken bir hata oluştu.');
+      console.error('Supabase Error:', error.message);
+    } else {
+      toast.success('Toplantı talebiniz başarıyla iletildi.');
+      setForm({
+        full_name: '',
+        phone: '',
+        email: '',
+        reason: '',
+        meeting_date: '',
+        meeting_time_slot: '',
+      });
+      setToken('');
+      captchaRef.current.resetCaptcha();
+    }
   };
 
   const timeSlots = [
@@ -43,14 +107,14 @@ const Meeting = () => {
           Toplantı Talebi Oluştur
         </h1>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">Ad Soyad</label>
               <input
                 type="text"
-                name="name"
-                value={form.name}
+                name="full_name"
+                value={form.full_name}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white focus:outline-none dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
                 required
@@ -64,6 +128,7 @@ const Meeting = () => {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
+                placeholder="+90 555 123 4567"
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white focus:outline-none dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
                 required
               />
@@ -78,6 +143,7 @@ const Meeting = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
+                placeholder="mail@ornek.com"
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white focus:outline-none dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
                 required
               />
@@ -86,15 +152,15 @@ const Meeting = () => {
             <div>
               <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">Tarih Seçimi</label>
               <select
-                name="date"
-                value={form.date}
+                name="meeting_date"
+                value={form.meeting_date}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white focus:outline-none dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
                 required
               >
-                <option value="">Tarih seçin</option>
+                <option value="" className='dark:bg-neutral-800 border dark:border-neutral-700'>Tarih seçin</option>
                 {oneWeekFromNow().map((date) => (
-                  <option key={date} value={date}>
+                  <option key={date} value={date} className='dark:bg-neutral-800 border dark:border-neutral-700'>
                     {new Date(date).toLocaleDateString('tr-TR')}
                   </option>
                 ))}
@@ -109,6 +175,7 @@ const Meeting = () => {
               rows={3}
               value={form.reason}
               onChange={handleChange}
+              placeholder="Neden bir toplantı ayarlamak istiyorsunuz?"
               className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white focus:outline-none dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
               required
             />
@@ -117,23 +184,28 @@ const Meeting = () => {
           <div>
             <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">Saat Seçimi</label>
             <select
-              name="time"
-              value={form.time}
+              name="meeting_time_slot"
+              value={form.meeting_time_slot}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white focus:outline-none dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
               required
             >
-              <option value="">Saat seçin</option>
+              <option value="" className='dark:bg-neutral-800 border dark:border-neutral-700'>Saat seçin</option>
               {timeSlots.map((slot) => (
-                <option key={slot} value={slot}>
+                <option key={slot} value={slot} className='dark:bg-neutral-800 border dark:border-neutral-700'>
                   {slot}
                 </option>
               ))}
             </select>
           </div>
 
-          <div className="h-20 w-full bg-neutral-100 dark:bg-neutral-800 rounded-md flex items-center justify-center text-sm text-neutral-500 dark:text-neutral-400 border border-dashed border-neutral-300 dark:border-neutral-600">
-            hCaptcha buraya entegre edilecek
+          <div className="rounded-md border border-neutral-300 dark:border-neutral-600 p-4 bg-neutral-50 dark:bg-neutral-800">
+            <HCaptcha
+              sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
+              onVerify={handleVerify}
+              ref={captchaRef}
+              theme="dark"
+            />
           </div>
 
           <button
