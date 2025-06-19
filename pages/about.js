@@ -98,7 +98,7 @@ const About = () => {
 
       {/* Kariyer Vizyonu */}
       <div className="mt-10">
-        <h2 className="text-lg font-semibold mb-2">Kariyer Amacım</h2>
+        <h2 className="text-lg font-semibold mb-2">Kariyer Hedefim</h2>
         <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
           Temiz kod yazma prensiplerine bağlı, çözüm odaklı ve takım çalışmasına uyumlu bir geliştirici olarak, yazılım alanında kendimi sürekli geliştirerek gerçek dünya problemlerine etkili çözümler üretmek istiyorum. Gelecekte kaliteli ekiplerde yer almayı ve fayda sağlayan projelerde bulunmayı hedefliyorum.
         </p>
