@@ -19,7 +19,7 @@ export default function Home() {
         <div className="my-10 max-w-6xl w-full flex flex-col gap-4">
           <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Popüler Projelerim</h2>
 
-          <div className="flex flex-wrap gap-6 justify-center sm:justify-start">
+          <div className="flex flex-wrap gap-6 justify-center sm:justify-between">
             {populerProjects.map((project, idx) => (
               <ProjectCard
                 key={idx}
