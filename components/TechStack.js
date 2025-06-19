@@ -27,8 +27,8 @@ const TechStack = () => {
             onClick={() => setSelectedCategory(cat.key)}
             className={`px-4 py-2 rounded-md cursor-pointer text-sm font-medium border transition-all ${
               selectedCategory === cat.key
-                ? 'bg-neutral-700 border-none text-white'
-                : 'bg-white text-neutral-700 border-neutral-300'
+                ? 'bg-neutral-700 dark:bg-neutral-900 border-none text-white'
+                : 'bg-white dark:bg-neutral-600 text-neutral-700 dark:text-neutral-200 border-neutral-300 dark:border-neutral-600'
             } transition`}
           >
             {cat.label}
@@ -41,14 +41,14 @@ const TechStack = () => {
         {filteredTech.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-4 rounded-md border border-neutral-300"
+            className="flex flex-col items-center text-center p-4 rounded-md border border-neutral-300 dark:border-neutral-700"
           >
             <img
               src={`https://skillicons.dev/icons?i=${item.iconName}`}
               alt={item.title}
               className="h-10 mb-2"
             />
-            <span className="text-sm font-medium text-neutral-800">{item.title}</span>
+            <span className="text-sm font-medium text-neutral-800 dark:text-neutral-300">{item.title}</span>
           </div>
         ))}
       </div>
