@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { tech } from '@/data/tech';
 
 const categories = [
-  { key: 'frontend', label: 'Frontend' },
   { key: 'language', label: 'Programlama Dilleri' },
+  { key: 'frontend', label: 'Frontend' },
   { key: 'backend', label: 'Backend' },
   { key: 'database', label: 'Veri Tabanı' },
   { key: 'tool', label: 'Araçlar' },
@@ -37,11 +37,11 @@ const TechStack = () => {
       </div>
 
       {/* Kartlar */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 min-h-96">
         {filteredTech.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-4 rounded-md border border-neutral-300 dark:border-neutral-700"
+            className="h-fit flex flex-col items-center text-center p-4 rounded-md border border-neutral-300 dark:border-neutral-700"
           >
             <img
               src={`https://skillicons.dev/icons?i=${item.iconName}`}
