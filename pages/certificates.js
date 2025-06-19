@@ -30,7 +30,7 @@ const certificates = [
 const Certificates = () => {
   return (
     <div className="py-16 text-neutral-800 dark:text-neutral-200">
-      <h1 className="text-2xl font-semibold mb-8">Sertifikalarım</h1>
+      <h1 className="text-2xl font-semibold mb-8">Sertifikalarım <span className='text-lg font-medium text-neutral-400'>({certificates.length} adet)</span></h1>
       
       <div className="grid md:grid-cols-2 gap-10">
         {certificates.map((cert, index) => (
