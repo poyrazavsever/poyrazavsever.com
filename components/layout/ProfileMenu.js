@@ -42,7 +42,7 @@ const ProfileMenu = () => {
           alt="profile"
           width={32}
           height={32}
-          className="rounded-full border dark:grayscale"
+          className="rounded-full border"
         />
       </div>
 
