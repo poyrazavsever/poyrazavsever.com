@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
+import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaLanguage } from 'react-icons/fa6';
 
@@ -16,15 +17,18 @@ const LanguageDropdown = () => {
   const [selected, setSelected] = useState('en');
   const dropdownRef = useRef(null);
 
+  const router = useRouter();
+
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('language') || 'en';
+    const savedLanguage = localStorage.getItem('language') || router.locale || 'en';
     setSelected(savedLanguage);
-  }, []);
+  }, [router.locale]);
 
   const handleLanguageChange = (langId) => {
     localStorage.setItem('language', langId);
     setSelected(langId);
     setOpen(false);
+    router.push(router.asPath, router.asPath, { locale: langId }); // locale değiştir
   };
 
   useEffect(() => {

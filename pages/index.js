@@ -1,8 +1,9 @@
 import HeroSection from '@/components/HeroSection';
 import ProjectCard from '@/components/shared/ProjectCard';
 import TechStack from '@/components/TechStack';
-import { projects } from '@/data/projects'; // path'ini doğru ayarla
+import { projects } from '@/data/projects';
 import Link from 'next/link';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Home() {
   const populerProjects = projects.filter(project => project.populer);
@@ -30,19 +31,22 @@ export default function Home() {
           </div>
 
           <Link href='/project' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>Bütün Projeleri Gör</Link>
-
         </div>
       )}
 
       {/* Tech Stack*/}
       <div className='flex flex-col items-start gap-8 w-full py-24'>
-
         <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Kullandığım Teknolojiler</h2>
-
         <TechStack />
-
       </div>
-
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }
