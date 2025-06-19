@@ -1,12 +1,14 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 import { projects } from '@/data/projects';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeHighlight from 'rehype-highlight';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import fs from 'fs';
+import path from 'path';
 
 const ProjectDetail = ({ project }) => {
-  const router = useRouter();
 
   if (!project) {
     return <div className='min-h-[70vh] flex items-center justify-center text-5xl font-semibold text-neutral-800 dark:text-neutral-200'>404 - Proje bulunamadı</div>;
@@ -14,7 +16,7 @@ const ProjectDetail = ({ project }) => {
 
   return (
     <div className="py-16">
-      <h1 className="text-3xl font-bold text-neutral-800 dark:text-white mb-4">{project.title}</h1>
+      <h1 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">{project.title}</h1>
       <img
         src={project.image}
         alt={project.title}
@@ -22,8 +24,13 @@ const ProjectDetail = ({ project }) => {
       />
       <p className="text-neutral-600 dark:text-neutral-300 mb-6">{project.desc}</p>
 
-      <article className="prose dark:prose-invert max-w-none">
-        <ReactMarkdown>{project.content}</ReactMarkdown>
+      <article className="mdCustom">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeHighlight]}
+      >
+        {project.content}
+      </ReactMarkdown>
       </article>
 
       <div className="mt-10">
@@ -48,15 +55,25 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params, locale }) {
-  const project = projects.find((p) => p.slug === params.slug);
-  console.log(params, project);
-  
+  const projectMeta = projects.find((p) => p.slug === params.slug);
+
+  let markdownContent = '';
+
+  if (projectMeta?.content) {
+    const filePath = path.join(process.cwd(), 'content', projectMeta.content);
+    markdownContent = fs.readFileSync(filePath, 'utf8');
+  }
+
   return {
     props: {
-      project: project || null,
+      project: {
+        ...projectMeta,
+        content: markdownContent,
+      },
       ...(await serverSideTranslations(locale, ['common'])),
     },
   };
 }
+
 
 export default ProjectDetail;

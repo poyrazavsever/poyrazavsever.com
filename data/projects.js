@@ -4,7 +4,7 @@ export const projects = [
         title: "Pati Tekno",
         desc: "Pati Tekno, insanlar güncel teknolojileri, tasarım trendlerini ve yazılım araçlarını kolay bir şekilde takip edebileceği sosyal mecralar ve web platformudur.",
         slug:"patitekno",
-        content:"",
+        content: "patitekno.md",
         populer: true,
     },
     {

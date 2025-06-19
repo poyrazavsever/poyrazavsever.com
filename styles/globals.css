@@ -1,3 +1,98 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* === Markdown Custom Style === */
+.mdCustom {
+    @apply leading-relaxed text-[15px] sm:text-base text-neutral-800 dark:text-neutral-200;
+  }
+  
+  /* Headings */
+  .mdCustom h1 {
+    @apply text-3xl font-bold mt-10 mb-4 border-b border-neutral-200 dark:border-neutral-700 pb-2;
+  }
+  
+  .mdCustom h2 {
+    @apply text-2xl font-semibold mt-8 mb-3 text-neutral-800 dark:text-neutral-100;
+  }
+  
+  .mdCustom h3 {
+    @apply text-xl font-semibold mt-6 mb-2 text-neutral-700 dark:text-neutral-200;
+  }
+  
+  .mdCustom h4 {
+    @apply text-lg font-medium mt-5 mb-2 text-neutral-700 dark:text-neutral-300;
+  }
+  
+  /* Paragraphs */
+  .mdCustom p {
+    @apply my-4 text-neutral-700 dark:text-neutral-300;
+  }
+  
+  /* Links */
+  .mdCustom a {
+    @apply text-blue-600 dark:text-blue-400 underline hover:opacity-80 transition;
+  }
+  
+  /* Lists */
+  .mdCustom ul {
+    @apply list-disc list-inside my-4 pl-4 text-neutral-700 dark:text-neutral-300;
+  }
+  
+  .mdCustom ol {
+    @apply list-decimal list-inside my-4 pl-4 text-neutral-700 dark:text-neutral-300;
+  }
+  
+  .mdCustom li {
+    @apply mb-2;
+  }
+  
+  /* Blockquote */
+  .mdCustom blockquote {
+    @apply border-l-4 pl-4 italic my-6 text-neutral-600 dark:text-neutral-400 border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 py-2 rounded-md;
+  }
+  
+  /* Code (inline) */
+  .mdCustom code {
+    @apply bg-neutral-100 dark:bg-neutral-800 text-pink-600 dark:text-pink-400 px-1 py-0.5 rounded text-sm;
+  }
+  
+  /* Preformatted code blocks */
+  .mdCustom pre {
+    @apply bg-neutral-900 text-white p-4 rounded-md overflow-x-auto text-sm my-6;
+  }
+  
+  /* Horizontal Rule */
+  .mdCustom hr {
+    @apply border-t border-neutral-300 dark:border-neutral-700 my-8;
+  }
+  
+  /* Images */
+  .mdCustom img {
+    @apply rounded-md shadow-md my-4 max-w-full h-auto;
+  }
+  
+  /* Tables */
+  .mdCustom table {
+    @apply w-full text-left border-collapse my-6;
+  }
+  
+  .mdCustom thead {
+    @apply bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100;
+  }
+  
+  .mdCustom th,
+  .mdCustom td {
+    @apply border border-neutral-300 dark:border-neutral-700 px-4 py-2;
+  }
+  
+  /* Strong */
+  .mdCustom strong {
+    @apply font-semibold text-neutral-900 dark:text-neutral-100;
+  }
+  
+  /* Emphasis */
+  .mdCustom em {
+    @apply italic text-neutral-700 dark:text-neutral-300;
+  }
+  
