@@ -5,7 +5,7 @@ import ProjectCard from '@/components/shared/ProjectCard'
 const Projects = () => {
   return (
     <div className='mt-8 max-w-6xl w-full flex flex-col gap-8'>
-        <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Popüler Projelerim</h2>
+        <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Projelerim</h2>
 
         <div className="flex flex-wrap gap-6 justify-center sm:justify-between">
         {projects.map((project, idx) => (

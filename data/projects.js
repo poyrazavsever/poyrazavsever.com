@@ -18,7 +18,7 @@ export const projects = [
     {
         image: "/project/athenasifa.png",
         title: "Athena Şifa",
-        desc: "Athena Şifa, bir müşterime yaptığım fullstack bir web uygulamasıdır. Admin panelinden sayfa istatistiklerini görüntüleyebilir,blog yazısı ekleyip düzenleyebilinir.",
+        desc: "Athena Şifa, müşterime yaptığım fullstack web uygulamasıdır. Admin panelinden sayfa istatistiklerini görüntülenebilir, blog yazısı ekleyip düzenlenebilinir.",
         slug:"athenasifa",
         contentFolder:"",
         populer: true,
