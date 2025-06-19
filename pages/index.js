@@ -31,7 +31,7 @@ export default function Home() {
             ))}
           </div>
 
-          <Link href='/project' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>Bütün Projeleri Gör</Link>
+          <Link href='/projects' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>Bütün Projeleri Gör</Link>
         </div>
       )}
 
