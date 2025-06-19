@@ -6,6 +6,7 @@ export const projects = [
         slug:"patitekno",
         contentFolder: "patitekno",
         populer: true,
+        category:"design",
     },
     {
         image: "/project/marslar.png",
@@ -14,6 +15,7 @@ export const projects = [
         slug:"marslarimizinanlami",
         contentFolder:"",
         populer: true,
+        category:"design",
     },
     {
         image: "/project/athenasifa.png",
@@ -22,5 +24,6 @@ export const projects = [
         slug:"athenasifa",
         contentFolder:"",
         populer: true,
+        category:"design",
     },
 ]
