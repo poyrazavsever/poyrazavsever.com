@@ -81,7 +81,7 @@ export async function getStaticProps({ params, locale }) {
         ...projectMeta,
         content: markdownContent,
       },
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'layout'])),
     },
   };
 }

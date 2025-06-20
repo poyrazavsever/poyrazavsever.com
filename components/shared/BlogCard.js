@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
 const BlogCard = ({ cardImage, title, description, slug }) => {
+  const { t } = useTranslation('common');
   return (
     <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full max-w-xs">
       <div className="relative w-full h-48 rounded-lg overflow-hidden">
@@ -18,7 +20,7 @@ const BlogCard = ({ cardImage, title, description, slug }) => {
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1 line-clamp-1">{description}</p>
         <Link href={`/blog/${slug}`}>
           <span className="text-sm text-sky-500 dark:text-sky-400 underline hover:text-sky-800 transition-all cursor-pointer mt-2">
-            Yazıyı oku
+            {t('details')}
           </span>
         </Link>
       </div>

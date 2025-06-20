@@ -1,0 +1,40 @@
+{
+    "name": "Poyraz Avsever",
+    "role": "Fullstack Developer",
+    "location": "Ankara’da yaşıyor, Üniversite öğrencisi",
+    "aboutTitle": "Hakkımda",
+    "aboutDescription": "Ortaokulda yazılımla tanıştığım andan beri bir şeyler öğrenmeye ve geliştirmeye çalışıyorum. Lise hayatımda öğrenme hevesim giderek arttı ve web alanında çeşitli teknolojileri öğrenme fırsatı yakaladım. Lise sonlarına doğru mobil dünyasına giriş yaptım. Şu an aktif olarak üretmeye, geliştirmeye ve en önemlisi öğrenmeye devam ediyorum.",
+    "educationTitle": "Eğitim Geçmişi",
+    "education": [
+      {
+        "school": "Ostim Teknik Üniversitesi",
+        "degree": "Yazılım Mühendisliği (Lisans)",
+        "duration": "2024 – Halen"
+      },
+      {
+        "school": "TOBB Tuşba Fen Lisesi",
+        "degree": "Fen Lisesi, Sayısal Bölüm",
+        "duration": "2020 – 2024"
+      }
+    ],
+    "experienceTitle": "Deneyim",
+    "experiences": [
+      {
+        "title": "Fullstack Developer Stajyer - Omedya Bilişim A.Ş",
+        "duration": "Haziran 2025 – Halen"
+      },
+      {
+        "title": "Fullstack Developer Stajyer - ARC Foreign Trade",
+        "duration": "Şubat 2025 – Haziran 2025"
+      },
+      {
+        "title": "Fullstack Developer Stajyer - Tarvina Yazılım Teknolojileri",
+        "duration": "Ekim 2024 – Aralık 2024"
+      }
+    ],
+    "careerTitle": "Kariyer Hedefim",
+    "careerDescription": "Temiz kod yazma prensiplerine bağlı, çözüm odaklı ve takım çalışmasına uyumlu bir geliştirici olarak, yazılım alanında kendimi sürekli geliştirerek gerçek dünya problemlerine etkili çözümler üretmek istiyorum. Gelecekte kaliteli ekiplerde yer almayı ve fayda sağlayan projelerde bulunmayı hedefliyorum.",
+    "ctaTitle": "Benimle çalışmak ister misin?",
+    "ctaButton": "İletişime Geç"
+  }
+  

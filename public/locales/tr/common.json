@@ -10,5 +10,6 @@
   "backend": "Backend",
   "database": "Veri Tabanı",
   "tool": "Araçlar",
-  "platform": "Platformlar"
+  "platform": "Platformlar",
+  "details": "Detaylar"
 }

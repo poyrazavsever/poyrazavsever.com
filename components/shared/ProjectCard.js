@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useTranslation } from 'next-i18next';
 const ProjectCard = ({ imageSrc, title, description, slug}) => {
+  const { t } = useTranslation('common');
   return (
     <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full md:max-w-xs">
       <div className="relative w-full h-52 md:h-48 rounded-lg overflow-hidden">
@@ -15,7 +16,7 @@ const ProjectCard = ({ imageSrc, title, description, slug}) => {
         <h3 className="text-sm text-neutral-800 dark:text-neutral-200 font-semibold">{title}</h3>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1 line-clamp-4 break-words whitespace-normal">{description}</p>
         <a href={`/projects/${slug}`} className="text-sm text-sky-500 dark:text-sky-600 underline hover:text-sky-800 transition-all cursor-pointer">
-            İncele
+          {t('details')}
         </a>
       </div>
     </div>

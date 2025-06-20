@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import BlogCard from '@/components/shared/BlogCard'
 import { supabase } from '@/lib/supabaseClient'
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 const Blog = () => {
   const [posts, setPosts] = useState([])
   const [lang, setLang] = useState('en')
@@ -64,3 +64,11 @@ const Blog = () => {
 }
 
 export default Blog
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'layout'])),
+    },
+  }
+}
