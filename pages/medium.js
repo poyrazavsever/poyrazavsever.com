@@ -21,7 +21,7 @@ const Medium = () => {
 
   }, []);
 
-  const { t } = useTranslation('medium');
+  const { t } = useTranslation('common');
 
   return (
     <div className="py-16">
