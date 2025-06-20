@@ -22,13 +22,13 @@ const Medium = () => {
   const { t } = useTranslation('common');
 
   useEffect(() => {
-    toast.error("mediumError");
+    toast.error(t("mediumError"));
   }, []);
 
   return (
     <div className="py-16">
       <h1 className="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-6">
-        {t('mediumTitle')}
+        {t('medium')}
       </h1>
 
       <ul className="space-y-6 mb-6">
