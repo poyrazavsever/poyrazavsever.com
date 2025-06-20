@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <div className="flex items-center gap-2 mb-2">
             <div className="w-3 h-3 bg-black dark:bg-white rounded-sm" />
-            <span className="font-semibold text-neutral-800 dark:text-neutral-200">poyrazavsever.com</span>
+            <span className="font-semibold text-neutral-800 dark:text-neutral-200">www.pavsever.com</span>
           </div>
           <p className="text-xs text-neutral-500 dark:text-neutral-500">
             {t('footer.description')}
