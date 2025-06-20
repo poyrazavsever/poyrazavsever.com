@@ -49,7 +49,7 @@ const Projects = () => {
           filteredProjects.map((project, idx) => (
             <ProjectCard
               key={idx}
-              imageSrc={project.bannerImage}
+              imageSrc={project.image}
               title={project.title}
               description={project.desc}
               slug={project.slug}
