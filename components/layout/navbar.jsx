@@ -74,7 +74,7 @@ const Navbar = () => {
             <DropdownMenu mobile onClose={() => setIsOpen(false)} />
             <Link href="/contact" onClick={() => setIsOpen(false)}>{t('nav.contact')}</Link>
             <Link
-              href="/resume.pdf"
+              href="https://localhost:3000/resume.pdf"
               target="_blank"
               download
               onClick={() => setIsOpen(false)}
