@@ -1,4 +1,6 @@
 import React from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next';
 
 const bookmarks = [
   { title: 'Color Hunt', link: 'https://colorhunt.co' },
@@ -9,11 +11,20 @@ const bookmarks = [
   { title: 'React Icons', link: 'https://react-icons.github.io/react-icons' },
 ];
 
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'layout'])),
+    },
+  };
+}
+
 const Bookmarks = () => {
+  const { t } = useTranslation('common');
   return (
     <div className="py-16">
       <h1 className="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-8">
-        Sık Kullandığım Bağlantılar
+        {t('bookmarks')}
       </h1>
 
       <ul className="space-y-4">
