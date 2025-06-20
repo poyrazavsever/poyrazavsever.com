@@ -1,0 +1,30 @@
+{
+    "title": "Gönüllü Çalışmalar",
+    "items": [
+      {
+        "name": "Ostim Teknik Üniversiteis Münazara Topluluğu",
+        "category": "Eğitim",
+        "date": "Ekim 2024 - Halen",
+        "content": "Okulumuzda münazara alanında eğitimler veriyorum, turnuvalara katılacak takım arkadaşlarımızla yapılan çalışmaların organizasyonunu sağlıyorum. Kurucu Başkanlık görevini üstleniyorum."
+      },
+      {
+        "name": "Huawei Student Developers",
+        "category": "Teknoloji",
+        "date": "Şubat 2025 - Hala",
+        "content": "Medium Araştırma, Sosyal Medya ve Proje ekiplerinde bir şeyler üretiyor ve geliştiriyorum. Proje ekibinde sosyal sorumluluk projelerinde takım çalışmasını deneyimliyorum."
+      },
+      {
+        "name": "Google Developers Group",
+        "category": "Teknoloji",
+        "date": "Aralık 2024 - Hala",
+        "content": "Teknoloji departmanda görev alıyorum. Düzenlenen etkinliklerde teknik ekipte yer alıyorum."
+      },
+      {
+        "name": "Ottoqua Teknoloji Takımı",
+        "category": "Teknoloji",
+        "date": "Kasım 2024 - Hala",
+        "content": "Tubitak ve teknofest yarışmalarına katılıyor, yazılım çözümleri geliştiriyoruz. Web platformları ve mobil uygulamalar kodluyorum."
+      }
+    ]
+  }
+  
