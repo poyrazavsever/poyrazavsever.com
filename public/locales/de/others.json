@@ -4,6 +4,27 @@
     "pages": "Seiten",
     "social": "Soziale Netzwerke"
   },
-  "pages": [],
-  "social": []
+  "pages": [
+    { "label": "Blog", "href": "/blog", "description": "Meine persönlichen Beiträge und Notizen" },
+    { "label": "Galerie", "href": "/gallery", "description": "Von mir aufgenommene Fotos und Videos" },
+    { "label": "Zertifikate", "href": "/certificates", "description": "Meine Bildungs- und Erfolgsnachweise" },
+    { "label": "UI/UX-Arbeiten", "href": "/designs", "description": "Meine Interface-Designs" },
+    { "label": "Meine Ausrüstung", "href": "/gear", "description": "Hardware und Software, die ich verwende" },
+    { "label": "Lesezeichen", "href": "/bookmarks", "description": "Meine bevorzugten Links" },
+    { "label": "Tech Stack", "href": "/stack", "description": "Technologien, die ich in Projekten verwende" },
+    { "label": "Referenzen", "href": "/references", "description": "Was über mich gesagt wird" },
+    { "label": "Meine Medium-Artikel", "href": "/medium", "description": "Meine veröffentlichten Artikel auf Medium" },
+    { "label": "Termin Vereinbaren", "href": "/meeting", "description": "Planen Sie ein Treffen mit mir" },
+    { "label": "Freiwilligenarbeit", "href": "/volunteer", "description": "Organisationen, bei denen ich ehrenamtlich tätig bin" }
+  ],
+  "social": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/poyrazavsever" },
+    { "label": "@Pavori_", "href": "https://www.instagram.com/pavori_" },
+    { "label": "Medium", "href": "https://medium.com/@poyrazavsever" },
+    { "label": "@PatiTekno", "href": "https://www.instagram.com/patitekno" },
+    { "label": "@PatiTekno", "href": "http://youtube.com/@patitekno" },
+    { "label": "Behance", "href": "https://www.behance.net/slayeras" },
+    { "label": "Buy Me a Coffee", "href": "https://www.buymeacoffee.com/poyrazavsever" },
+    { "label": "GitHub", "href": "https://www.github.com/poyrazavsever" }
+  ]
 }
