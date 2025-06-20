@@ -32,7 +32,7 @@ const Navbar = () => {
           <DropdownMenu />
           <Link href="/contact">{t('nav.contact')}</Link>
           <Link
-            href="/resume.pdf"
+            href="http://localhost:3000/resume.pdf"
             target="_blank"
             download
             className="px-2 py-1 text-sm bg-neutral-100 dark:bg-neutral-700 rounded-full text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-900 hover:text-neutral-800 dark:hover:text-neutral-300 transition-all duration-200"
@@ -74,7 +74,7 @@ const Navbar = () => {
             <DropdownMenu mobile onClose={() => setIsOpen(false)} />
             <Link href="/contact" onClick={() => setIsOpen(false)}>{t('nav.contact')}</Link>
             <Link
-              href="https://localhost:3000/resume.pdf"
+              href="http://localhost:3000/resume.pdf"
               target="_blank"
               download
               onClick={() => setIsOpen(false)}
