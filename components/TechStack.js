@@ -2,20 +2,26 @@
 
 import React, { useState } from 'react';
 import { tech } from '@/data/tech';
+import { useTranslation } from 'next-i18next';
 
-const categories = [
-  { key: 'language', label: 'Programlama Dilleri' },
-  { key: 'frontend', label: 'Frontend' },
-  { key: 'backend', label: 'Backend' },
-  { key: 'database', label: 'Veri Tabanı' },
-  { key: 'tool', label: 'Araçlar' },
-  { key: 'platform', label: 'Platformlar' },
-];
+
+
 
 const TechStack = () => {
   const [selectedCategory, setSelectedCategory] = useState('frontend');
 
   const filteredTech = tech.filter(item => item.category === selectedCategory);
+
+  const {t} = useTranslation("common")
+
+  const categories = [
+    { key: 'language', label: t('language') },
+    { key: 'frontend', label: t('frontend') },
+    { key: 'backend', label: t('backend') },
+    { key: 'database', label: t('database') },
+    { key: 'tool', label: t('tool') },
+    { key: 'platform', label: t('platform') },
+  ]
 
   return (
     <div className="w-full max-w-6xl">

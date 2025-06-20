@@ -1,6 +1,14 @@
 {
-    "hello": "",
-    "welcome": "",
-    "contact":""
-  }
-  
+  "hello": "Merhaba, Ben Poyraz!",
+  "welcome": "Teknolojiye meraklı bir insanım. UI/UX tasarımı ve yazılım geliştirme konularına ilgi duyuyorum. Frontend geliştirmede Next.js ve Tailwind kullanıyorum. Eğer benimle bir konu hakkında konuşmak isterseniz;",
+  "contact": "İletişime Geç",
+  "popularProject": "Popüler Projelerim",
+  "usedTech": "Kullandığım Teknolojiler",
+  "all": "Hepsini Gör",
+  "language": "Programlama Dilleri",
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "database": "Veri Tabanı",
+  "tool": "Araçlar",
+  "platform": "Platformlar"
+}
