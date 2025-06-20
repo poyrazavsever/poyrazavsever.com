@@ -4,8 +4,18 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const galleryImages = [
-  '/gallery/1.png',
-  '/gallery/2.png',
+  {
+    img:'/gallery/1.png',
+    title:"Yapay Zeka Çağında Sürdürülebilirlik, Uluslar Arası Öğrenci Kongresi"
+  },
+  {
+    img:'/gallery/2.png',
+    title:"Yapay Zeka Çağında Sürdürülebilirlik, Uluslar Arası Öğrenci Kongresi"
+  },
+  {
+    img:'/gallery/1.png',
+    title:"Yapay Zeka Çağında Sürdürülebilirlik, Uluslar Arası Öğrenci Kongresi"
+  },
 ];
 
 const Gallery = () => {
@@ -28,11 +38,11 @@ const Gallery = () => {
   return (
     <>
       {/* Grid Gallery */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 my-16">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 my-16">
         {galleryImages.map((src, idx) => (
           <div key={idx} onClick={() => openModal(idx)} className="cursor-pointer">
             <img
-              src={src}
+              src={src.img}
               alt={`Gallery image ${idx + 1}`}
               className="object-cover h-64 w-64 rounded-md"
             />
@@ -50,15 +60,18 @@ const Gallery = () => {
             exit={{ opacity: 0 }}
             onClick={() => setIsOpen(false)}
           >
-            <motion.img
-              src={galleryImages[currentIndex]}
-              alt={`Modal image ${currentIndex + 1}`}
-              className="max-h-[80vh] max-w-[90vw] rounded-lg"
-              initial={{ scale: 0.95 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.95 }}
-              onClick={(e) => e.stopPropagation()} // Modal dışında tıklama
-            />
+            <div className='flex flex-col items-center gap-4 px-2'>
+              <motion.img
+                src={galleryImages[currentIndex].img}
+                alt={`Modal image ${currentIndex + 1}`}
+                className="max-h-[80vh] max-w-[90vw] rounded-lg"
+                initial={{ scale: 0.95 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.95 }}
+                onClick={(e) => e.stopPropagation()} // Modal dışında tıklama
+              />
+              <span className='text-white text-center'>{galleryImages[currentIndex].title}</span>
+            </div>
             {/* Navigation */}
             <div className="absolute left-4 text-white text-4xl cursor-pointer" onClick={(e) => { e.stopPropagation(); prevImage(); }}>{'‹'}</div>
             <div className="absolute right-4 text-white text-4xl cursor-pointer" onClick={(e) => { e.stopPropagation(); nextImage(); }}>{'›'}</div>
