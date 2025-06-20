@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <section className="py-20 flex justify-center text-neutral-800 dark:text-neutral-200">
-      <div className="w-full max-w-4xl">
+      <div className="w-full">
         <h1 className="text-2xl sm:text-3xl font-bold mb-6">{t('title')}</h1>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-12 max-w-xl">
           {t('description')}
