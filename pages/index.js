@@ -62,14 +62,14 @@ export default function Home() {
             ))}
           </div>
 
-          <Link href='/projects' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>{t("blog")}</Link>
+          <Link href='/projects' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>{t("all")}</Link>
         </div>
       )}
 
       {/* Son Blog Yazılarım */}
       {latestPosts.length > 0 && (
         <div className="my-10 max-w-6xl w-full flex flex-col gap-4">
-          <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('heading')}</h2>
+          <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('blog')}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center sm:justify-between">
             {latestPosts.map(post => (
               <BlogCard
