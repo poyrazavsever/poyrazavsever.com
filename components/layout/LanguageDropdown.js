@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaLanguage } from 'react-icons/fa6';
 
 const languages = [
-  { id: 'en', label: 'İngilizce' },
-  { id: 'tr', label: 'Türkçe' },
-  { id: 'de', label: 'Almanca' },
-  { id: 'es', label: 'İspanyolca' },
+  { id: 'en', label: 'Türkçe' },
+  { id: 'tr', label: 'English' },
+  { id: 'de', label: 'Deutsch' },
+  { id: 'es', label: 'Español' },
 ];
 
 const LanguageDropdown = () => {
