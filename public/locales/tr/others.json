@@ -1,0 +1,31 @@
+{
+    "title": "Tüm Bağlantılar",
+    "tabs": {
+      "pages": "Sayfalar",
+      "social": "Sosyal"
+    },
+    "pages": [
+      { "label": "Blog", "href": "/blog", "description": "Kişisel yazılarım ve notlarım" },
+      { "label": "Galeri", "href": "/gallery", "description": "Çektiğim fotoğraf ve videolar" },
+      { "label": "Sertifikalar", "href": "/certificates", "description": "Eğitim ve Başarı belgelerim" },
+      { "label": "UI/UX Çalışmalarım", "href": "/designs", "description": "Arayüz tasarımlarım" },
+      { "label": "Ekipmanlarım", "href": "/gear", "description": "Kullandığım donanım ve yazılımlar" },
+      { "label": "Bookmarklarım", "href": "/bookmarks", "description": "Favori bağlantılarım" },
+      { "label": "Teknoloji Yığınım", "href": "/stack", "description": "Projelerde kullandığım teknolojiler" },
+      { "label": "Referanslar", "href": "/references", "description": "Hakkımda söylenenler" },
+      { "label": "Medium Yazılarım", "href": "/medium", "description": "Medium’da yayımlanan yazılarım" },
+      { "label": "Toplantı Ayarla", "href": "/meeting", "description": "Benimle toplantı planlayın" },
+      { "label": "Gönüllü Çalışmalar", "href": "/volunteer", "description": "Gönüllü çalıştığım organizasyonlar" }
+    ],
+    "social": [
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/poyrazavsever" },
+      { "label": "@Pavori_", "href": "https://www.instagram.com/pavori_" },
+      { "label": "Medium", "href": "https://medium.com/@poyrazavsever" },
+      { "label": "@PatiTekno", "href": "https://www.instagram.com/patitekno" },
+      { "label": "@PatiTekno", "href": "http://youtube.com/@patitekno" },
+      { "label": "Behance", "href": "https://www.behance.net/slayeras" },
+      { "label": "Buy Me a Coffee", "href": "https://www.buymeacoffee.com/poyrazavsever" },
+      { "label": "GitHub", "href": "https://www.github.com/poyrazavsever" }
+    ]
+  }
+  
