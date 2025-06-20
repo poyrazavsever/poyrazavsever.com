@@ -1,0 +1,20 @@
+{
+    "title": "Toplantı Talebi Oluştur",
+    "name": "Ad Soyad",
+    "phone": "Telefon Numarası",
+    "email": "E-posta",
+    "date": "Tarih Seçimi",
+    "reason": "Toplantı Sebebi",
+    "reason_placeholder": "Neden bir toplantı ayarlamak istiyorsunuz?",
+    "time": "Saat Seçimi",
+    "submit": "Toplantı Talebini Gönder",
+    "select_date": "Tarih seçin",
+    "select_time": "Saat seçin",
+    "captcha_error": "Lütfen doğrulamayı tamamlayın.",
+    "validation_error": "Lütfen tüm alanları doldurun.",
+    "email_error": "Geçerli bir e-posta adresi girin.",
+    "phone_error": "Geçerli bir telefon numarası girin.",
+    "save_success": "Toplantı talebiniz başarıyla iletildi.",
+    "save_error": "Veri kaydedilirken bir hata oluştu."
+  }
+  
