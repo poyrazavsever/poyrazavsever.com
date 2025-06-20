@@ -1,0 +1,8 @@
+{
+    "popularProject": "Projets Populaires",
+    "githubActivities": "Activités GitHub",
+    "githubProfile": "Profil GitHub @{{username}}",
+    "githubContributions": "Tableau des contributions GitHub",
+    "latestRepos": "Derniers dépôts GitHub",
+    "loading": "Chargement..."
+}
