@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast';
 
 const Layout = ({ children }) => {
   return (
-    <div className="max-w-5xl mx-auto container min-h-screen flex flex-col relative">
+    <div className="max-w-5xl mx-auto container min-h-screen flex flex-col relative px-4 sm:px-0">
 
       <Navbar />
 

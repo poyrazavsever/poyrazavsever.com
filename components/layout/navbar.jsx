@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 left-0 z-50 w-full bg-white dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-900 py-3 px-4 md:px-0">
+    <nav className="sticky top-0 left-0 z-50 w-full bg-white dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-900 py-3">
       {/* Main Row */}
       <div className="flex justify-between items-center">
         {/* Sol */}

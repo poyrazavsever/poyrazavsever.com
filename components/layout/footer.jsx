@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="w-full bg-white dark:bg-neutral-800 border-t border-neutral-200 dark:border-neutral-900 py-8 text-sm text-neutral-600 dark:text-neutral-400">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+      <div className="max-w-6xl mx-aut flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
         
         {/* Sol - Logo & Açıklama */}
         <div>
