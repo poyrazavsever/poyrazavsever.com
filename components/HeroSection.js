@@ -7,11 +7,11 @@ const HeroSection = () => {
   const {t} = useTranslation('common')
 
   return (
-    <div className="my-4 sm:my-24 sm:p-0 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center justify-between max-w-6xl w-full">
-        <img src="/hero/1.png" alt="hero section 1" className='rounded-xl'/>
+    <div className="my-4 md:my-24 sm:p-0 flex flex-col md:flex-row gap-8 sm:gap-16 items-start md:items-center justify-between max-w-6xl w-full">
+        <img src="/hero/1.png" alt="hero section 1" className='rounded-xl w-full'/>
 
         {/* Sağdaki Metin Alanı */}
-        <div className="text-center sm:text-left space-y-3">
+        <div className="text-left space-y-3">
           <h1 className="text-2xl sm:text-3xl font-bold text-neutral-800 dark:text-neutral-100">
             {t('hello')}
           </h1>
