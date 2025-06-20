@@ -1,0 +1,19 @@
+{
+  "title": "Terminvereinbarung",
+  "name": "Vollständiger Name",
+  "phone": "Telefonnummer",
+  "email": "E-Mail",
+  "date": "Datum auswählen",
+  "reason": "Grund für das Treffen",
+  "reason_placeholder": "Warum möchtest du ein Treffen vereinbaren?",
+  "time": "Uhrzeit auswählen",
+  "submit": "Termin senden",
+  "select_date": "Datum auswählen",
+  "select_time": "Uhrzeit auswählen",
+  "captcha_error": "Bitte überprüfe die Sicherheitsabfrage.",
+  "validation_error": "Bitte fülle alle Felder aus.",
+  "email_error": "Bitte gib eine gültige E-Mail-Adresse ein.",
+  "phone_error": "Bitte gib eine gültige Telefonnummer ein.",
+  "save_success": "Deine Terminanforderung wurde erfolgreich übermittelt.",
+  "save_error": "Fehler beim Speichern der Daten."
+}

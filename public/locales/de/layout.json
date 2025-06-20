@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "projects": "Meine Projekte",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf"
+  },
+  "themes": {
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus",
+    "system": "Systemmodus"
+  },
+  "menu": {
+    "blog": {
+      "label": "Blog",
+      "description": "Meine persönlichen Beiträge und Notizen"
+    },
+    "gallery": {
+      "label": "Galerie",
+      "description": "Von mir aufgenommene Fotos und Videos"
+    },
+    "certificates": {
+      "label": "Zertifikate",
+      "description": "Meine Bildungs- und Leistungsnachweise"
+    },
+    "designs": {
+      "label": "UI/UX-Arbeiten",
+      "description": "Meine Interface-Designs"
+    },
+    "gear": {
+      "label": "Meine Ausrüstung",
+      "description": "Von mir verwendete Hardware und Software"
+    },
+    "bookmarks": {
+      "label": "Lesezeichen",
+      "description": "Meine Lieblingslinks"
+    },
+    "stack": {
+      "label": "Technologie-Stack",
+      "description": "Technologien, die ich in Projekten verwende"
+    },
+    "references": {
+      "label": "Referenzen",
+      "description": "Was andere über mich sagen"
+    },
+    "medium": {
+      "label": "Meine Medium-Artikel",
+      "description": "Meine veröffentlichten Artikel auf Medium"
+    },
+    "meeting": {
+      "label": "Termin vereinbaren",
+      "description": "Plane ein Treffen mit mir"
+    },
+    "volunteer": {
+      "label": "Freiwilligenarbeit",
+      "description": "Organisationen, bei denen ich freiwillig arbeite"
+    },
+    "others": {
+      "label": "Weitere",
+      "description": "Alle Links anzeigen"
+    }
+  },
+  "footer": {
+    "description": "Mein persönliches Portfolio & digitaler Kreativraum.",
+    "projects": "Meine Projekte",
+    "blog": "Blog",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
