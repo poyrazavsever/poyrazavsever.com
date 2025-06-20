@@ -1,0 +1,19 @@
+{
+  "title": "Solicitud de Reunión",
+  "name": "Nombre Completo",
+  "phone": "Número de Teléfono",
+  "email": "Correo Electrónico",
+  "date": "Seleccionar Fecha",
+  "reason": "Motivo de la Reunión",
+  "reason_placeholder": "¿Por qué deseas agendar una reunión?",
+  "time": "Seleccionar Hora",
+  "submit": "Enviar Solicitud",
+  "select_date": "Seleccionar fecha",
+  "select_time": "Seleccionar hora",
+  "captcha_error": "Por favor completa la verificación.",
+  "validation_error": "Por favor completa todos los campos.",
+  "email_error": "Introduce una dirección de correo válida.",
+  "phone_error": "Introduce un número de teléfono válido.",
+  "save_success": "Tu solicitud de reunión ha sido enviada exitosamente.",
+  "save_error": "Ocurrió un error al guardar los datos."
+}

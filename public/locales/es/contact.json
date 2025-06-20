@@ -1,0 +1,16 @@
+{
+  "title": "Contacto",
+  "description": "Puedes contactarme rellenando el siguiente formulario.",
+  "nameLabel": "Nombre Completo",
+  "namePlaceholder": "Introduce tu nombre",
+  "emailLabel": "Correo Electrónico",
+  "emailPlaceholder": "Introduce tu correo electrónico",
+  "subjectLabel": "Asunto",
+  "subjectPlaceholder": "Asunto del mensaje",
+  "messageLabel": "Mensaje",
+  "messagePlaceholder": "Escribe tu mensaje...",
+  "button": "Enviar",
+  "captchaError": "Por favor completa la verificación de captcha.",
+  "success": "¡Mensaje enviado con éxito!",
+  "error": "No se pudo enviar el mensaje."
+}

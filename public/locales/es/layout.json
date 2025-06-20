@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Mis Proyectos",
+    "about": "Sobre Mí",
+    "contact": "Contacto",
+    "resume": "Currículum"
+  },
+  "themes": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro",
+    "system": "Modo del Sistema"
+  },
+  "menu": {
+    "blog": {
+      "label": "Blog",
+      "description": "Mis publicaciones y notas personales"
+    },
+    "gallery": {
+      "label": "Galería",
+      "description": "Fotos y videos que he tomado"
+    },
+    "certificates": {
+      "label": "Certificados",
+      "description": "Mis documentos educativos y de logros"
+    },
+    "designs": {
+      "label": "Trabajos UI/UX",
+      "description": "Mis diseños de interfaces"
+    },
+    "gear": {
+      "label": "Mi Equipo",
+      "description": "Hardware y software que utilizo"
+    },
+    "bookmarks": {
+      "label": "Marcadores",
+      "description": "Mis enlaces favoritos"
+    },
+    "stack": {
+      "label": "Stack Tecnológico",
+      "description": "Tecnologías que utilizo en mis proyectos"
+    },
+    "references": {
+      "label": "Referencias",
+      "description": "Lo que otros dicen sobre mí"
+    },
+    "medium": {
+      "label": "Mis Artículos en Medium",
+      "description": "Mis artículos publicados en Medium"
+    },
+    "meeting": {
+      "label": "Agendar Reunión",
+      "description": "Programa una reunión conmigo"
+    },
+    "volunteer": {
+      "label": "Trabajo Voluntario",
+      "description": "Organizaciones con las que colaboro"
+    },
+    "others": {
+      "label": "Otros",
+      "description": "Ver todos los enlaces"
+    }
+  },
+  "footer": {
+    "description": "Mi portafolio personal y espacio de creación digital.",
+    "projects": "Mis Proyectos",
+    "blog": "Blog",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  }
+}

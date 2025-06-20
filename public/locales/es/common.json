@@ -1,5 +1,18 @@
 {
-    "hello": "Merhaba, ben Poyraz!",
-    "welcome": "Teknolojiye meraklı bir insanım. UI/UX tasarımı ve yazılım geliştirme konularına ilgi duyuyorum. Frontend geliştirmede Next.js ve Tailwind kullanıyorum. Eğer benimle bir konu hakkında konuşmak isterseniz;"
+  "hello": "¡Hola, soy Poyraz!",
+  "welcome": "Soy una persona apasionada por la tecnología. Me interesa el diseño UI/UX y el desarrollo de software. Utilizo Next.js y Tailwind para el desarrollo frontend. Si quieres hablar conmigo sobre algo:",
+  "contact": "Contacto",
+  "popularProject": "Proyectos Populares",
+  "usedTech": "Tecnologías Utilizadas",
+  "all": "Ver Todo",
+  "language": "Lenguajes de Programación",
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "database": "Base de Datos",
+  "tool": "Herramientas",
+  "platform": "Plataformas",
+  "details": "Detalles",
+  "bookmarks": "Marcadores",
+  "gear": "Mi Equipo",
+  "medium": "Mis Artículos en Medium"
 }
-  
