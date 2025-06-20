@@ -73,7 +73,7 @@ const DetailPage = () => {
         <h1 className="text-3xl font-bold mb-2">
           {lang === 'tr' ? post.title_tr : post.title_en}
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-600 break-words whitespace-normal leading-relaxed">
           {lang === 'tr' ? post.desc_tr : post.desc_en}
         </p>
         <p className="text-sm text-gray-400 mt-2">

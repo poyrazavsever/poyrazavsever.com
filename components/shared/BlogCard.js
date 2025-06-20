@@ -15,7 +15,7 @@ const BlogCard = ({ cardImage, title, description, slug }) => {
       </div>
       <div className="mt-4 flex flex-col gap-1 items-start">
         <h3 className="text-neutral-800 dark:text-neutral-200 font-semibold line-clamp-1">{title}</h3>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1 line-clamp-3">{description}</p>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1 line-clamp-1">{description}</p>
         <Link href={`/blog/${slug}`}>
           <span className="text-sm text-sky-500 dark:text-sky-400 underline hover:text-sky-800 transition-all cursor-pointer mt-2">
             Yazıyı oku
