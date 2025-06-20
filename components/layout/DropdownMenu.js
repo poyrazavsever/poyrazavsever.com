@@ -16,7 +16,7 @@ const items = [
   { label: 'Medium Yazılarım', href: '/medium', description: 'Medium’da yayımlanan yazılarım' },
   { label: 'Toplantı Ayarla', href: '/meeting', description: 'Benimle toplantı planlayın' },
   { label: 'Gönüllü Çalışmalar', href: '/volunteer', description: 'Gönüllü çalıştığım organizasyonlar' },
-  { label: 'Diğerleri', href: '/others/all', description: 'Bütün linkleri görüntüle' },
+  { label: 'Diğerleri', href: '/others', description: 'Bütün linkleri görüntüle' },
 ];
 
 const DropdownMenu = () => {
