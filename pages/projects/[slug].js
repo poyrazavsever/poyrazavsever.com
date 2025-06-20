@@ -18,7 +18,7 @@ const ProjectDetail = ({ project }) => {
     <div className="py-16">
       <h1 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">{project.title}</h1>
       <img
-        src={project.image}
+        src={project.bannerImage}
         alt={project.title}
         className="w-full h-64 object-cover object-center rounded-lg mb-6 shadow-sm"
       />
