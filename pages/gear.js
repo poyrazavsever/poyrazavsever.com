@@ -46,8 +46,6 @@ const Gear = () => {
         Kullandığım Ekipmanlar
       </h1>
 
-      <img src='/gear/hero.jpg' alt='hero for gear' className='w-full h-96 object-cover object-center my-8 rounded-xl border border-neutral-300 dark:border-none'/>
-
       <div className="grid gap-10 sm:grid-cols-2">
         {gears.map((gear, idx) => (
           <div key={idx} className="flex flex-col items-center text-center">
