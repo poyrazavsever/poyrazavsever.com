@@ -16,6 +16,7 @@ const GITHUB_USERNAME = "poyrazavsever";
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
+  const [search, setSearch] = useState('');
   const { t } = useTranslation('projects');
 
   useEffect(() => {
@@ -24,20 +25,39 @@ const Projects = () => {
       .then(data => setRepos(data));
   }, []);
 
+  // Arama filtresi
+  const filteredProjects = projects.filter(project =>
+    project.title.toLowerCase().includes(search.toLowerCase()) ||
+    (project.desc && project.desc.toLowerCase().includes(search.toLowerCase()))
+  );
+
   return (
     <div className='mt-8 max-w-6xl w-full flex flex-col gap-8'>
-      <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('popularProject')}</h2>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('popularProject')}</h2>
+        <input
+          type="text"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder={t('searchPlaceholder')}
+          className="px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 focus:outline-none focus:ring-2 focus:ring-blue-400 transition w-full sm:w-64"
+        />
+      </div>
 
       <div className="flex flex-wrap gap-6 justify-center sm:justify-between">
-        {projects.map((project, idx) => (
-          <ProjectCard
-            key={idx}
-            imageSrc={project.image}
-            title={project.title}
-            description={project.desc}
-            slug={project.slug}
-          />
-        ))}
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project, idx) => (
+            <ProjectCard
+              key={idx}
+              imageSrc={project.image}
+              title={project.title}
+              description={project.desc}
+              slug={project.slug}
+            />
+          ))
+        ) : (
+          <div className="text-neutral-500 dark:text-neutral-400 w-full text-center">{t('noProjectFound')}</div>
+        )}
       </div>
 
       {/* GitHub Bölümü */}

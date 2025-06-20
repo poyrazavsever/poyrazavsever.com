@@ -4,5 +4,7 @@
     "githubProfile": "@{{username}} GitHub Profilim",
     "githubContributions": "GitHub katkı tablom",
     "latestRepos": "Son GitHub Repolarım",
-    "loading": "Yükleniyor..."
+    "loading": "Yükleniyor...",
+    "searchPlaceholder": "Projelerde ara...",
+    "noProjectFound": "Hiçbir proje bulunamadı."
 }

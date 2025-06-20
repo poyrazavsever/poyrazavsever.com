@@ -4,5 +4,7 @@
     "githubProfile": "@{{username}} GitHub Profile",
     "githubContributions": "GitHub contributions chart",
     "latestRepos": "Latest GitHub Repositories",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "searchPlaceholder": "Search projects...",
+    "noProjectFound": "No project found."
   }

@@ -1,8 +1,10 @@
 {
-    "popularProject": "Projets Populaires",
-    "githubActivities": "Activités GitHub",
-    "githubProfile": "Profil GitHub @{{username}}",
-    "githubContributions": "Tableau des contributions GitHub",
-    "latestRepos": "Derniers dépôts GitHub",
-    "loading": "Chargement..."
+    "popularProject": "Proyectos Populares",
+    "githubActivities": "Actividades de GitHub",
+    "githubProfile": "Perfil de GitHub @{{username}}",
+    "githubContributions": "Tabla de contribuciones de GitHub",
+    "latestRepos": "Últimos repositorios de GitHub",
+    "loading": "Cargando...",
+    "searchPlaceholder": "Buscar en proyectos...",
+    "noProjectFound": "No se encontró ningún proyecto."
 }
