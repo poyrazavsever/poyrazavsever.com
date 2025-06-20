@@ -1,6 +1,7 @@
 export const projects = [
     {
         image: "/project/patitekno.png",
+        bannerImage: "/project/patitekno-banner.png",
         title: "Pati Tekno",
         desc: "Pati Tekno, insanlar güncel teknolojileri, tasarım trendlerini ve yazılım araçlarını kolay bir şekilde takip edebileceği sosyal mecralar ve web platformudur.",
         slug:"patitekno",
@@ -10,6 +11,7 @@ export const projects = [
     },
     {
         image: "/project/marslar.png",
+        bannerImage: "/project/marslar-banner.png",
         title: "Marşlarımızın Anlamı",
         desc: "Marşlarımızın Anlamı, Türkiye Cumhuriyetine ait marşların hikayelerini ve marşta geçen kelimelerin anlamlarına kolaylıkla ulaşabileceğiniz bir web platformudur. ",
         slug:"marslarimizinanlami",
@@ -19,6 +21,7 @@ export const projects = [
     },
     {
         image: "/project/athenasifa.png",
+        bannerImage: "/project/athenasifa-banner.png",
         title: "Athena Şifa",
         desc: "Athena Şifa, müşterime yaptığım fullstack web uygulamasıdır. Admin panelinden sayfa istatistiklerini görüntülenebilir, blog yazısı ekleyip düzenlenebilinir.",
         slug:"athenasifa",
