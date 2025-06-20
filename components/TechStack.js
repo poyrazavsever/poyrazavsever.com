@@ -18,9 +18,9 @@ const TechStack = () => {
   const filteredTech = tech.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full max-w-6xl">
       {/* Kategori Butonları */}
-      <div className="flex flex-wrap gap-3 justify-center sm:justify-start mb-6">
+      <div className="flex flex-wrap gap-3 justify-start mb-6">
         {categories.map(cat => (
           <button
             key={cat.key}
@@ -48,7 +48,7 @@ const TechStack = () => {
               alt={item.title}
               className="h-10 mb-2"
             />
-            <span className="text-sm font-medium text-neutral-800 dark:text-neutral-300">{item.title}</span>
+            <span className="text-sm font-medium text-neutral-800 dark:text-neutral-300 line-clamp-1 sm:line-clamp-none">{item.title}</span>
           </div>
         ))}
       </div>
