@@ -3,17 +3,18 @@
 import React, { useEffect, useState } from 'react'
 import BlogCard from '@/components/shared/BlogCard'
 import { supabase } from '@/lib/supabaseClient'
+import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 const Blog = () => {
   const [posts, setPosts] = useState([])
-  const [lang, setLang] = useState('en')
-
+  const [lang, setLang] = useState<'tr' | 'en' | 'de' | 'es'>('en')
+  const { t } = useTranslation('blog')
 
   useEffect(() => {
-
     const storedLang = localStorage.getItem('language')
-    if (storedLang === 'tr') {
-      setLang('tr')
+    if (storedLang === 'tr' || storedLang === 'de' || storedLang === 'es') {
+      setLang(storedLang)
     } else {
       setLang('en')
     }
@@ -37,14 +38,12 @@ const Blog = () => {
   return (
     <div className="my-8 w-full flex flex-col gap-8">
       <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-        {lang === 'tr' ? 'Blog Yazılarım' : 'My Blog Posts'}
+        {t('heading')}
       </h2>
 
       {posts.length === 0 ? (
         <p className="text-neutral-500 dark:text-neutral-400 text-sm italic">
-          {lang === 'tr'
-            ? 'Şu anda herhangi bir blog yazım bulunmamakta.'
-            : 'No blog posts available at the moment.'}
+          {t('noPosts')}
         </p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -52,8 +51,8 @@ const Blog = () => {
             <BlogCard
               key={post.id}
               cardImage={post.cardImage}
-              title={lang === 'tr' ? post.title_tr : post.title_en}
-              description={lang === 'tr' ? post.desc_tr : post.desc_en}
+              title={post[`title_${lang}`]}
+              description={post[`desc_${lang}`]}
               slug={post.slug}
             />
           ))}
@@ -68,7 +67,7 @@ export default Blog
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'layout'])),
+      ...(await serverSideTranslations(locale, ['common', 'layout', 'blog'])),
     },
   }
 }
