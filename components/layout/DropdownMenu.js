@@ -103,36 +103,37 @@ const DropdownMenu = ({ mobile = false, onClose = () => {} }) => {
   // Mobile version
   return (
     <>
-      <button
-        onClick={handleDropdownClick}
-        className="w-full text-left"
-      >
-        {t('menu.others.label')}
-      </button>
+    <button
+      onClick={handleDropdownClick}
+      className="w-full text-left"
+    >
+      {t('menu.others.label')}
+    </button>
 
-      <AnimatePresence>
-        {isDropdownOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[60] bg-white dark:bg-neutral-900 p-6"
-          >
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-100">
-                {t('menu.others.label')}
-              </h2>
-              <button
-                onClick={() => setIsDropdownOpen(false)}
-                className="text-2xl text-neutral-600 dark:text-neutral-300"
-                aria-label="Menüyü Kapat"
-              >
-                <FiX size={28} />
-              </button>
-            </div>
+    <AnimatePresence>
+      {isDropdownOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          className="fixed inset-0 z-[60] bg-white dark:bg-neutral-900 flex flex-col" // flex-col eklendi
+        >
+          <div className="flex justify-between items-center p-6 border-b border-neutral-200 dark:border-neutral-800">
+            <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-100">
+              {t('menu.others.label')}
+            </h2>
+            <button
+              onClick={() => setIsDropdownOpen(false)}
+              className="text-2xl text-neutral-600 dark:text-neutral-300"
+              aria-label="Menüyü Kapat"
+            >
+              <FiX size={28} />
+            </button>
+          </div>
 
-            <div className="flex-1 overflow-y-auto space-y-4 pr-1">
+          <div className="flex-1 overflow-y-auto p-6">
+            <div className="grid gap-4">
               {items.map(({ label, href, description }) => (
                 <Link
                   key={label}
@@ -147,9 +148,10 @@ const DropdownMenu = ({ mobile = false, onClose = () => {} }) => {
                 </Link>
               ))}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
     </>
   );
 };
