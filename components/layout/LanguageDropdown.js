@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaLanguage } from 'react-icons/fa6';
 
 const languages = [
-  { id: 'en', label: 'Türkçe' },
-  { id: 'tr', label: 'English' },
+  { id: 'en', label: 'Engilish' },
+  { id: 'tr', label: 'Turkish' },
   { id: 'de', label: 'Deutsch' },
   { id: 'es', label: 'Español' },
 ];
