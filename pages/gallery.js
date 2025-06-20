@@ -38,7 +38,7 @@ const Gallery = () => {
   return (
     <>
       {/* Grid Gallery */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 my-16">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 my-8 sm:my-16">
         {galleryImages.map((src, idx) => (
           <div key={idx} onClick={() => openModal(idx)} className="cursor-pointer">
             <img
