@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const gears = [
   {
@@ -40,10 +42,11 @@ const gears = [
 ];
 
 const Gear = () => {
+  const { t } = useTranslation('gear');
   return (
     <div className="py-16">
       <h1 className="text-2xl font-semibold mb-8 text-neutral-800 dark:text-neutral-100">
-        Kullandığım Ekipmanlar
+        {t('gear')}
       </h1>
 
       <div className="grid gap-10 sm:grid-cols-2">
@@ -65,6 +68,14 @@ const Gear = () => {
       </div>
     </div>
   );
+};
+
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'layout'])),
+    },
+  };
 };
 
 export default Gear;
