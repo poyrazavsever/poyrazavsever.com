@@ -15,5 +15,6 @@
   "bookmarks": "Yer İmleri",
   "gear": "Kullandığım Ekipmanlar",
   "medium": "Medium Yazılarım",
-  "mediumError" : "Bu sayfa da yalnızca Türkçe içerik bulunmaktadır."
+  "mediumError" : "Bu sayfa da yalnızca Türkçe içerik bulunmaktadır.",
+  "blog": "Son Blog Yazılarım"
 }
