@@ -1,5 +1,24 @@
 {
   "title": "Meine Zertifikate",
   "count": "{{count}} Stück",
-  "list": []
+  "list": [
+    {
+      "name": "Frontend Development Bootcamp",
+      "organization": "Kodluyoruz & Patika.dev",
+      "date": "Mai 2024",
+      "description": "Praktische Schulung zu HTML, CSS, JavaScript und React.js."
+    },
+    {
+      "name": "Fullstack Web Developer Ausbildung",
+      "organization": "BTK Akademie",
+      "date": "März 2024",
+      "description": "Umfassende Softwareausbildung, die Frontend- und Backend-Technologien abdeckt."
+    },
+    {
+      "name": "Fortgeschrittenes JavaScript",
+      "organization": "Udemy",
+      "date": "Januar 2024",
+      "description": "Fortgeschrittene JS-Schulung zu asynchroner Programmierung, modularer Struktur und Leistungsoptimierung."
+    }
+  ]
 }

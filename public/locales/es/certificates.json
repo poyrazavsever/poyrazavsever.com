@@ -1,5 +1,24 @@
 {
   "title": "Mis Certificados",
   "count": "{{count}} elementos",
-  "list": []
+  "list": [
+    {
+      "name": "Bootcamp de Desarrollo Frontend",
+      "organization": "Kodluyoruz & Patika.dev",
+      "date": "Mayo 2024",
+      "description": "Capacitación práctica en HTML, CSS, JavaScript y React.js."
+    },
+    {
+      "name": "Curso de Desarrollador Web Fullstack",
+      "organization": "BTK Akademi",
+      "date": "Marzo 2024",
+      "description": "Formación integral en tecnologías frontend y backend."
+    },
+    {
+      "name": "JavaScript Avanzado",
+      "organization": "Udemy",
+      "date": "Enero 2024",
+      "description": "Curso avanzado de JS sobre programación asíncrona, estructura modular y optimización del rendimiento."
+    }
+  ]
 }

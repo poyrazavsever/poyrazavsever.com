@@ -8,7 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Blog = () => {
   const [posts, setPosts] = useState([])
-  const [lang, setLang] = useState<'tr' | 'en' | 'de' | 'es'>('en')
+  const [lang, setLang] = useState('en')
   const { t } = useTranslation('blog')
 
   useEffect(() => {
