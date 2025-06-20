@@ -1,0 +1,25 @@
+{
+    "title": "Sertifikalarım",
+    "count": "{{count}} adet",
+    "list": [
+      {
+        "name": "Frontend Development Bootcamp",
+        "organization": "Kodluyoruz & Patika.dev",
+        "date": "Mayıs 2024",
+        "description": "HTML, CSS, JavaScript ve React.js konularında uygulamalı eğitim."
+      },
+      {
+        "name": "Fullstack Web Developer Eğitimi",
+        "organization": "BTK Akademi",
+        "date": "Mart 2024",
+        "description": "Frontend ve backend teknolojilerini içeren kapsamlı bir yazılım eğitimi."
+      },
+      {
+        "name": "Advanced JavaScript",
+        "organization": "Udemy",
+        "date": "Ocak 2024",
+        "description": "Asenkron programlama, modüler yapı ve performans optimizasyonu üzerine ileri seviye JS eğitimi."
+      }
+    ]
+  }
+  

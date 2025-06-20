@@ -2,36 +2,30 @@
 
 import Image from 'next/image';
 import React from 'react';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-const certificates = [
-  {
-    name: 'Frontend Development Bootcamp',
-    organization: 'Kodluyoruz & Patika.dev',
-    date: 'Mayıs 2024',
-    description: 'HTML, CSS, JavaScript ve React.js konularında uygulamalı eğitim.',
-    image: '/certificates/1.jpg',
-  },
-  {
-    name: 'Fullstack Web Developer Eğitimi',
-    organization: 'BTK Akademi',
-    date: 'Mart 2024',
-    description: 'Frontend ve backend teknolojilerini içeren kapsamlı bir yazılım eğitimi.',
-    image: '/certificates/1.jpg',
-  },
-  {
-    name: 'Advanced JavaScript',
-    organization: 'Udemy',
-    date: 'Ocak 2024',
-    description: 'Asenkron programlama, modüler yapı ve performans optimizasyonu üzerine ileri seviye JS eğitimi.',
-    image: '/certificates/1.jpg',
-  },
-];
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['certificates', 'layout'])),
+    },
+  };
+};
 
 const Certificates = () => {
+  const { t } = useTranslation('certificates');
+  const certificates = t('list', { returnObjects: true });
+
   return (
     <div className="py-16 text-neutral-800 dark:text-neutral-200">
-      <h1 className="text-2xl font-semibold mb-8">Sertifikalarım <span className='text-lg font-medium text-neutral-400'>({certificates.length} adet)</span></h1>
-      
+      <h1 className="text-2xl font-semibold mb-8">
+        {t('title')}{" "}
+        <span className="text-lg font-medium text-neutral-400">
+          ({t('count', { count: certificates.length })})
+        </span>
+      </h1>
+
       <div className="grid md:grid-cols-2 gap-10">
         {certificates.map((cert, index) => (
           <div
@@ -40,7 +34,7 @@ const Certificates = () => {
           >
             <div className="relative w-full sm:w-56 h-40 rounded-lg overflow-hidden">
               <Image
-                src={cert.image}
+                src={`/certificates/1.jpg`}
                 alt={cert.name}
                 fill
                 className="object-cover"
