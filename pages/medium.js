@@ -16,12 +16,14 @@ const Medium = () => {
         setPosts(data)
         
       });
-    
-      toast.error("This page only contains my Turkish articles.");
 
   }, []);
 
   const { t } = useTranslation('common');
+
+  useEffect(() => {
+    toast.error("mediumError");
+  }, []);
 
   return (
     <div className="py-16">

@@ -14,5 +14,6 @@
   "details": "Details",
   "bookmarks": "Lesezeichen",
   "gear": "Meine Ausrüstung",
-  "medium": "Meine Medium-Artikel"
+  "medium": "Meine Medium-Artikel",
+  "mediumError": "Diese Seite enthält nur Inhalte auf Türkisch. Es tut mir leid :("
 }

@@ -14,5 +14,6 @@
   "details": "Details",
   "bookmarks": "Bookmarks",
   "gear": "My Gear",
-  "medium": "My Medium Articles"
+  "medium": "My Medium Articles",
+  "mediumError": "This page only contains content in Turkish. Sorry :("
 }
