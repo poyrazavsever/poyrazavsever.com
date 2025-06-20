@@ -42,7 +42,7 @@ const gears = [
 ];
 
 const Gear = () => {
-  const { t } = useTranslation('gear');
+  const { t } = useTranslation('common');
   return (
     <div className="py-16">
       <h1 className="text-2xl font-semibold mb-8 text-neutral-800 dark:text-neutral-100">

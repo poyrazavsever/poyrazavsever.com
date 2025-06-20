@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Stack = () => {
-  const { t } = useTranslation('stack')
+  const { t } = useTranslation('common')
 
   return (
     <div className='flex flex-col items-start gap-8 w-full py-8 md:py-16'>
