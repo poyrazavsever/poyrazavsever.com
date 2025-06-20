@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* Mobile Menü Butonu */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Mobil Menüyü Aç/Kapat">
-            {isOpen ? <FiX size={26} /> : <FiMenu size={26} />}
+            {isOpen ? <FiX size={26} /> : <FiMenu size={26} className='text-neutral-800 dark:text-neutral-200'/>}
           </button>
         </div>
       </div>
