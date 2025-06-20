@@ -1,0 +1,30 @@
+{
+    "title": "Volunteer Work",
+    "items": [
+      {
+        "name": "Ostim Technical University Debate Club",
+        "category": "Education",
+        "date": "October 2024 – Present",
+        "content": "I provide training in the field of debate at our university and organize team activities with teammates who will participate in tournaments. I serve as the Founding President."
+      },
+      {
+        "name": "Huawei Student Developers",
+        "category": "Technology",
+        "date": "February 2025 – Present",
+        "content": "I produce and develop content in the Medium Research, Social Media, and Project teams. I gain experience in teamwork through social responsibility projects."
+      },
+      {
+        "name": "Google Developers Group",
+        "category": "Technology",
+        "date": "December 2024 – Present",
+        "content": "I work in the technology department and take part in the technical team during events."
+      },
+      {
+        "name": "Ottoqua Technology Team",
+        "category": "Technology",
+        "date": "November 2024 – Present",
+        "content": "We participate in TÜBİTAK and Teknofest competitions, developing software solutions. I code web platforms and mobile applications."
+      }
+    ]
+  }
+  

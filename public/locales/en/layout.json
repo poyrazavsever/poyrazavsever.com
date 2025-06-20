@@ -1,0 +1,73 @@
+{
+    "nav": {
+      "home": "Home",
+      "projects": "My Projects",
+      "about": "About Me",
+      "contact": "Contact",
+      "resume": "Resume"
+    },
+    "themes": {
+      "light": "Light Mode",
+      "dark": "Dark Mode",
+      "system": "System Mode"
+    },
+    "menu": {
+      "blog": {
+        "label": "Blog",
+        "description": "My personal posts and notes"
+      },
+      "gallery": {
+        "label": "Gallery",
+        "description": "Photos and videos I've taken"
+      },
+      "certificates": {
+        "label": "Certificates",
+        "description": "My education and achievement documents"
+      },
+      "designs": {
+        "label": "UI/UX Works",
+        "description": "My interface designs"
+      },
+      "gear": {
+        "label": "My Gear",
+        "description": "Hardware and software I use"
+      },
+      "bookmarks": {
+        "label": "My Bookmarks",
+        "description": "My favorite links"
+      },
+      "stack": {
+        "label": "My Tech Stack",
+        "description": "Technologies I use in my projects"
+      },
+      "references": {
+        "label": "References",
+        "description": "What others say about me"
+      },
+      "medium": {
+        "label": "My Medium Articles",
+        "description": "My published articles on Medium"
+      },
+      "meeting": {
+        "label": "Schedule a Meeting",
+        "description": "Plan a meeting with me"
+      },
+      "volunteer": {
+        "label": "Volunteer Work",
+        "description": "Organizations I volunteered for"
+      },
+      "others": {
+        "label": "Others",
+        "description": "View all links"
+      }
+    },
+    "footer": {
+      "description": "Personal portfolio & digital creation space.",
+      "projects": "My Projects",
+      "blog": "Blog",
+      "gallery": "Gallery",
+      "contact": "Contact",
+      "rights": "All rights reserved."
+    }
+  }
+  

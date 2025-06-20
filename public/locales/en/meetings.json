@@ -1,0 +1,20 @@
+{
+    "title": "Create a Meeting Request",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email",
+    "date": "Select a Date",
+    "reason": "Reason for the Meeting",
+    "reason_placeholder": "Why do you want to schedule a meeting?",
+    "time": "Select Time",
+    "submit": "Submit Meeting Request",
+    "select_date": "Select a date",
+    "select_time": "Select a time",
+    "captcha_error": "Please complete the verification.",
+    "validation_error": "Please fill in all fields.",
+    "email_error": "Please enter a valid email address.",
+    "phone_error": "Please enter a valid phone number.",
+    "save_success": "Your meeting request was successfully submitted.",
+    "save_error": "An error occurred while saving the data."
+  }
+  

@@ -1,0 +1,40 @@
+{
+    "name": "Poyraz Avsever",
+    "role": "Fullstack Developer",
+    "location": "Lives in Ankara, University student",
+    "aboutTitle": "About Me",
+    "aboutDescription": "Since I was introduced to software in middle school, I’ve been trying to learn and improve continuously. During high school, my enthusiasm for learning grew and I had the opportunity to explore various technologies in web development. Towards the end of high school, I stepped into the mobile world. Currently, I’m actively creating, developing, and most importantly, still learning.",
+    "educationTitle": "Education Background",
+    "education": [
+      {
+        "school": "Ostim Technical University",
+        "degree": "Software Engineering (Bachelor)",
+        "duration": "2024 – Present"
+      },
+      {
+        "school": "TOBB Tuşba Science High School",
+        "degree": "Science High School, Science Track",
+        "duration": "2020 – 2024"
+      }
+    ],
+    "experienceTitle": "Experience",
+    "experiences": [
+      {
+        "title": "Fullstack Developer Intern - Omedya Bilişim A.Ş",
+        "duration": "June 2025 – Present"
+      },
+      {
+        "title": "Fullstack Developer Intern - ARC Foreign Trade",
+        "duration": "February 2025 – June 2025"
+      },
+      {
+        "title": "Fullstack Developer Intern - Tarvina Software Technologies",
+        "duration": "October 2024 – December 2024"
+      }
+    ],
+    "careerTitle": "My Career Goal",
+    "careerDescription": "As a developer committed to clean code principles, solution-oriented and team-friendly, I want to continuously improve myself in software and produce effective solutions to real-world problems. My future goal is to be part of quality teams and contribute to impactful projects.",
+    "ctaTitle": "Would you like to work with me?",
+    "ctaButton": "Contact Me"
+  }
+  

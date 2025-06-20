@@ -1,0 +1,25 @@
+{
+    "title": "My Certificates",
+    "count": "{{count}} items",
+    "list": [
+      {
+        "name": "Frontend Development Bootcamp",
+        "organization": "Kodluyoruz & Patika.dev",
+        "date": "May 2024",
+        "description": "Hands-on training on HTML, CSS, JavaScript, and React.js."
+      },
+      {
+        "name": "Fullstack Web Developer Training",
+        "organization": "BTK Academy",
+        "date": "March 2024",
+        "description": "A comprehensive software training covering frontend and backend technologies."
+      },
+      {
+        "name": "Advanced JavaScript",
+        "organization": "Udemy",
+        "date": "January 2024",
+        "description": "Advanced JS training focused on asynchronous programming, modular structure, and performance optimization."
+      }
+    ]
+  }
+  

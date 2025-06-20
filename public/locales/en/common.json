@@ -1,5 +1,18 @@
 {
-    "hello": "Hi, I'm Poyraz!",
-    "welcome": "Teknolojiye meraklı bir insanım. UI/UX tasarımı ve yazılım geliştirme konularına ilgi duyuyorum. Frontend geliştirmede Next.js ve Tailwind kullanıyorum. Eğer benimle bir konu hakkında konuşmak isterseniz;"
-  }
-  
+  "hello": "Hello, I'm Poyraz!",
+  "welcome": "I'm someone who's curious about technology. I'm interested in UI/UX design and software development. I use Next.js and Tailwind for frontend development. If you'd like to talk to me about anything;",
+  "contact": "Contact Me",
+  "popularProject": "Popular Projects",
+  "usedTech": "Technologies I Use",
+  "all": "View All",
+  "language": "Programming Languages",
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "database": "Database",
+  "tool": "Tools",
+  "platform": "Platforms",
+  "details": "Details",
+  "bookmarks": "Bookmarks",
+  "gear": "My Gear",
+  "medium": "My Medium Articles"
+}

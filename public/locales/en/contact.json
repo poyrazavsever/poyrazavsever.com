@@ -1,0 +1,17 @@
+{
+    "title": "Contact",
+    "description": "You can contact me by filling out the form below.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email address",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Subject of your message",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message...",
+    "button": "Send",
+    "captchaError": "Please complete the captcha verification.",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message."
+  }
+  
