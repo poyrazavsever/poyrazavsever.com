@@ -1,4 +1,29 @@
 {
   "title": "Freiwilligenarbeit",
-  "items": []
+  "items": [
+    {
+      "name": "Debattierclub der Ostim Technischen Universität",
+      "category": "Bildung",
+      "date": "Oktober 2024 – Heute",
+      "content": "Ich gebe an unserer Universität Schulungen im Bereich Debatte und organisiere Teamaktivitäten mit Teilnehmern an Turnieren. Ich bin der Gründungspräsident."
+    },
+    {
+      "name": "Huawei Student Developers",
+      "category": "Technologie",
+      "date": "Februar 2025 – Heute",
+      "content": "Ich produziere und entwickle Inhalte in den Teams für Medium Research, soziale Medien und Projekte. Durch soziale Projekte sammle ich Erfahrung in Teamarbeit."
+    },
+    {
+      "name": "Google Developers Group",
+      "category": "Technologie",
+      "date": "Dezember 2024 – Heute",
+      "content": "Ich arbeite in der Technologieabteilung und bin bei Veranstaltungen Teil des technischen Teams."
+    },
+    {
+      "name": "Ottoqua Technologie-Team",
+      "category": "Technologie",
+      "date": "November 2024 – Heute",
+      "content": "Wir nehmen an TÜBİTAK- und Teknofest-Wettbewerben teil und entwickeln Softwarelösungen. Ich programmiere Webplattformen und mobile Anwendungen."
+    }
+  ]
 }

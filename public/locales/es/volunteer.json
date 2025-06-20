@@ -1,4 +1,29 @@
 {
   "title": "Trabajo Voluntario",
-  "items": []
+  "items": [
+    {
+      "name": "Club de Debate de la Universidad Técnica de Ostim",
+      "category": "Educación",
+      "date": "Octubre 2024 – Presente",
+      "content": "Imparto formación en el área de debate en nuestra universidad y organizo actividades en equipo con compañeros que participarán en torneos. Me desempeño como Presidente Fundador."
+    },
+    {
+      "name": "Huawei Student Developers",
+      "category": "Tecnología",
+      "date": "Febrero 2025 – Presente",
+      "content": "Produzco y desarrollo contenido en los equipos de investigación de Medium, redes sociales y proyectos. Gano experiencia en trabajo en equipo a través de proyectos de responsabilidad social."
+    },
+    {
+      "name": "Google Developers Group",
+      "category": "Tecnología",
+      "date": "Diciembre 2024 – Presente",
+      "content": "Trabajo en el departamento de tecnología y formo parte del equipo técnico en los eventos organizados."
+    },
+    {
+      "name": "Equipo Tecnológico Ottoqua",
+      "category": "Tecnología",
+      "date": "Noviembre 2024 – Presente",
+      "content": "Participamos en competiciones de TÜBİTAK y Teknofest, desarrollando soluciones de software. Programo plataformas web y aplicaciones móviles."
+    }
+  ]
 }
