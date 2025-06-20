@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProjectCard = ({ imageSrc, title, description, slug}) => {
   return (
-    <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full max-w-xs">
-      <div className="relative w-full h-48 rounded-lg overflow-hidden">
+    <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full md:max-w-xs">
+      <div className="relative w-full h-52 md:h-48 rounded-lg overflow-hidden">
         <img
           src={imageSrc}
           alt={title}
