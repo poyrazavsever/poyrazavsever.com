@@ -35,7 +35,7 @@ const Blog = () => {
   }, [])
 
   return (
-    <div className="mt-8 w-full flex flex-col gap-8">
+    <div className="my-8 w-full flex flex-col gap-8">
       <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">
         {lang === 'tr' ? 'Blog Yazılarım' : 'My Blog Posts'}
       </h2>
