@@ -1,5 +1,7 @@
 {
     "heading": "Meine Blogbeiträge",
-    "noPosts": "Zurzeit sind keine Blogbeiträge verfügbar."
+    "noPosts": "Zurzeit sind keine Blogbeiträge verfügbar.",
+    "noResults": "Keine Ergebnisse für Ihre Suche gefunden.",
+    "searchPlaceholder": "Blog-Beiträge durchsuchen..."
   }
   

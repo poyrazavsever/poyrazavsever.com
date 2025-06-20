@@ -1,5 +1,7 @@
 {
     "heading": "My Blog Posts",
-    "noPosts": "No blog posts available at the moment."
+    "noPosts": "No blog posts available at the moment.",
+    "noResults": "No results found for your search.",
+    "searchPlaceholder": "Search blog posts..."
   }
   

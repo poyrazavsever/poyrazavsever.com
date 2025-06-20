@@ -1,5 +1,7 @@
 {
     "heading": "Blog Yazılarım",
-    "noPosts": "Şu anda herhangi bir blog yazım bulunmamakta."
+    "noPosts": "Şu anda herhangi bir blog yazım bulunmamakta.",
+    "noResults": "Aramanızla eşleşen sonuç bulunamadı.",
+    "searchPlaceholder": "Blog yazılarında ara..."
   }
   
