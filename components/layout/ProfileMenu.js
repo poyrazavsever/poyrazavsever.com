@@ -40,7 +40,7 @@ const ProfileMenu = () => {
         className="transition-transform duration-200 sm:hover:scale-105 sm:hover:shadow-md hover:none rounded-full cursor-pointer flex items-center gap-2"
       >
         <Image
-          src="/avatar.jpg"
+          src="/avatar.png"
           alt="profile"
           width={32}
           height={32}
