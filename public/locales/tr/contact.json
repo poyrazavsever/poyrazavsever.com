@@ -1,0 +1,17 @@
+{
+    "title": "İletişim",
+    "description": "Aşağıdaki formu doldurarak benimle iletişime geçebilirsiniz.",
+    "nameLabel": "Ad Soyad",
+    "namePlaceholder": "Adınızı girin",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "E-posta adresiniz",
+    "subjectLabel": "Konu",
+    "subjectPlaceholder": "Mesaj konusu",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Mesajınızı yazın...",
+    "button": "Gönder",
+    "captchaError": "Lütfen captcha doğrulamasını tamamlayın.",
+    "success": "Mesaj başarıyla gönderildi!",
+    "error": "Mesaj gönderilemedi."
+  }
+  
