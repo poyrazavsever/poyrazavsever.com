@@ -32,6 +32,24 @@ const DropdownMenu = ({ mobile = false, onClose = () => {} }) => {
     href: `/${key}`,
   }));
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    // Sadece masaüstü versiyonunda ve dropdown açıkken event listener ekle
+    if (!mobile && isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isDropdownOpen, mobile]);
+
   const handleDropdownClick = (e) => {
     e.preventDefault();
     setIsDropdownOpen(true);
