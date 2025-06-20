@@ -3,17 +3,19 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LuSun, LuMoonStar, LuMonitor } from 'react-icons/lu';
-
-const themes = [
-  { id: 'light', label: 'Açık Mod', icon: <LuSun /> },
-  { id: 'dark', label: 'Karanlık Mod', icon: <LuMoonStar /> },
-  { id: 'system', label: 'Sistem Modu', icon: <LuMonitor /> },
-];
+import { useTranslation } from 'next-i18next';
 
 const ThemeDropdown = () => {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState('system');
   const dropdownRef = useRef(null);
+  const { t } = useTranslation('layout');
+
+  const themes = [
+    { id: 'light', label: t('themes.light'), icon: <LuSun /> },
+    { id: 'dark', label: t('themes.dark'), icon: <LuMoonStar /> },
+    { id: 'system', label: t('themes.system'), icon: <LuMonitor /> },
+  ];
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'system';
@@ -69,11 +71,13 @@ const ThemeDropdown = () => {
                 key={theme.id}
                 onClick={() => handleThemeChange(theme.id)}
                 className={`flex items-center gap-2 p-2 rounded-md cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700 transition ${
-                  selected === theme.id ? 'text-black dark:text-white bg-neutral-200 dark:bg-neutral-700 font-semibold' : 'text-neutral-600 dark:text-neutral-300'
+                  selected === theme.id
+                    ? 'text-black dark:text-white bg-neutral-200 dark:bg-neutral-700 font-semibold'
+                    : 'text-neutral-600 dark:text-neutral-300'
                 }`}
               >
                 <span>{theme.icon}</span>
-                <span className='text-sm'>{theme.label}</span>
+                <span className="text-sm">{theme.label}</span>
               </div>
             ))}
           </motion.div>

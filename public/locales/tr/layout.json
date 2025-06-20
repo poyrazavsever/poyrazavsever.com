@@ -1,0 +1,74 @@
+{
+    "nav": {
+      "home": "Ana Sayfa",
+      "projects": "Projelerim",
+      "about": "Hakkımda",
+      "contact": "İletişim",
+      "resume": "Özgeçmiş"
+    },
+    "themes": {
+      "light": "Açık Mod",
+      "dark": "Karanlık Mod",
+      "system": "Sistem Modu"
+    },
+    "menu": {
+      "blog": {
+        "label": "Blog",
+        "description": "Kişisel yazılarım ve notlarım"
+      },
+      "gallery": {
+        "label": "Galeri",
+        "description": "Çektiğim fotoğraf ve videolar"
+      },
+      "certificates": {
+        "label": "Sertifikalar",
+        "description": "Eğitim ve Başarı belgelerim"
+      },
+      "designs": {
+        "label": "UI/UX Çalışmalarım",
+        "description": "Arayüz tasarımlarım"
+      },
+      "gear": {
+        "label": "Ekipmanlarım",
+        "description": "Kullandığım donanım ve yazılımlar"
+      },
+      "bookmarks": {
+        "label": "Bookmarklarım",
+        "description": "Favori bağlantılarım"
+      },
+      "stack": {
+        "label": "Teknoloji Yığınım",
+        "description": "Projelerde kullandığım teknolojiler"
+      },
+      "references": {
+        "label": "Referanslar",
+        "description": "Hakkımda söylenenler"
+      },
+      "medium": {
+        "label": "Medium Yazılarım",
+        "description": "Medium’da yayımlanan yazılarım"
+      },
+      "meeting": {
+        "label": "Toplantı Ayarla",
+        "description": "Benimle toplantı planlayın"
+      },
+      "volunteer": {
+        "label": "Gönüllü Çalışmalar",
+        "description": "Gönüllü çalıştığım organizasyonlar"
+      },
+      "others": {
+        "label": "Diğerleri",
+        "description": "Bütün linkleri görüntüle"
+      }
+    },
+
+    "footer": {
+    "description": "Kişisel portfolyo & dijital üretim alanım.",
+    "projects": "Projelerim",
+    "blog": "Blog",
+    "gallery": "Galeri",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır."
+    }
+  }
+  

@@ -3,6 +3,7 @@ import Footer from './footer';
 import { Toaster } from 'react-hot-toast';
 
 const Layout = ({ children }) => {
+  
   return (
     <div className="max-w-5xl mx-auto container min-h-screen flex flex-col relative px-4 md:px-0">
 
