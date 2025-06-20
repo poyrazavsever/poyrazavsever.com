@@ -3,13 +3,37 @@
   "role": "Desarrollador Fullstack",
   "location": "Vive en Ankara, estudiante universitario",
   "aboutTitle": "Sobre Mí",
-  "aboutDescription": "Desde que conocí la programación en la secundaria, he estado aprendiendo y desarrollando constantemente. Durante la preparatoria, mi pasión por aprender creció y tuve la oportunidad de conocer diversas tecnologías web. Hacia el final, comencé a trabajar con aplicaciones móviles. Actualmente, sigo creando, desarrollando y aprendiendo activamente.",
-  "educationTitle": "Educación",
-  "education": [],
+  "aboutDescription": "Desde que fui introducido al software en la escuela secundaria, he intentado aprender y mejorar continuamente. Durante la preparatoria, mi entusiasmo por aprender creció y tuve la oportunidad de explorar diversas tecnologías en el desarrollo web. Hacia el final de la preparatoria, me adentré en el mundo móvil. Actualmente, estoy creando, desarrollando y, lo más importante, sigo aprendiendo activamente.",
+  "educationTitle": "Formación Académica",
+  "education": [
+    {
+      "school": "Universidad Técnica de Ostim",
+      "degree": "Ingeniería de Software (Licenciatura)",
+      "duration": "2024 – Presente"
+    },
+    {
+      "school": "Escuela Secundaria de Ciencias TOBB Tuşba",
+      "degree": "Escuela Secundaria Científica, Rama de Ciencias",
+      "duration": "2020 – 2024"
+    }
+  ],
   "experienceTitle": "Experiencia",
-  "experiences": [],
-  "careerTitle": "Objetivo Profesional",
-  "careerDescription": "Como desarrollador enfocado en escribir código limpio, orientado a soluciones y con habilidades para el trabajo en equipo, busco mejorarme continuamente y brindar soluciones eficaces a problemas del mundo real.",
+  "experiences": [
+    {
+      "title": "Practicante de Desarrollador Fullstack - Omedya Bilişim A.Ş",
+      "duration": "Junio 2025 – Presente"
+    },
+    {
+      "title": "Practicante de Desarrollador Fullstack - ARC Comercio Exterior",
+      "duration": "Febrero 2025 – Junio 2025"
+    },
+    {
+      "title": "Practicante de Desarrollador Fullstack - Tarvina Tecnologías de Software",
+      "duration": "Octubre 2024 – Diciembre 2024"
+    }
+  ],
+  "careerTitle": "Mi Objetivo Profesional",
+  "careerDescription": "Como desarrollador comprometido con los principios del código limpio, orientado a soluciones y con buena disposición para el trabajo en equipo, quiero mejorar continuamente en el ámbito del software y crear soluciones eficaces a problemas del mundo real. Mi objetivo es formar parte de equipos de calidad y contribuir en proyectos con impacto.",
   "ctaTitle": "¿Te gustaría trabajar conmigo?",
-  "ctaButton": "Contacto"
+  "ctaButton": "Contáctame"
 }
