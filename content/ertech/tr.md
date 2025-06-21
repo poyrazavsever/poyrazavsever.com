@@ -22,7 +22,7 @@ Er Technology, yenilikçi teknoloji çözümleri sunmayı hedefleyen genç bir g
 | **Tailwind CSS** | Stil framework'ü | ![Tailwind](https://skillicons.dev/icons?i=tailwind) |
 | **JavaScript** | Programlama dili | ![JavaScript](https://skillicons.dev/icons?i=js) |
 
-## 🚀 Özellikler
+## Özellikler
 
 1. **Ana Sayfa**
    - Şirket tanıtımı
@@ -44,7 +44,7 @@ Er Technology, yenilikçi teknoloji çözümleri sunmayı hedefleyen genç bir g
    - Vizyon ve misyon
    - Ekip bilgileri
 
-## ⚙️ Kurulum ve Kullanım
+## Kurulum ve Kullanım
 
 ```bash
 # Projeyi klonlayın
@@ -62,7 +62,7 @@ npm run dev
 # ya da canlı site --> ertechnology.net
 ```
 
-## 📈 Proje Gelişim Süreci
+## Proje Gelişim Süreci
 
 1. **Tasarım & Planlama (1 Hafta)**
    - Rakip analizi
@@ -79,13 +79,13 @@ npm run dev
    - Cross-browser testing
    - Domain ve hosting ayarları
 
-## 🔗 Faydalı Linkler
+## Faydalı Linkler
 
 - [Canlı Site](https://ertechnology.net)
 - [GitHub Repo](https://github.com/poyrazavsever/Cibik-Website)
 - [Hata Bildirimi](https://github.com/poyrazavsever/Cibik-Website/issues)
 
-## 👨‍💻 Geliştiriciler
+## Geliştiriciler
 
 - [**Poyraz Avsever**](https://github.com/poyrazavsever) - Frontend Developer & UI Designer
 - [**Emir Kemal Eraslan**](https://www.linkedin.com/in/emir-kemal-eraslan-3075b2271/) - Proje Sahibi

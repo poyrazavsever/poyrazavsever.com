@@ -22,7 +22,7 @@ Er Technology is a young startup aiming to deliver innovative tech solutions:
 | **Tailwind CSS** | Styling framework       | ![Tailwind](https://skillicons.dev/icons?i=tailwind)  |
 | **JavaScript**| Programming language        | ![JavaScript](https://skillicons.dev/icons?i=js)      |
 
-## 🚀 Features
+## Features
 
 1. **Home Page**
    - Company introduction  
@@ -44,7 +44,7 @@ Er Technology is a young startup aiming to deliver innovative tech solutions:
    - Vision and mission  
    - Team profiles  
 
-## ⚙️ Installation and Usage
+## Installation and Usage
 
 ``` bash
 # Clone the project
@@ -62,7 +62,7 @@ npm run dev
 # or view live site --> ertechnology.net
 ```
 
-## 📈 Project Development Process
+## Project Development Process
 
 1. **Design & Planning (1 Week)**
    - Competitor analysis  
@@ -79,13 +79,13 @@ npm run dev
    - Cross-browser testing  
    - Domain and hosting setup  
 
-## 🔗 Useful Links
+## Useful Links
 
 - [Live Site](https://ertechnology.net)  
 - [GitHub Repo](https://github.com/poyrazavsever/Cibik-Website)  
 - [Issue Tracker](https://github.com/poyrazavsever/Cibik-Website/issues)  
 
-## 👨‍💻 Developers
+## Developers
 
 - [**Poyraz Avsever**](https://github.com/poyrazavsever) – Frontend Developer & UI Designer  
 - [**Emir Kemal Eraslan**](https://www.linkedin.com/in/emir-kemal-eraslan-3075b2271/) – Project Owner  
