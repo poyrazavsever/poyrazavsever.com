@@ -16,5 +16,7 @@
   "gear": "Mi Equipo",
   "medium": "Mis Artículos en Medium",
   "mediumError": "Esta página solo contiene contenido en turco. Lo siento :(",
-  "blog": "Últimas entradas del blog"
+  "blog": "Últimas entradas del blog",
+  "backToProjects": "Volver a Proyectos",
+  "projectNotFound": "Proyecto No Encontrado"
 }

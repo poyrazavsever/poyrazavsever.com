@@ -16,5 +16,7 @@
   "gear": "My Gear",
   "medium": "My Medium Articles",
   "mediumError": "This page only contains content in Turkish. Sorry :(",
-  "blog": "Latest Blog Posts"
+  "blog": "Latest Blog Posts",
+  "backToProjects": "Back to Projects",
+  "projectNotFound": "Project Not Found"
 }

@@ -16,5 +16,8 @@
   "gear": "Meine Ausrüstung",
   "medium": "Meine Medium-Artikel",
   "mediumError": "Diese Seite enthält nur Inhalte auf Türkisch. Es tut mir leid :(",
-  "blog": "Neueste Blogbeiträge"
+  "blog": "Neueste Blogbeiträge",
+  "backToProjects": "Zurück zu Projekten",
+  "projectNotFound": "Projekt Nicht Gefunden"
+  
 }
