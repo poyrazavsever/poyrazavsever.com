@@ -22,7 +22,7 @@ const ProjectCard = ({ imageSrc, title, description, slug }) => {
           src={imageSrc}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
       <div className="mt-4 flex flex-col gap-1 items-start">
