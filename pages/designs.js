@@ -50,7 +50,7 @@ const Designs = () => {
         <div className="max-w-6xl w-full flex flex-col gap-6 mt-16">
           <h2 className="text-xl font-semibold">{t('sectionTitle')}</h2>
 
-          <div className="flex flex-wrap gap-6 justify-center sm:justify-between">
+          <div className="flex flex-wrap gap-6 justify-center sm:justify-start">
             {designProjects.map((project, idx) => (
               <ProjectCard
                 key={idx}
