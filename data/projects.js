@@ -52,7 +52,7 @@ export const projects = [
     {
         image: "/project/arcforeign.png",
         bannerImage: "/project/arcforeign-banner.png",
-        title: "Athena Şifa",
+        title: "Arc Foreign Trade",
         desc: "Arc Foreign Trade, staj yaptığım firmanın web platformudur. Bu platformda firmanın yaptığı ihracat ve ithalat işlemlerini takip edebilirsiniz.",
         slug:"arcforeign",
         contentFolder:"arcforeign",
