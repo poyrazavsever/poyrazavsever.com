@@ -33,21 +33,21 @@ El significado de nuestros himnos es una plataforma fácil de usar diseñada par
 
 ## Funcionalidades
 
-1. **Catálogo de himnos**  
+**Catálogo de himnos**  
    - Lista de himnos categorizados  
    - Letras  
    - Información histórica
 
-2. **Análisis con IA**  
+**Análisis con IA**  
    - Explicación del significado de palabras  
    - Aclaración de referencias culturales
 
-3. **Funciones sociales (Próximamente)**  
+**Funciones sociales (Próximamente)**  
    - Perfiles de usuario  
    - Sistema de comentarios  
    - Compartir himnos
 
-4. **Herramienta educativa**  
+**Herramienta educativa**  
    - Ampliación de vocabulario  
    - Enriquecimiento cultural
 
@@ -71,16 +71,16 @@ npm run dev
 
 ## Proceso de Desarrollo del Proyecto
 
-1. **Investigación y planificación (1 semana)**  
+**Investigación y planificación (1 semana)**  
    - Creación del archivo de himnos  
    - [Planificación UI](https://www.figma.com/design/fUIxY1UmomNgLdQlpNCNup/Mar%C5%9Flar%C4%B1n-Anlam%C4%B1?t=5BNBOMjMuVMQF03J-0)  
    - Planificación de integración de IA
 
-2. **Desarrollo (3 semanas)**  
+**Desarrollo (3 semanas)**  
    - Desarrollo del frontend  
    - Integración del backend
 
-3. **Pruebas y optimización (1 semana)**  
+**Pruebas y optimización (1 semana)**  
    - Mejoras de rendimiento  
    - Pruebas de usuario  
    - Validación de contenido

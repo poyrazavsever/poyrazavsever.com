@@ -23,22 +23,22 @@ Er Technology, yenilikçi teknoloji çözümleri sunmayı hedefleyen genç bir g
 
 ## Özellikler
 
-1. **Ana Sayfa**
+**Ana Sayfa**
    - Şirket tanıtımı
    - Hizmet açıklamaları
    - Proje portfolyosu
 
-2. **Proje Vitrinleri**
+**Proje Vitrinleri**
    - Tamamlanan projeler
    - Devam eden çalışmalar
    - Teknoloji stack'leri
 
-3. **İletişim Özellikleri** 
+**İletişim Özellikleri** 
    - İletişim formu
    - Sosyal medya bağlantıları
    - Konum bilgisi
 
-4. **Kurumsal**
+**Kurumsal**
    - Hakkımızda bölümü
    - Vizyon ve misyon
    - Ekip bilgileri
@@ -63,17 +63,17 @@ npm run dev
 
 ## Proje Gelişim Süreci
 
-1. **Tasarım & Planlama (1 Hafta)**
+**Tasarım & Planlama (1 Hafta)**
    - Rakip analizi
    - UI/UX tasarımı
    - İçerik stratejisi
 
-2. **Geliştirme (2 Hafta)**
+**Geliştirme (2 Hafta)**
    - Frontend geliştirme
    - Responsive tasarım
    - SEO optimizasyonu
 
-3. **Test & Yayın (3 Gün)**
+**Test & Yayın (3 Gün)**
    - Performans testleri
    - Cross-browser testing
    - Domain ve hosting ayarları

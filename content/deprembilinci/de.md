@@ -25,16 +25,16 @@ Erdbebenbewusstsein ist eine Bildungsplattform, die sich zum Ziel gesetzt hat, d
 
 ## Funktionen
 
-1. **Lernmodule**
+**Lernmodule**
    - Altersgerechte Inhalte  
    - Interaktive Lernmaterialien  
 
-2. **Tests & Bewertung**
+**Tests & Bewertung**
    - Praktische Übungen  
    - Sofortige Rückmeldung  
    - Erfolgsstatistiken  
 
-3. **Notfall-Funktionen**
+**Notfall-Funktionen**
    - Schneller Notfall-Zugriff  
    - Karte mit Sammelplätzen  
    - Notfall-Checklisten  
@@ -51,17 +51,17 @@ npm run dev
 
 ## Projektverlauf
 
-1. **Recherche & Inhalte (1 Woche)**
+**Recherche & Inhalte (1 Woche)**
    - Experteninterviews  
    - Inhaltserstellung  
    - Lehrplanentwicklung  
 
-2. **Design & Entwicklung (1 Woche)**
+**Design & Entwicklung (1 Woche)**
    - UI/UX Design  
    - Frontend-Programmierung  
    - Backend-Integration  
 
-3. **Test & Optimierung (1 Woche)**
+**Test & Optimierung (1 Woche)**
    - Benutzerfeedback  
    - Inhaltsprüfung  
    - Leistungsoptimierung  

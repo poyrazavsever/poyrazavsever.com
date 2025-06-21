@@ -33,21 +33,21 @@ The Meaning of Our Anthems is a user-friendly platform designed to keep our nati
 
 ## Features
 
-1. **Anthem Catalog**  
+**Anthem Catalog**  
    - Categorized anthem list  
    - Lyrics  
    - Historical information
 
-2. **AI Analysis**  
+**AI Analysis**  
    - Explanation of word meanings  
    - Clarification of cultural references
 
-3. **Social Features (Coming Soon)**  
+**Social Features (Coming Soon)**  
    - User profiles  
    - Comment system  
    - Anthem sharing
 
-4. **Educational Tool**  
+**Educational Tool**  
    - Vocabulary building  
    - Cultural enrichment
 
@@ -71,16 +71,16 @@ npm run dev
 
 ## Project Development Process
 
-1. **Research & Planning (1 Week)**  
+**Research & Planning (1 Week)**  
    - Building anthem archive  
    - [UI Planning](https://www.figma.com/design/fUIxY1UmomNgLdQlpNCNup/Mar%C5%9Flar%C4%B1n-Anlam%C4%B1?t=5BNBOMjMuVMQF03J-0)  
    - AI integration planning
 
-2. **Development (3 Weeks)**  
+**Development (3 Weeks)**  
    - Frontend development  
    - Backend integration
 
-3. **Testing & Optimization (1 Week)**  
+**Testing & Optimization (1 Week)**  
    - Performance improvements  
    - User testing  
    - Content validation

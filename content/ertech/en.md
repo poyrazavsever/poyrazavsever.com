@@ -23,22 +23,22 @@ Er Technology is a young startup aiming to deliver innovative tech solutions:
 
 ## Features
 
-1. **Home Page**
+**Home Page**
    - Company introduction  
    - Service descriptions  
    - Project portfolio  
 
-2. **Project Showcase**
+**Project Showcase**
    - Completed projects  
    - Ongoing work  
    - Technology stacks  
 
-3. **Contact Features**
+**Contact Features**
    - Contact form  
    - Social media links  
    - Location information  
 
-4. **Corporate**
+**Corporate**
    - About us section  
    - Vision and mission  
    - Team profiles  
@@ -63,17 +63,17 @@ npm run dev
 
 ## Project Development Process
 
-1. **Design & Planning (1 Week)**
+**Design & Planning (1 Week)**
    - Competitor analysis  
    - UI/UX design  
    - Content strategy  
 
-2. **Development (2 Weeks)**
+**Development (2 Weeks)**
    - Frontend development  
    - Responsive design  
    - SEO optimization  
 
-3. **Testing & Deployment (3 Days)**
+**Testing & Deployment (3 Days)**
    - Performance tests  
    - Cross-browser testing  
    - Domain and hosting setup  

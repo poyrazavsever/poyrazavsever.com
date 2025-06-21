@@ -25,16 +25,16 @@ Earthquake Awareness is an educational web platform aiming to raise awareness ab
 
 ## Features
 
-1. **Learning Modules**
+**Learning Modules**
    - Age-specific content  
    - Interactive materials  
 
-2. **Quizzes & Evaluation**
+**Quizzes & Evaluation**
    - Practical applications  
    - Instant feedback  
    - Achievement tracking  
 
-3. **Emergency Tools**
+**Emergency Tools**
    - Quick-access guide  
    - Assembly area map  
    - Emergency checklist  
@@ -51,17 +51,17 @@ npm run dev
 
 ## Project Development Timeline
 
-1. **Research & Content (1 Week)**
+**Research & Content (1 Week)**
    - Expert interviews  
    - Content compilation  
    - Curriculum design  
 
-2. **Design & Development (1 Week)**
+**Design & Development (1 Week)**
    - UI/UX design  
    - Frontend development  
    - Backend integration  
 
-3. **Testing & Optimization (1 Week)**
+**Testing & Optimization (1 Week)**
    - User testing  
    - Content validation  
    - Performance optimization  

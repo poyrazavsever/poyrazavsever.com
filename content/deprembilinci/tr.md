@@ -26,16 +26,16 @@ Deprem Bilinci, toplumun her kesiminin deprem konusunda bilinçlenmesini hedefle
 
 ## Özellikler
 
-1. **Eğitim Modülleri**
+**Eğitim Modülleri**
    - Yaş gruplarına özel içerikler
    - Etkileşimli öğrenme materyalleri
 
-2. **Test ve Değerlendirme**
+**Test ve Değerlendirme**
    - Pratik uygulamalar
    - Anlık geri bildirim
    - Başarı istatistikleri
 
-3. **Acil Durum Özellikleri**
+**Acil Durum Özellikleri**
    - Hızlı erişim rehberi
    - Toplanma alanları haritası
    - Acil durum kontrol listesi
@@ -59,17 +59,17 @@ npm run dev
 
 ## Proje Gelişim Süreci
 
-1. **Araştırma ve İçerik (1 Hafta)**
+**Araştırma ve İçerik (1 Hafta)**
    - Uzman görüşmeleri
    - İçerik derleme
    - Müfredat hazırlığı
 
-2. **Tasarım ve Geliştirme (1 Hafta)**
+**Tasarım ve Geliştirme (1 Hafta)**
    - UI/UX tasarımı
    - Frontend geliştirme
    - Backend entegrasyonu
 
-3. **Test ve İyileştirme (1 Hafta)**
+**Test ve İyileştirme (1 Hafta)**
    - Kullanıcı testleri
    - İçerik doğrulama
    - Performans optimizasyonu

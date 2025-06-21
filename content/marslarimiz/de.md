@@ -33,21 +33,21 @@ Die Bedeutung unserer Märsche ist eine benutzerfreundliche Plattform, die darau
 
 ## Funktionen
 
-1. **Marschkatalog**  
+**Marschkatalog**  
    - Kategorisierte Marschliste  
    - Liedtexte  
    - Historische Informationen
 
-2. **KI-Analyse**  
+**KI-Analyse**  
    - Erklärung von Wortbedeutungen  
    - Erläuterung kultureller Bezüge
 
-3. **Soziale Funktionen (Demnächst)**  
+**Soziale Funktionen (Demnächst)**  
    - Benutzerprofile  
    - Kommentarsystem  
    - Marschfreigabe
 
-4. **Lernwerkzeug**  
+**Lernwerkzeug**  
    - Wortschatzaufbau  
    - Kulturelle Bereicherung
 
@@ -71,16 +71,16 @@ npm run dev
 
 ## Projektentwicklungsprozess
 
-1. **Recherche & Planung (1 Woche)**  
+**Recherche & Planung (1 Woche)**  
    - Erstellung eines Marscharchivs  
    - [UI-Planung](https://www.figma.com/design/fUIxY1UmomNgLdQlpNCNup/Mar%C5%9Flar%C4%B1n-Anlam%C4%B1?t=5BNBOMjMuVMQF03J-0)  
    - Planung der KI-Integration
 
-2. **Entwicklung (3 Wochen)**  
+**Entwicklung (3 Wochen)**  
    - Frontend-Entwicklung  
    - Backend-Integration
 
-3. **Test & Optimierung (1 Woche)**  
+**Test & Optimierung (1 Woche)**  
    - Leistungsverbesserungen  
    - Benutzertests  
    - Inhaltsverifizierung

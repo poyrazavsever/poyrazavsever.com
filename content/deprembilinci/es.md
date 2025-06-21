@@ -25,16 +25,16 @@ Conciencia Sísmica es una plataforma web educativa cuyo objetivo es concientiza
 
 ## Funcionalidades
 
-1. **Módulos Educativos**
+**Módulos Educativos**
    - Contenido por grupo de edad  
    - Materiales interactivos  
 
-2. **Pruebas y Evaluación**
+**Pruebas y Evaluación**
    - Ejercicios prácticos  
    - Retroalimentación inmediata  
    - Estadísticas de rendimiento  
 
-3. **Herramientas de Emergencia**
+**Herramientas de Emergencia**
    - Guía de acceso rápido  
    - Mapa de zonas de reunión  
    - Lista de control ante emergencias  
@@ -51,17 +51,17 @@ npm run dev
 
 ## Proceso de Desarrollo
 
-1. **Investigación y Contenido (1 semana)**
+**Investigación y Contenido (1 semana)**
    - Entrevistas con expertos  
    - Recolección de información  
    - Preparación del currículo  
 
-2. **Diseño y Desarrollo (1 semana)**
+**Diseño y Desarrollo (1 semana)**
    - Diseño UI/UX  
    - Desarrollo del frontend  
    - Integración backend  
 
-3. **Pruebas y Mejora (1 semana)**
+**Pruebas y Mejora (1 semana)**
    - Pruebas de usuario  
    - Validación de contenido  
    - Optimización del rendimiento  

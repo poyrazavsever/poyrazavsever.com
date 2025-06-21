@@ -23,22 +23,22 @@ Er Technology ist ein junges Startup mit dem Ziel, innovative Tech-Lösungen ber
 
 ## Funktionen
 
-1. **Startseite**
+**Startseite**
    - Unternehmensvorstellung  
    - Leistungsbeschreibungen  
    - Projektportfolio  
 
-2. **Projektvorstellung**
+**Projektvorstellung**
    - Abgeschlossene Projekte  
    - Laufende Arbeiten  
    - Tech-Stacks  
 
-3. **Kontaktfunktionen**
+**Kontaktfunktionen**
    - Kontaktformular  
    - Social-Media-Links  
    - Standortinformationen  
 
-4. **Unternehmen**
+**Unternehmen**
    - Über uns Abschnitt  
    - Vision und Mission  
    - Teammitglieder  
@@ -63,17 +63,17 @@ npm run dev
 
 ## Projektentwicklungsprozess
 
-1. **Design & Planung (1 Woche)**
+**Design & Planung (1 Woche)**
    - Wettbewerbsanalyse  
    - UI/UX Design  
    - Content-Strategie  
 
-2. **Entwicklung (2 Wochen)**
+**Entwicklung (2 Wochen)**
    - Frontend-Entwicklung  
    - Responsives Design  
    - SEO-Optimierung  
 
-3. **Test & Veröffentlichung (3 Tage)**
+**Test & Veröffentlichung (3 Tage)**
    - Leistungstests  
    - Cross-Browser-Tests  
    - Domain- und Hosting-Einrichtung  

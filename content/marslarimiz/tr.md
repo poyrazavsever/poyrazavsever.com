@@ -33,21 +33,21 @@ Marşlarımızın Anlamı, milli marşlarımızı dijital ortamda yaşatmak ve a
 
 ## Özellikler
 
-1. **Marş Kataloğu**
+**Marş Kataloğu**
    - Kategorize edilmiş marş listesi
    - Marş sözleri
    - Tarihsel bilgiler
 
-2. **Yapay Zeka Analizi**
+**Yapay Zeka Analizi**
    - Kelime anlamları açıklama
    - Kültürel referansların açıklanması
 
-3. **Sosyal Özellikler (Yakında)** 
+**Sosyal Özellikler (Yakında)** 
    - Kullanıcı profilleri
    - Yorum sistemi
    - Marş paylaşımı
 
-4. **Eğitim Aracı**
+**Eğitim Aracı**
    - Kelime dağarcığı geliştirme
    - Kültürel birikim artırma
 
@@ -71,16 +71,16 @@ npm run dev
 
 ## Proje Gelişim Süreci
 
-1. **Araştırma & Planlama (1 Hafta)**
+**Araştırma & Planlama (1 Hafta)**
    - Marş arşivi oluşturma
    - [UI Planlama](https://www.figma.com/design/fUIxY1UmomNgLdQlpNCNup/Mar%C5%9Flar%C4%B1n-Anlam%C4%B1?t=5BNBOMjMuVMQF03J-0)
    - Yapay zeka entegrasyon planı
 
-2. **Geliştirme (3 Hafta)**
+**Geliştirme (3 Hafta)**
    - Frontend geliştirme
    - Backend entegrasyonu
 
-3. **Test & Optimizasyon (1 Hafta)**
+**Test & Optimizasyon (1 Hafta)**
    - Performans iyileştirmeleri
    - Kullanıcı testleri
    - İçerik doğrulama
