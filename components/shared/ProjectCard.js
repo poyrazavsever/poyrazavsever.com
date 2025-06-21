@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const ProjectCard = ({ imageSrc, title, description, slug }) => {
   const { t } = useTranslation('common');
-  const [lang, setLang] = useState('tr');
-
-  useEffect(() => {
-    // Client-side'da localStorage'dan dil bilgisini al
-    const storedLang = localStorage.getItem('language');
-    if (storedLang) {
-      setLang(storedLang);
-    }
-  }, []);
+  const router = useRouter();
+  const locale = router.locale || 'tr';
 
   return (
     <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full md:max-w-xs">
@@ -33,7 +26,8 @@ const ProjectCard = ({ imageSrc, title, description, slug }) => {
           {description}
         </p>
         <Link
-          href={`/${lang}/projects/${slug}`}
+          href={`/projects/${slug}`}
+          locale={locale}
           className="text-sm text-sky-500 dark:text-sky-600 underline hover:text-sky-800 transition-all cursor-pointer"
         >
           {t('details')}

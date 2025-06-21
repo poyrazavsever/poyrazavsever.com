@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import { projects } from '@/data/projects'
 import ProjectCard from '@/components/shared/ProjectCard'
 import { useTranslation } from 'next-i18next'
@@ -18,6 +19,8 @@ const Projects = () => {
   const [repos, setRepos] = useState([]);
   const [search, setSearch] = useState('');
   const { t } = useTranslation('projects');
+  const router = useRouter();
+  const locale = router.locale || 'tr';
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`)
@@ -26,10 +29,10 @@ const Projects = () => {
   }, []);
 
   // Arama filtresi
-  const filteredProjects = projects.filter(project =>
+  const filteredProjects = projects[locale]?.filter(project =>
     project.title.toLowerCase().includes(search.toLowerCase()) ||
     (project.desc && project.desc.toLowerCase().includes(search.toLowerCase()))
-  );
+  ) || [];
 
   return (
     <div className='mt-8 max-w-6xl w-full flex flex-col gap-8'>

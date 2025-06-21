@@ -15,11 +15,16 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export default function Home() {
-  const populerProjects = projects.filter(project => project.populer);
+  
   const { t } = useTranslation("common");
   const [latestPosts, setLatestPosts] = useState([]);
   const router = useRouter();
+  
   const lang = router.locale || 'tr';
+
+  const populerProjects = projects[lang]?.filter(project => project.populer) || [];
+
+  
 
   useEffect(() => {
     async function fetchPosts() {

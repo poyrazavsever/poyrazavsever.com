@@ -7,7 +7,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Designs = () => {
   const { t } = useTranslation('designs');
-  const designProjects = projects.filter((project) => project.category === 'design');
+  const router = useRouter();
+  const locale = router.locale || 'tr';
+
+  const designProjects = projects[locale]?.filter(
+    (project) => project.category === 'design'
+  ) || [];
 
   return (
     <div className="w-full flex flex-col items-center justify-center pt-4 pb-8 md:py-24 text-neutral-800 dark:text-neutral-200">
