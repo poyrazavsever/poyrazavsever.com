@@ -87,7 +87,7 @@ npm run dev
 
 ## Faydalı Linkler
 
-- [Canlı Site](https://marslarinanlami.vercel.app)
+- [Canlı Site](https://marslarinanlami.pavsever.com)
 - [GitHub Repo](https://github.com/poyrazavsever/marslarinanlami)
 - [Hata Bildirimi](https://github.com/poyrazavsever/marslarinanlami/issues)
 

@@ -87,7 +87,7 @@ npm run dev
 
 ## Enlaces útiles
 
-- [Sitio en vivo](https://marslarinanlami.vercel.app)  
+- [Sitio en vivo](https://marslarinanlami.pavsever.com)  
 - [Repositorio GitHub](https://github.com/poyrazavsever/marslarinanlami)  
 - [Reportar errores](https://github.com/poyrazavsever/marslarinanlami/issues)
 

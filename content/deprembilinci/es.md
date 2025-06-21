@@ -68,13 +68,12 @@ npm run dev
 
 ## Enlaces Útiles
 
-- [Sitio en Vivo (Próximamente)]()  
+- [Sitio en Vivo](https://www.deprembilinci.pavsever.com)  
 - [Repositorio GitHub](https://github.com/HSD-OSTIMTECH/DepremBilinci)  
 - [Reportar Errores](https://github.com/HSD-OSTIMTECH/DepremBilinci/issues)  
 
 ## Desarrolladores
 
 - [**Poyraz Avsever**](https://github.com/poyrazavsever) – Frontend Developer & UI Designer  
-- [**HSD Contributors**](https://github.com/HSD-OSTIMTECH) – Equipo del proyecto  
 
 > Este proyecto ha sido desarrollado como código abierto para el beneficio social.

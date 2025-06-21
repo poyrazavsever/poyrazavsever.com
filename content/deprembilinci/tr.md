@@ -76,7 +76,7 @@ npm run dev
 
 ## Faydalı Linkler
 
-- [Canlı Site (Yakında)]()
+- [Canlı Site](https://www.deprembilinci.pavsever.com)
 - [GitHub Repo](https://github.com/HSD-OSTIMTECH/DepremBilinci)
 - [Hata Bildirimi](https://github.com/HSD-OSTIMTECH/DepremBilinci/issues)
 
@@ -84,6 +84,5 @@ npm run dev
 ## Geliştiriciler
 
 - [**Poyraz Avsever**](https://github.com/poyrazavsever) - Frontend Developer & UI Designer
-- [**HSD Contributors**](https://github.com/HSD-OSTIMTECH) - Proje Ekibi
 
 > Bu proje, toplum yararına açık kaynak olarak geliştirilmektedir.
