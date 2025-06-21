@@ -1,6 +1,32 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { FiCpu, FiHardDrive } from 'react-icons/fi';
+import { BsGpuCard, BsMemory } from 'react-icons/bs';
+import { DiLinux } from 'react-icons/di';
+
+const systemSpecs = [
+  {
+    icon: <BsGpuCard size={18} />,
+    value: 'GeForce GTX 1650'
+  },
+  {
+    icon: <FiCpu size={18} />,
+    value: 'Intel Core i7-11700K'
+  },
+  {
+    icon: <BsMemory size={18} />,
+    value: '16GB DDR4'
+  },
+  {
+    icon: <FiHardDrive size={18} />,
+    value: '1TB M.2 SSD'
+  },
+  {
+    icon: <DiLinux size={18} />,
+    value: 'Zorin OS'
+  }
+];
 
 const gears = [
   {
@@ -48,6 +74,19 @@ const Gear = () => {
       <h1 className="text-2xl font-semibold mb-8 text-neutral-800 dark:text-neutral-100">
         {t('gear')}
       </h1>
+
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12 bg-neutral-50 dark:bg-neutral-900/10 rounded-lg p-4">
+        {systemSpecs.map((spec, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <span className="text-neutral-600 dark:text-neutral-400">
+              {spec.icon}
+            </span>
+            <p className="text-neutral-800 dark:text-neutral-200 font-medium">
+                {spec.value}
+            </p>
+          </div>
+        ))}
+      </div>
 
       <div className="grid gap-10 sm:grid-cols-2">
         {gears.map((gear, idx) => (
