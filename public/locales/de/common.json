@@ -18,6 +18,10 @@
   "mediumError": "Diese Seite enthält nur Inhalte auf Türkisch. Es tut mir leid :(",
   "blog": "Neueste Blogbeiträge",
   "backToProjects": "Zurück zu Projekten",
-  "projectNotFound": "Projekt Nicht Gefunden"
-  
+  "projectNotFound": "Projekt Nicht Gefunden",
+  "contentLoading": "Inhalt wird geladen...",
+  "contentNotFound": "Inhalt nicht gefunden.",
+  "category": "Kategorie",
+  "popular": "Beliebt",
+  "backToBlog": "Zurück zum Blog"  
 }

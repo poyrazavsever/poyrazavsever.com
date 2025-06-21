@@ -18,5 +18,11 @@
   "mediumError": "Esta página solo contiene contenido en turco. Lo siento :(",
   "blog": "Últimas entradas del blog",
   "backToProjects": "Volver a Proyectos",
-  "projectNotFound": "Proyecto No Encontrado"
+  "projectNotFound": "Proyecto No Encontrado",
+  "contentLoading": "Cargando contenido...",
+  "contentNotFound": "Contenido no encontrado.",
+  "category": "Categoría",
+  "popular": "Popular",
+  "backToBlog": "Volver al blog"
+
 }

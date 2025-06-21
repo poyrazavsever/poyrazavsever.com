@@ -18,5 +18,10 @@
   "mediumError" : "Bu sayfa da yalnızca Türkçe içerik bulunmaktadır.",
   "blog": "Son Blog Yazılarım",
   "backToProjects": "Projelere Geri Dön",
-  "projectNotFound": "Proje Bulunamadı"
+  "projectNotFound": "Proje Bulunamadı",
+  "contentLoading": "İçerik yükleniyor...",
+  "contentNotFound": "İçerik bulunamadı.",
+  "category": "Kategori",
+  "popular": "Popüler",
+  "backToBlog": "Blog'a Geri Dön"
 }
