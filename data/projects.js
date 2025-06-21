@@ -69,7 +69,27 @@ export const projects = {
             contentFolder:"readmemaker",
             populer: false,
             category:"web",
-        }
+        },
+        {
+          image: "/project/esanayim.png",
+          bannerImage: "/project/esanayim-banner.png",
+          title: "E-sanayim UI Design",
+          desc: "E-sanayim Ostim Teknik Üniversitesin'de düzenlenen Pitching Day etkinliğinde finale kalan projemizin UI tasarımını yaptım. E-sanayim, sanayi firmalarının dijitalleşmesini sağlayan bir platformdur.",
+          slug:"esanayim",
+          contentFolder:"esanayim",
+          populer: false,
+          category:"design",
+      },
+      {
+        image: "/project/restorant.png",
+        bannerImage: "/project/restorant-banner.png",
+        title: "Restorant UI Design",
+        desc: "Hayali bir restorant için yaptığım UI tasarım projesidir. Bu projede, kullanıcı dostu bir arayüz ve estetik bir mobil tasarım oluşturdum.",
+        slug:"restorant",
+        contentFolder:"restorant",
+        populer: false,
+        category:"design",
+      },
     ],
     en: [
         {
@@ -142,9 +162,29 @@ export const projects = {
           populer: false,
           category: "web",
         },
-      ],
-    
-      de: [
+        {
+          image: "/project/esanayim.png",
+          bannerImage: "/project/esanayim-banner.png",
+          title: "E-sanayim UI Design",
+          desc: "I designed the UI for E-sanayim, our project that reached the finals at the Pitching Day event organized by Ostim Technical University. E-sanayim is a platform that helps industrial companies digitize.",
+          slug: "esanayim",
+          contentFolder: "esanayim",
+          populer: false,
+          category: "design",
+        },
+        {
+          image: "/project/restorant.png",
+          bannerImage: "/project/restorant-banner.png",
+          title: "Restaurant UI Design",
+          desc: "This is a UI design project I created for a fictional restaurant. The goal was to build an aesthetic mobile design with a user-friendly interface.",
+          slug: "restorant",
+          contentFolder: "restorant",
+          populer: false,
+          category: "design",
+        },
+        
+    ],
+    de: [
         {
           image: "/project/patitekno.png",
           bannerImage: "/project/patitekno-banner.png",
@@ -215,9 +255,29 @@ export const projects = {
           populer: false,
           category: "web",
         },
-      ],
-    
-      es: [
+        {
+          image: "/project/esanayim.png",
+          bannerImage: "/project/esanayim-banner.png",
+          title: "E-sanayim UI-Design",
+          desc: "Ich habe das UI-Design für E-sanayim erstellt, unser Projekt, das beim Pitching Day der Ostim Technischen Universität das Finale erreicht hat. E-sanayim ist eine Plattform, die Industrieunternehmen bei der Digitalisierung unterstützt.",
+          slug: "esanayim",
+          contentFolder: "esanayim",
+          populer: false,
+          category: "design",
+        },
+        {
+          image: "/project/restorant.png",
+          bannerImage: "/project/restorant-banner.png",
+          title: "Restaurant UI-Design",
+          desc: "Ein UI-Design-Projekt für ein fiktives Restaurant. Ziel war es, ein ästhetisches mobiles Design mit einer benutzerfreundlichen Oberfläche zu erstellen.",
+          slug: "restorant",
+          contentFolder: "restorant",
+          populer: false,
+          category: "design",
+        },
+        
+    ],
+    es: [
         {
           image: "/project/patitekno.png",
           bannerImage: "/project/patitekno-banner.png",
@@ -288,5 +348,25 @@ export const projects = {
           populer: false,
           category: "web",
         },
+        {
+          image: "/project/esanayim.png",
+          bannerImage: "/project/esanayim-banner.png",
+          title: "Diseño UI de E-sanayim",
+          desc: "Diseñé la interfaz de usuario (UI) de E-sanayim, nuestro proyecto finalista en el evento Pitching Day organizado por la Universidad Técnica de Ostim. E-sanayim es una plataforma que ayuda a digitalizar a las empresas industriales.",
+          slug: "esanayim",
+          contentFolder: "esanayim",
+          populer: false,
+          category: "design",
+        },
+        {
+          image: "/project/restorant.png",
+          bannerImage: "/project/restorant-banner.png",
+          title: "Diseño UI de Restaurante",
+          desc: "Este es un proyecto de diseño UI que realicé para un restaurante ficticio. El objetivo fue crear un diseño móvil estético con una interfaz fácil de usar.",
+          slug: "restorant",
+          contentFolder: "restorant",
+          populer: false,
+          category: "design",
+        },        
     ],
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { projects } from '@/data/projects';
 import ProjectCard from '@/components/shared/ProjectCard';
 import { useTranslation } from 'next-i18next';
