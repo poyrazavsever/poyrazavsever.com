@@ -6,7 +6,6 @@
 
 Er Technology ist ein junges Startup mit dem Ziel, innovative Tech-Lösungen bereitzustellen:
 
-- **Softwareprojekte**: Web- und Mobile-App-Entwicklung  
 - **Modernes Design**: Benutzerfreundliche UI-Gestaltung  
 - **Responsive Aufbau**: Kompatibles Layout auf allen Geräten  
 - **Hohe Leistung**: Optimierter Code  

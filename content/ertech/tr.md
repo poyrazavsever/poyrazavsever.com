@@ -6,7 +6,6 @@
 
 Er Technology, yenilikçi teknoloji çözümleri sunmayı hedefleyen genç bir girişimdir:
 
-- **Yazılım Projeleri**: Web ve mobil uygulama geliştirme
 - **Modern Tasarım**: Kullanıcı dostu arayüz tasarımı
 - **Responsive Yapı**: Tüm cihazlarda uyumlu görünüm
 - **Hızlı Performans**: Optimize edilmiş kod yapısı

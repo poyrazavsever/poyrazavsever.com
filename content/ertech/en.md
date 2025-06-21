@@ -6,7 +6,6 @@
 
 Er Technology is a young startup aiming to deliver innovative tech solutions:
 
-- **Software Projects**: Web and mobile application development  
 - **Modern Design**: User-friendly interface design  
 - **Responsive Architecture**: Compatible layout across all devices  
 - **Fast Performance**: Optimized codebase  

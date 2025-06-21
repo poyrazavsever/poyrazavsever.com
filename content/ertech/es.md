@@ -5,8 +5,7 @@
 ## Sobre nosotros
 
 Er Technology es una joven startup que busca ofrecer soluciones tecnológicas innovadoras:
-
-- **Proyectos de software**: Desarrollo de aplicaciones web y móviles  
+ 
 - **Diseño moderno**: Interfaz amigable para el usuario  
 - **Arquitectura responsive**: Diseño compatible en todos los dispositivos  
 - **Rendimiento rápido**: Código optimizado  
