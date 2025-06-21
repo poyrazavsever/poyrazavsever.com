@@ -25,7 +25,7 @@ const ProjectDetail = ({ project, markdownContent }) => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-16">
+    <div className="py-16">
       <h1 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">
         {project.title}
       </h1>
