@@ -25,7 +25,7 @@ The UI design process focused on the following core principles:
 
 ## Visuals
 
-![E-sanayim Screenshot](http://localhost:3000/designs/esanayim.png)
+![E-sanayim Screenshot](https://www.pavsever.com/designs/esanayim.png)
 
 ### Detailed Screens
 

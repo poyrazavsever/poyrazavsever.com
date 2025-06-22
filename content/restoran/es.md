@@ -25,7 +25,7 @@ Durante el proceso de diseño UI se priorizaron los siguientes principios:
 
 ## Imágenes
 
-![Captura de UI del Restaurante](http://localhost:3000/designs/restorant.png)
+![Captura de UI del Restaurante](https://www.pavsever.com/designs/restorant.png)
 
 ### Pantallas Detalladas
 

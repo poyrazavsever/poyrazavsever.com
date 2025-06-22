@@ -25,7 +25,7 @@ Durante el proceso de diseño UI se priorizaron los siguientes principios:
 
 ## Imágenes
 
-![Captura E-sanayim](http://localhost:3000/designs/esanayim.png)
+![Captura E-sanayim](https://www.pavsever.com/designs/esanayim.png)
 
 ### Pantallas Detalladas
 

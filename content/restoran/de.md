@@ -25,7 +25,7 @@ Beim UI-Design wurden folgende Grundprinzipien beachtet:
 
 ## Bilder
 
-![Restaurant UI Screenshot](http://localhost:3000/designs/restorant.png)
+![Restaurant UI Screenshot](https://www.pavsever.com/designs/restorant.png)
 
 ### Detaillierte Screens
 

@@ -25,7 +25,7 @@ UI tasarımı sürecinde aşağıdaki temel ilkelere dikkat edilmiştir:
 
 ## Görseller
 
-![Restoran UI Görseli](http://localhost:3000/designs/restorant.png)
+![Restoran UI Görseli](https://www.pavsever.com/designs/restorant.png)
 
 ### Detaylı Ekranlar
 

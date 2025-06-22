@@ -25,7 +25,7 @@ The UI design process was guided by the following key principles:
 
 ## Visuals
 
-![Restaurant UI Screenshot](http://localhost:3000/designs/restorant.png)
+![Restaurant UI Screenshot](https://www.pavsever.com/designs/restorant.png)
 
 ### Detailed Screens
 

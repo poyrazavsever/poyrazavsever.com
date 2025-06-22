@@ -25,7 +25,7 @@ Beim UI-Design wurden folgende Grundprinzipien beachtet:
 
 ## Bilder
 
-![E-sanayim Screenshot](http://localhost:3000/designs/esanayim.png)
+![E-sanayim Screenshot](https://www.pavsever.com/designs/esanayim.png)
 
 ### Detaillierte Bildschirme
 

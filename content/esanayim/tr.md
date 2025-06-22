@@ -25,7 +25,7 @@ UI tasarımı sürecinde aşağıdaki temel ilkelere dikkat edilmiştir:
 
 ## Görseller
 
-![E-sanayim Görseli](http://localhost:3000/designs/esanayim.png)
+![E-sanayim Görseli](https://www.pavsever.com/designs/esanayim.png)
 
 ### Detaylı Ekranlar
 
