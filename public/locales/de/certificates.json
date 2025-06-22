@@ -3,22 +3,81 @@
   "count": "{{count}} Stück",
   "list": [
     {
-      "name": "Frontend Development Bootcamp",
-      "organization": "Kodluyoruz & Patika.dev",
-      "date": "Mai 2024",
-      "description": "Praktische Schulung zu HTML, CSS, JavaScript und React.js."
+      "name": "GDG Hackathon Teilnahmezertifikat",
+      "organization": "Google Developer Group",
+      "date": "Mai 2025",
+      "description": "Ich war Teil des Organisationsteams beim Hackathon der Google Developer Group.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQEi-d9Zy8-ibQ/profile-treasury-image-shrink_800_800/B4DZbIiQwrHsAY-/0/1747121147387?e=1751180400&v=beta&t=xNKyjdmFZyPY7vVFQky8CvAu0Sj9BDF9CVLOX4kdhto"
     },
     {
-      "name": "Fullstack Web Developer Ausbildung",
+      "name": "Teilnahmezertifikat des Nationalen Studentenkongresses",
+      "organization": "Ostim Technical University, Fakultät für Betriebswirtschaft",
+      "date": "April 2025",
+      "description": "Teilnahmeurkunde für meinen Beitrag zum 1. Nationalen Studentenkongress „Nachhaltige Unternehmen im Zeitalter der Künstlichen Intelligenz“.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQFg7iC6njSrew/profile-treasury-image-shrink_800_800/B4DZaK1RJUGcAY-/0/1746085942503?e=1751180400&v=beta&t=qn-Q1Fh-tXUgWnwExO6RjbBTtsZfXM8MfTDXuPNdKhs"
+    },
+    {
+      "name": "HSD Core-Team Teilnahmezertifikat",
+      "organization": "Huawei Student Developers",
+      "date": "Januar 2025",
+      "description": "Ich wurde in das Core-Team der neu gegründeten Huawei Student Developers (HSD)-Community an der OSTİM Technical University für das Studienjahr 2024–2025 aufgenommen.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQF636C2rqVrqg/profile-treasury-image-shrink_800_800/B4DZYuZa8DHAAY-/0/1744535138597?e=1751180400&v=beta&t=7DOAAqgCyXkRX21nnSoyd8hED9ywySCAJc8OD2Ppmao"
+    },
+    {
+      "name": "Versionsverwaltung: Git & GitHub",
       "organization": "BTK Akademie",
-      "date": "März 2024",
-      "description": "Umfassende Softwareausbildung, die Frontend- und Backend-Technologien abdeckt."
+      "date": "September 2024",
+      "description": "Ich habe den Kurs über Git und GitHub abgeschlossen. Dieser Kurs vertiefte mein Wissen über Versionskontrolle und brachte mir bei, Projekte mit Git zu verwalten. Das Teilen von Projekten auf GitHub zeigte mir die Bedeutung von Zusammenarbeit und Versionsverfolgung.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQGp3NGf5KIwyw/profile-treasury-image-shrink_800_800/B4DZVcxwIBHYAY-/0/1741018301364?e=1751180400&v=beta&t=xDAz1qPwNDJkgEPUTm0r1ioZq7TjIxcdiexFDM3TYmc"
     },
     {
-      "name": "Fortgeschrittenes JavaScript",
+      "name": "Präsentationstechniken & Kommunikationsmanagement im Unternehmertum",
+      "organization": "BTK Akademie",
+      "date": "September 2024",
+      "description": "Ich habe das Zertifikat für Präsentationstechniken & Kommunikationsmanagement im Unternehmertum erworben. Diese Schulung half mir, effektive Präsentationen zu halten, überzeugend zu kommunizieren und mich im Bereich Unternehmertum besser auszudrücken.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQGp_V_l6hHC_w/profile-treasury-image-shrink_1920_1920/B4DZVcyHl0HYAg-/0/1741018397578?e=1751180400&v=beta&t=7iBIFeaC6hzsTJGglQxEVbcsTftMPbsqbfLGjMayyTs"
+    },
+    {
+      "name": "Effizientes LinkedIn-Profil erstellen",
+      "organization": "BTK Akademie",
+      "date": "Oktober 2024",
+      "description": "Ich habe das Zertifikat „Effizientes LinkedIn-Profil erstellen“ erworben. Diese Schulung verbesserte meine Fähigkeiten, ein professionelles Profil zu erstellen, Networking-Strategien zu entwickeln und LinkedIn effektiver zu nutzen.",
+      "image": "/certificates/linkedin.png"
+    },
+    {
+      "name": "Webprogrammierung mit REACT",
+      "organization": "BTK Akademie",
+      "date": "Juni 2024",
+      "description": "Ich habe das Zertifikat „Webprogrammierung mit REACT“ erhalten. Diese Schulung vermittelte mir, wie man moderne Webanwendungen mit React entwickelt, komponentenbasierte Architektur nutzt und dynamische Benutzeroberflächen erstellt.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQEXr2GaHiDAMA/profile-treasury-image-shrink_1920_1920/B4DZVcy0CRHkAc-/0/1741018579491?e=1751180400&v=beta&t=LKNixh7VyTVvg04dXHgUYdYodjesCELsbxGVo70oTsI"
+    },
+    {
+      "name": "Webprogrammierung mit Node.js",
+      "organization": "BTK Akademie",
+      "date": "November 2024",
+      "description": "Ich habe das Zertifikat „Webprogrammierung mit Node.js“ erhalten. Diese Schulung verbesserte meine Fähigkeiten in der Entwicklung von serverseitigen Anwendungen, der Erstellung von APIs und der Verwaltung von Backends mit Node.js.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQEqgicbgfuDXw/profile-treasury-image-shrink_8192_8192/B4DZVcy_v5HYAg-/0/1741018627467?e=1751180400&v=beta&t=7lQr98NbPCTLrYDHoynyChD8AtIMabk-BXE_8GnDDZc"
+    },
+    {
+      "name": "Yeşilay Nationale Debattier-Meisterschaft",
+      "organization": "Yeşilay",
+      "date": "Juli 2023",
+      "description": "Ich wurde Finalist der Yeşilay Nationalen Debattier-Meisterschaft. In diesem Prozess verbesserte ich meine Fähigkeiten in Kommunikation, Überzeugungskraft und schnellem Denken.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQGs2dDI5OTwrg/profile-treasury-image-shrink_8192_8192/B4DZVczPtiHwAo-/0/1741018692848?e=1751180400&v=beta&t=458B_PEyQLe-IR4Yl3VWSRZUYmrl6NUYShwSk9crzpk"
+    },
+    {
+      "name": "Yeşilay Regionale Debattier-Turniermeisterschaft",
+      "organization": "Yeşilay",
+      "date": "Mai 2023",
+      "description": "Ich wurde Finalist der Yeşilay Regionalen Debattier-Turniermeisterschaft. In diesem Prozess verbesserte ich meine Fähigkeiten in Kommunikation, Überzeugungskraft und schnellem Denken.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQH0j0wqAvocMg/profile-treasury-image-shrink_800_800/B4DZVcz.Q.G4Ac-/0/1741018884240?e=1751180400&v=beta&t=czZ-03HyszPZ__0p1Qcakt7jrnkAx3c55sxj4THhCKY"
+    },
+    {
+      "name": "Python | Programmierung von Grund auf bis zum Fortgeschrittenen-Niveau",
       "organization": "Udemy",
-      "date": "Januar 2024",
-      "description": "Fortgeschrittene JS-Schulung zu asynchroner Programmierung, modularer Struktur und Leistungsoptimierung."
+      "date": "November 2021",
+      "description": "Ich habe dieses Zertifikat erworben, indem ich mich mit grundlegenden und fortgeschrittenen Themen der Python-Programmierung befasst habe, darunter Algorithmen, Datenstrukturen und objektorientierte Programmierung.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQFpkyf8Toiw6g/profile-treasury-image-shrink_800_800/B4DZVc2J5kG4AY-/0/1741019455468?e=1751180400&v=beta&t=Nww-TF3AEM3Dmz2-kr_UFpKXF9Ut3iDRAhBCxu8rUio"
     }
   ]
 }
