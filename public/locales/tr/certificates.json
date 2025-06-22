@@ -3,22 +3,81 @@
     "count": "{{count}} adet",
     "list": [
       {
-        "name": "Frontend Development Bootcamp",
-        "organization": "Kodluyoruz & Patika.dev",
-        "date": "Mayıs 2024",
-        "description": "HTML, CSS, JavaScript ve React.js konularında uygulamalı eğitim."
+        "name": "GDG Hackathon Katılım Sertifikası",
+        "organization": "Google Developer Group",
+        "date": "Mayıs 2025",
+        "description": "Google Developer Group tarafından düzenlenen hackathon etkinliğinde organizasyonda yer aldım",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQEi-d9Zy8-ibQ/profile-treasury-image-shrink_800_800/B4DZbIiQwrHsAY-/0/1747121147387?e=1751180400&v=beta&t=xNKyjdmFZyPY7vVFQky8CvAu0Sj9BDF9CVLOX4kdhto"
       },
       {
-        "name": "Fullstack Web Developer Eğitimi",
+        "name": "Ulusal Öğrenci Kongresi Katılım Sertifikası",
+        "organization": "Ostim Teknik Üniversitesi İİBF İşletme Fakültesi",
+        "date": "Nisan 2025",
+        "description": "1. Ulusal Öğrenci Kongresi Yapay Zeka Çağında Sürdürülebilir İşletmeler' kongresine sunmuş olduğum katkı için katılım sertifikası",
+        "image": "https://media.licdn.com/dms/image/v2/D4D2DAQFg7iC6njSrew/profile-treasury-image-shrink_800_800/B4DZaK1RJUGcAY-/0/1746085942503?e=1751180400&v=beta&t=qn-Q1Fh-tXUgWnwExO6RjbBTtsZfXM8MfTDXuPNdKhs"
+      },
+      {
+        "name": "HSD Core Team Katılım Sertifikası",
+        "organization": "Huawei Student Developers",
+        "date": "Ocak 2025",
+        "description": "2024–2025 dönemi için OSTİM Teknik Üniversitesi'nde yeni kurulan Huawei Student Developers (HSD) topluluğunun Core Team ekibine dahil edildim.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQF636C2rqVrqg/profile-treasury-image-shrink_800_800/B4DZYuZa8DHAAY-/0/1744535138597?e=1751180400&v=beta&t=7DOAAqgCyXkRX21nnSoyd8hED9ywySCAJc8OD2Ppmao"
+      },
+      {
+        "name": "Versiyon Kontrolleri: Git ve GitHub",
         "organization": "BTK Akademi",
-        "date": "Mart 2024",
-        "description": "Frontend ve backend teknolojilerini içeren kapsamlı bir yazılım eğitimi."
+        "date": "Eylül 2024",
+        "description": "Git ve GitHub hakkında aldığım kursu tamamladım. Bu kurs sayesinde versiyon kontrolü konusunda daha fazla bilgi sahibi oldum ve Git ile projeleri nasıl yönetebileceğimi öğrendim. GitHub üzerinde projelerimi paylaşarak, işbirlikçi çalışma yapmanın ve projelerdeki değişiklikleri takip etmenin ne kadar önemli olduğunu fark ettim.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQGp3NGf5KIwyw/profile-treasury-image-shrink_800_800/B4DZVcxwIBHYAY-/0/1741018301364?e=1751180400&v=beta&t=xDAz1qPwNDJkgEPUTm0r1ioZq7TjIxcdiexFDM3TYmc"
       },
       {
-        "name": "Advanced JavaScript",
+        "name": "Girişimcilikte Sunum Teknikleri ve İletişim Yönetimi",
+        "organization": "BTK Akademi",
+        "date": "Eylül 2024",
+        "description": "Girişimcilikte Sunum Teknikleri ve İletişim Yönetimi sertifikasını almaya hak kazandım. Bu eğitim sayesinde etkili sunum yapma, ikna edici iletişim kurma ve girişimcilik alanında kendimi daha iyi ifade etme konularında bilgi edindim. ",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQGp_V_l6hHC_w/profile-treasury-image-shrink_1920_1920/B4DZVcyHl0HYAg-/0/1741018397578?e=1751180400&v=beta&t=7iBIFeaC6hzsTJGglQxEVbcsTftMPbsqbfLGjMayyTs"
+      },
+      {
+        "name": "LinkedIn'de Etkili Profil Oluşturma ",
+        "organization": "BTK Akademi",
+        "date": "Ekim 2024",
+        "description": "LinkedIn'de Etkili Profil Oluşturma sertifikasını almaya hak kazandım. Bu eğitim sayesinde profesyonel bir profil oluşturma, doğru network stratejileri geliştirme ve LinkedIn'i daha etkili kullanma konularında bilgi edindim.",
+        "image":"/certificates/linkedin.png"
+      },
+      {
+        "name": "REACT ile Web Programcılığı",
+        "organization": "BTK Akademi",
+        "date": "Haziran 2024",
+        "description": "REACT ile Web Programcılığı sertifikasını almaya hak kazandım. Bu eğitim sayesinde React ile modern web uygulamaları geliştirme, bileşen tabanlı mimariyi kullanma ve dinamik kullanıcı arayüzleri oluşturma konularında bilgi edindim.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQEXr2GaHiDAMA/profile-treasury-image-shrink_1920_1920/B4DZVcy0CRHkAc-/0/1741018579491?e=1751180400&v=beta&t=LKNixh7VyTVvg04dXHgUYdYodjesCELsbxGVo70oTsI"
+      },
+      {
+        "name": "Node.js ile Web Programlama",
+        "organization": "BTK Akademi",
+        "date": "Kasım 2024",
+        "description": "Node.js ile Web Programlama sertifikasını almaya hak kazandım. Bu eğitim sayesinde Node.js kullanarak sunucu taraflı uygulamalar geliştirme, API oluşturma ve backend süreçlerini yönetme konularında bilgi edindim.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQEqgicbgfuDXw/profile-treasury-image-shrink_8192_8192/B4DZVcy_v5HYAg-/0/1741018627467?e=1751180400&v=beta&t=7lQr98NbPCTLrYDHoynyChD8AtIMabk-BXE_8GnDDZc"
+      },
+      {
+        "name": "Yeşilay Münazara Türkiye Şampiyonası",
+        "organization": "Yeşilay",
+        "date": "Temmuz 2023",
+        "description": "Yeşilay Münazara Türkiye Şampiyonası'nda finalist oldum. Bu süreçte etkili iletişim, ikna kabiliyeti ve hızlı düşünme becerilerimi geliştirdim.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQGs2dDI5OTwrg/profile-treasury-image-shrink_8192_8192/B4DZVczPtiHwAo-/0/1741018692848?e=1751180400&v=beta&t=458B_PEyQLe-IR4Yl3VWSRZUYmrl6NUYShwSk9crzpk"
+      },
+      {
+        "name": "Yeşilay Münazara Turnuvası Bölge Şampiyonası",
+        "organization": "Yeşilay",
+        "date": "Mayıs 2023",
+        "description": "Yeşilay Münazara Turnuvası Bölge Şampiyonası'nda finalist oldum. Bu süreçte etkili iletişim, ikna kabiliyeti ve hızlı düşünme becerilerimi geliştirdim.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQH0j0wqAvocMg/profile-treasury-image-shrink_800_800/B4DZVcz.Q.G4Ac-/0/1741018884240?e=1751180400&v=beta&t=czZ-03HyszPZ__0p1Qcakt7jrnkAx3c55sxj4THhCKY"
+      },
+      {
+        "name": "Yeşilay Münazara Turnuvası Bölge Şampiyonası",
         "organization": "Udemy",
-        "date": "Ocak 2024",
-        "description": "Asenkron programlama, modüler yapı ve performans optimizasyonu üzerine ileri seviye JS eğitimi."
+        "date": "Kasım 2021",
+        "description": "Sertifikasını almaya hak kazandım. Bu eğitim sayesinde Python programlama dilinde temel ve ileri seviye konular üzerinde çalışarak algoritmalar, veri yapıları ve nesne yönelimli programlama gibi konularda yetkinlik kazandım.",
+        "image":"https://media.licdn.com/dms/image/v2/D4D2DAQFpkyf8Toiw6g/profile-treasury-image-shrink_800_800/B4DZVc2J5kG4AY-/0/1741019455468?e=1751180400&v=beta&t=Nww-TF3AEM3Dmz2-kr_UFpKXF9Ut3iDRAhBCxu8rUio"
       }
     ]
   }

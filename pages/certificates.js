@@ -34,7 +34,7 @@ const Certificates = () => {
           >
             <div className="relative w-full sm:w-56 h-40 rounded-lg overflow-hidden">
               <Image
-                src={`/certificates/1.jpg`}
+                src={cert.image}
                 alt={cert.name}
                 fill
                 className="object-cover"
