@@ -1,6 +1,4 @@
 'use client';
-
-import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -26,18 +24,18 @@ const Certificates = () => {
         </span>
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-3 gap-10">
         {certificates.map((cert, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row items-start gap-5 border border-neutral-200 dark:border-neutral-700 p-4 rounded-lg transition"
+            className="flex flex-col items-center gap-5 border border-neutral-200 dark:border-neutral-700 p-4 rounded-lg transition"
           >
-            <div className="relative w-full sm:w-56 h-40 rounded-lg overflow-hidden">
-              <Image
+            <div className="relative w-full rounded-lg overflow-hidden">
+              <img
                 src={cert.image}
                 alt={cert.name}
                 fill
-                className="object-cover"
+                className="object-cover w-full"
               />
             </div>
 
