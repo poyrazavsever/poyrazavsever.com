@@ -28,7 +28,7 @@ const About = () => {
       {/* Avatar */}
       <div className="flex flex-col items-center text-center">
         <Image
-          src="/avatar.jpg"
+          src="/avatar.png"
           alt="Avatar"
           width={96}
           height={96}
