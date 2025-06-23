@@ -3,6 +3,13 @@
     "count": "{{count}} items",
     "list": [
       {
+        "name": "React Native | Practical React Native Course",
+        "organization": "Udemy",
+        "date": "June 2025",
+        "description": "Thanks to this React Native course, I gained the competence to develop mobile applications that work on both Android and iOS. The course focused on the basic components of React Native, navigation, data management, and performance optimization.",
+        "image":"/certificates/reactnative.png"
+      },
+      {
         "name": "GDG Hackathon Participation Certificate",
         "organization": "Google Developer Group",
         "date": "May 2025",

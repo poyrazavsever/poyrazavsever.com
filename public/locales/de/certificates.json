@@ -3,6 +3,13 @@
   "count": "{{count}} Stück",
   "list": [
     {
+      "name": "React Native | Praktischer React Native Kurs",
+      "organization": "Udemy",
+      "date": "Juni 2025",
+      "description": "Dank dieses React Native Kurses habe ich die Kompetenz erlangt, mobile Anwendungen zu entwickeln, die sowohl auf Android als auch auf iOS funktionieren. Der Kurs konzentrierte sich auf die grundlegenden Komponenten von React Native, Navigation, Datenmanagement und Leistungsoptimierung.",
+      "image":"/certificates/reactnative.png"
+    },
+    {
       "name": "GDG Hackathon Teilnahmezertifikat",
       "organization": "Google Developer Group",
       "date": "Mai 2025",

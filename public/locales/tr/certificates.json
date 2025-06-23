@@ -3,6 +3,13 @@
     "count": "{{count}} adet",
     "list": [
       {
+        "name": "React Native | Uygulamalı React Native Eğitimi",
+        "organization": "Udemy",
+        "date": "Haziran 2025",
+        "description": "React Native ile mobil uygulama geliştirme konusunda aldığım bu eğitim sayesinde, hem Android hem de iOS platformlarında çalışan uygulamalar geliştirme yetkinliği kazandım. Eğitimde, React Native'in temel bileşenleri, navigasyon, veri yönetimi ve performans optimizasyonu gibi konulara odaklandım.",
+        "image":"/certificates/reactnative.png"
+      },
+      {
         "name": "GDG Hackathon Katılım Sertifikası",
         "organization": "Google Developer Group",
         "date": "Mayıs 2025",
