@@ -34,7 +34,7 @@ const Gallery = () => {
             <img
               src={item.img}
               alt={`Gallery image ${idx + 1}`}
-              className="object-cover h-64 w-64 rounded-md"
+              className="object-cover h-64 w-full sm:w-64 rounded-md"
             />
           </div>
         ))}
