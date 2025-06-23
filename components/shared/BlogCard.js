@@ -13,7 +13,7 @@ const BlogCard = ({ cardImage, title, description, slug }) => {
   }
 
   return (
-    <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full max-w-xs">
+    <div className="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 p-4 w-full w-full sm:max-w-xs">
       <div className="relative w-full h-48 rounded-lg overflow-hidden">
         <Image
           src={cardImage}
