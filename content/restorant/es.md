@@ -29,7 +29,7 @@ Durante el proceso de diseño UI se priorizaron los siguientes principios:
 
 ### Pantallas Detalladas
 
-[Enlace Figma](https://www.figma.com/)
+[Enlace Figma](https://www.figma.com/design/MduDty1QUpDOdFHYbTIPKq/Menu-Tasar%C4%B1m%C4%B1?t=DlFXEbfxXsEwMUIV-0)
 
 ## Herramientas Utilizadas
 

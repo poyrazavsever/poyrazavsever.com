@@ -29,7 +29,7 @@ Beim UI-Design wurden folgende Grundprinzipien beachtet:
 
 ### Detaillierte Screens
 
-[Figma-Link](https://www.figma.com/)
+[Figma-Link](https://www.figma.com/design/MduDty1QUpDOdFHYbTIPKq/Menu-Tasar%C4%B1m%C4%B1?t=DlFXEbfxXsEwMUIV-0)
 
 ## Verwendete Tools
 

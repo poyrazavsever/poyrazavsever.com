@@ -29,7 +29,7 @@ The UI design process was guided by the following key principles:
 
 ### Detailed Screens
 
-[Figma Link](https://www.figma.com/)
+[Figma Link](https://www.figma.com/design/MduDty1QUpDOdFHYbTIPKq/Menu-Tasar%C4%B1m%C4%B1?t=DlFXEbfxXsEwMUIV-0)
 
 ## Tools Used
 

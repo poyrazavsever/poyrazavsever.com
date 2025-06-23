@@ -29,7 +29,7 @@ UI tasarımı sürecinde aşağıdaki temel ilkelere dikkat edilmiştir:
 
 ### Detaylı Ekranlar
 
-[Figma Linki](https://www.figma.com/) <!-- Gerçek figma linkin varsa buraya ekleyebilirim -->
+[Figma Linki](https://www.figma.com/design/MduDty1QUpDOdFHYbTIPKq/Menu-Tasar%C4%B1m%C4%B1?t=DlFXEbfxXsEwMUIV-0) <!-- Gerçek figma linkin varsa buraya ekleyebilirim -->
 
 ## Kullanılan Araçlar
 
