@@ -35,7 +35,7 @@ const Projects = () => {
   ) || [];
 
   return (
-    <div className='mt-8 max-w-6xl w-full flex flex-col gap-8'>
+    <div className='mt-8 max-w-6xl w-full flex flex-col gap-8 px-4 sm:px-6 lg:px-8'>
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('popularProject')}</h2>
         <input
@@ -47,19 +47,20 @@ const Projects = () => {
         />
       </div>
 
-      <div className="flex flex-wrap gap-6 justify-center sm:justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, idx) => (
-            <ProjectCard
-              key={idx}
-              imageSrc={project.image}
-              title={project.title}
-              description={project.desc}
-              slug={project.slug}
-            />
+            <div key={idx} className="flex justify-center">
+              <ProjectCard
+                imageSrc={project.image}
+                title={project.title}
+                description={project.desc}
+                slug={project.slug}
+              />
+            </div>
           ))
         ) : (
-          <div className="text-neutral-500 dark:text-neutral-400 w-full text-center">{t('noProjectFound')}</div>
+          <div className="col-span-full text-neutral-500 dark:text-neutral-400 text-center">{t('noProjectFound')}</div>
         )}
       </div>
 
@@ -81,7 +82,7 @@ const Projects = () => {
         {/* Repo Listesi */}
         <div className="w-full">
           <h4 className="text-md font-semibold mb-4 text-neutral-800 dark:text-neutral-200">{t('latestRepos')}</h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {repos && repos.length > 0 ? (
               repos.map(repo => (
                 <a
