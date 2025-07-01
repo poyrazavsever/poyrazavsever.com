@@ -71,13 +71,13 @@ const Projects = () => {
       <div className="my-12 flex flex-col gap-8 w-full">
         <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">{t('githubActivities')}</h3>
         {/* Contributions Chart */}
-        <div className="flex flex-col gap-2">
-          <span className="text-sm text-neutral-600 dark:text-neutral-400">{t('githubContributions')}</span>
-          <div className="bg-white dark:bg-neutral-900/30 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700 w-full flex justify-center">
+        <div className="flex flex-col gap-3">
+          <span className="text-sm font-medium text-neutral-600 dark:text-neutral-400">{t('githubContributions')}</span>
+          <div className="bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 w-full flex justify-center hover:shadow-lg transition-all duration-300">
             <img
-              src={`https://ghchart.rshah.org/${GITHUB_USERNAME}`}
+              src={`https://ghchart.rshah.org/0969DA/${GITHUB_USERNAME}`}
               alt="GitHub contributions chart"
-              className="w-full max-w-xl rounded"
+              className="w-full max-w-4xl rounded-lg"
               style={{ background: 'transparent' }}
             />
           </div>
