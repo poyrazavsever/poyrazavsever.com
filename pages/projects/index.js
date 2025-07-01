@@ -4,6 +4,9 @@ import { projects } from '@/data/projects'
 import ProjectCard from '@/components/shared/ProjectCard'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { FiStar, FiGitBranch, FiEye, FiGithub } from 'react-icons/fi'
+import { BiGitRepoForked } from 'react-icons/bi'
+import { AiOutlineClockCircle } from 'react-icons/ai'
 
 export async function getStaticProps({ locale }) {
   return {
@@ -68,13 +71,13 @@ const Projects = () => {
       <div className="my-12 flex flex-col gap-8 w-full">
         <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">{t('githubActivities')}</h3>
         {/* Contributions Chart */}
-        <div className="flex flex-col gap-2">
-          <span className="text-sm text-neutral-600 dark:text-neutral-400">{t('githubContributions')}</span>
-          <div className="bg-white dark:bg-neutral-900/30 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700 w-full flex justify-center">
+        <div className="flex flex-col gap-3">
+          <span className="text-sm font-medium text-neutral-600 dark:text-neutral-400">{t('githubContributions')}</span>
+          <div className="bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 w-full flex justify-center hover:shadow-lg transition-all duration-300">
             <img
-              src={`https://ghchart.rshah.org/${GITHUB_USERNAME}`}
+              src={`https://ghchart.rshah.org/0969DA/${GITHUB_USERNAME}`}
               alt="GitHub contributions chart"
-              className="w-full max-w-xl rounded"
+              className="w-full max-w-4xl rounded-lg"
               style={{ background: 'transparent' }}
             />
           </div>
@@ -90,10 +93,48 @@ const Projects = () => {
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block border border-neutral-200 dark:border-neutral-700 rounded-lg p-4 bg-white dark:bg-neutral-900/30 hover:shadow-md transition hover:border-blue-400 dark:hover:border-blue-400"
+                  className="group block border border-neutral-200 dark:border-neutral-700 rounded-lg p-4 bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-400"
                 >
-                  <div className="font-semibold text-neutral-800 dark:text-neutral-100 mb-1">{repo.name}</div>
-                  <div className="text-xs text-neutral-600 dark:text-neutral-400 line-clamp-2">{repo.description || '-'}</div>
+                  <div className="flex items-center gap-2 font-semibold text-neutral-800 dark:text-neutral-100 mb-3">
+                    <FiGithub className="text-neutral-600 dark:text-neutral-400" />
+                    <span className="truncate group-hover:text-blue-500 transition-colors">{repo.name}</span>
+                  </div>
+                  
+                  <div className="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2 min-h-[40px] mb-4">
+                    {repo.description || '-'}
+                  </div>
+
+                  <div className="flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-4">
+                      <span className="flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400">
+                        <FiStar className="text-amber-500" />
+                        {repo.stargazers_count}
+                      </span>
+                      <span className="flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400">
+                        <BiGitRepoForked className="text-emerald-500" />
+                        {repo.forks_count}
+                      </span>
+                      {repo.watchers_count > 0 && (
+                        <span className="flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400">
+                          <FiEye className="text-blue-500" />
+                          {repo.watchers_count}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-1.5 text-neutral-500 dark:text-neutral-400">
+                      <AiOutlineClockCircle />
+                      <span>{new Date(repo.updated_at).toLocaleDateString()}</span>
+                    </div>
+                  </div>
+
+                  {repo.language && (
+                    <div className="mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-700">
+                      <span className="flex items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+                        <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                        {repo.language}
+                      </span>
+                    </div>
+                  )}
                 </a>
               ))
             ) : (
