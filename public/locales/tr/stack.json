@@ -1,0 +1,14 @@
+{
+  "mostUsedLanguages": "En Çok Kullanılan Diller",
+  "codingStatistics": "Kodlama İstatistikleri",
+  "commitsThisYear": "Bu Yılki Commit Sayısı",
+  "pullRequests": "Pull Request Sayısı",
+  "projects": "Projeler",
+  "contributions": "Katkılar",
+  "developmentEnvironment": "Geliştirme Ortamı",
+  "githubActivity": "GitHub Aktivitesi",
+  "vscodeDescription": "Ana kod editörü, özel eklentiler ve ayarlar",
+  "copilotDescription": "Yapay zeka destekli programlama asistanı",
+  "dockerDescription": "Geliştirme ve dağıtım için container platformu",
+  "postmanDescription": "API geliştirme ve test aracı"
+}
