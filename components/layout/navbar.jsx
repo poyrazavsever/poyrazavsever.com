@@ -8,7 +8,8 @@ import { BiHomeAlt2, BiUser, BiFolder, BiMessageDetail, BiDotsHorizontalRounded,
   BiBookBookmark, BiImage, BiCertification, BiPalette, BiCode, BiHeadphone,
   BiNote, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory } from 'react-icons/bi';
 import { LuSun, LuMoonStar, LuMonitor } from 'react-icons/lu';
-import { FaLanguage } from 'react-icons/fa6';
+import { FaLanguage, FaLinkedin, FaInstagram, FaMedium, FaYoutube, FaBehance, FaGithub } from 'react-icons/fa6';
+import { PiCoffeeBold } from 'react-icons/pi';
 import { US, TR, DE, ES } from 'country-flag-icons/react/3x2';
 import { useTranslation } from 'next-i18next';
 
@@ -42,15 +43,30 @@ const menuKeys = [
   'others',
 ];
 
+// Social media links array
+const socialLinks = [
+  { href: 'https://www.linkedin.com/in/poyrazavsever/', icon: FaLinkedin, label: 'LinkedIn' },
+  { href: 'https://www.instagram.com/pavori_/', icon: FaInstagram, label: '@Pavori_' },
+  { href: 'https://medium.com/@poyrazavsever', icon: FaMedium, label: 'Medium' },
+  { href: 'https://www.instagram.com/patitekno/', icon: FaInstagram, label: '@PatiTekno' },
+  { href: 'http://youtube.com/@patitekno', icon: FaYoutube, label: '@PatiTekno' },
+  { href: 'https://www.behance.net/slayeras', icon: FaBehance, label: 'Behance' },
+  { href: 'https://www.buymeacoffee.com/poyrazavsever', icon: PiCoffeeBold, label: 'Buy Me a Coffee' },
+  { href: 'https://www.github.com/poyrazavsever', icon: FaGithub, label: 'GitHub' }
+];
+
 const Navbar = () => {
   const [activeTheme, setActiveTheme] = useState('system');
   const [activeLang, setActiveLang] = useState('en');
   const [isThemeOpen, setIsThemeOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
+  const [isSocialOpen, setIsSocialOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const themeRef = useRef(null);
   const langRef = useRef(null);
+  const socialRef = useRef(null);
+
   const router = useRouter();
   const { t } = useTranslation('layout');
   const { pathname } = router;
@@ -101,14 +117,17 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
       if (themeRef.current && !themeRef.current.contains(event.target)) {
         setIsThemeOpen(false);
       }
       if (langRef.current && !langRef.current.contains(event.target)) {
         setIsLangOpen(false);
       }
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
+      if (socialRef.current && !socialRef.current.contains(event.target)) {
+        setIsSocialOpen(false);
       }
     };
 
@@ -287,6 +306,47 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
+
+      {/* Social Media Links */}
+      <div className="relative" ref={socialRef}>
+        <button
+          onClick={() => {
+            setIsSocialOpen(!isSocialOpen);
+            setIsLangOpen(false);
+            setIsThemeOpen(false);
+          }}
+          className="p-2 rounded-lg bg-white/90 dark:bg-neutral-800/90 backdrop-blur-md border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-lg transition-all duration-200 cursor-pointer"
+        >
+          <BiCategory size={20} className="text-neutral-600 dark:text-neutral-300 sm:w-5 sm:h-5" />
+        </button>
+
+        <AnimatePresence>
+          {isSocialOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.2 }}
+              className="absolute right-0 mt-2 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-neutral-200 dark:border-neutral-700 p-2 min-w-[180px]"
+            >
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full p-2 rounded-lg flex items-center gap-3 text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                  title={link.label}
+                >
+                  <link.icon size={18} />
+                  <span className="text-sm font-medium">{link.label}</span>
+                </a>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      
     </div>
 
     </>
