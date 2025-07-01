@@ -1,0 +1,14 @@
+{
+  "mostUsedLanguages": "Lenguajes más utilizados",
+  "codingStatistics": "Estadísticas de programación",
+  "commitsThisYear": "Commits este año",
+  "pullRequests": "Pull Requests",
+  "projects": "Proyectos",
+  "contributions": "Contribuciones",
+  "developmentEnvironment": "Entorno de desarrollo",
+  "githubActivity": "Actividad de GitHub",
+  "vscodeDescription": "Editor de código principal con extensiones personalizadas",
+  "copilotDescription": "Asistente de programación con IA",
+  "dockerDescription": "Plataforma de contenedores para desarrollo y despliegue",
+  "postmanDescription": "Desarrollo y prueba de APIs"
+}
