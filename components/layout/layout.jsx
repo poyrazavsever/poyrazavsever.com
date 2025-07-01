@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
   const meta = metaData[routeKey] || metaData['index'];
 
   return (
-    <div className="max-w-7xl mx-auto min-h-screen flex flex-col relative px-4 md:px-0">
+    <div className="max-w-6xl mx-auto min-h-screen flex flex-col relative px-4 md:px-0 pb-16">
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
