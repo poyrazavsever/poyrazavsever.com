@@ -1,5 +1,4 @@
 import Navbar from './navbar';
-import Footer from './footer';
 import { Toaster } from 'react-hot-toast';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -78,19 +77,17 @@ const Layout = ({ children }) => {
   const meta = metaData[routeKey] || metaData['index'];
 
   return (
-    <div className="max-w-5xl mx-auto container min-h-screen flex flex-col relative px-4 md:px-0">
+    <div className="max-w-7xl mx-auto min-h-screen flex flex-col relative px-4 md:px-0">
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
       </Head>
 
-      <Navbar />
-
       <Toaster position='top-center'/>
 
       <main className="flex-1">{children}</main>
 
-      <Footer />
+      <Navbar />
     </div>
   );
 };
