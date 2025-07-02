@@ -57,7 +57,7 @@ export const projects = {
             desc: "Arc Foreign Trade, staj yaptığım firmanın web platformudur. Bu platformda firmanın yaptığı ihracat ve ithalat işlemlerini takip edebilirsiniz.",
             slug:"arcforeign",
             contentFolder:"arcforeign",
-            populer: false,
+            populer: true,
             category:"web",
         },
         {
@@ -149,7 +149,7 @@ export const projects = {
           desc: "Arc Foreign Trade is the web platform of the company where I did my internship. You can follow the company's export and import activities here.",
           slug: "arcforeign",
           contentFolder: "arcforeign",
-          populer: false,
+          populer: true,
           category: "web",
         },
         {
@@ -242,7 +242,7 @@ export const projects = {
           desc: "Arc Foreign Trade ist die Webplattform des Unternehmens, bei dem ich mein Praktikum gemacht habe. Hier können Sie die Export- und Importaktivitäten des Unternehmens verfolgen.",
           slug: "arcforeign",
           contentFolder: "arcforeign",
-          populer: false,
+          populer: true,
           category: "web",
         },
         {
@@ -335,7 +335,7 @@ export const projects = {
           desc: "Arc Foreign Trade es la plataforma web de la empresa donde realicé mis prácticas. Aquí puedes seguir sus actividades de exportación e importación.",
           slug: "arcforeign",
           contentFolder: "arcforeign",
-          populer: false,
+          populer: true,
           category: "web",
         },
         {
