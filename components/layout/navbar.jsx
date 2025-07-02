@@ -138,7 +138,7 @@ const Navbar = () => {
   return (
     <>
     
-      <nav className="fixed bottom-0 left-0 w-full z-50 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-lg border-t border-neutral-200 dark:border-neutral-800">
+      <nav className="fixed bottom-0 left-0 w-full z-40 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-lg border-t border-neutral-200 dark:border-neutral-800">
         <div className="max-w-screen-lg mx-auto px-4">
           {/* Ana Navigasyon */}
           <div className="flex items-center justify-between py-2">
