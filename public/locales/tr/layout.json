@@ -56,6 +56,10 @@
         "label": "Gönüllü Çalışmalar",
         "description": "Gönüllü çalıştığım organizasyonlar"
       },
+      "learning": {
+        "label": "Öğrenme Yolculuğum",
+        "description": "Şu an öğrenmekte olduğum teknolojiler"
+      },
       "others": {
         "label": "Diğerleri",
         "description": "Bütün linkleri görüntüle"
@@ -71,4 +75,3 @@
     "rights": "Tüm hakları saklıdır."
     }
   }
-  

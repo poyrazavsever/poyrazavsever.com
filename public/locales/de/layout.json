@@ -56,6 +56,10 @@
       "label": "Freiwilligenarbeit",
       "description": "Organisationen, bei denen ich freiwillig arbeite"
     },
+    "learning": {
+      "label": "Meine Lernreise",
+      "description": "Ressourcen und Fortschritt in meinem Lernen"
+    },
     "others": {
       "label": "Weitere",
       "description": "Alle Links anzeigen"

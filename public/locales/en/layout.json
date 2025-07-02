@@ -56,6 +56,10 @@
         "label": "Volunteer Work",
         "description": "Organizations I volunteered for"
       },
+      "learning": {
+        "label": "My Learning Journey",
+        "description": "Resources and progress in my learning"
+      },
       "others": {
         "label": "Others",
         "description": "View all links"
