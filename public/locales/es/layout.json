@@ -56,6 +56,10 @@
       "label": "Trabajo Voluntario",
       "description": "Organizaciones con las que colaboro"
     },
+    "learning": {
+      "label": "Mi Camino de Aprendizaje",
+      "description": "Recursos y progreso en mi aprendizaje"
+    },
     "others": {
       "label": "Otros",
       "description": "Ver todos los enlaces"

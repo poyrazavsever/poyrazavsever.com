@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { BiLink, BiNote, BiImage, BiCertification, BiPalette, BiCode, BiHeadphone,
-  BiBookBookmark, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory } from 'react-icons/bi';
+  BiBookBookmark, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory, BiBook } from 'react-icons/bi';
 import {
   FaLinkedin,
   FaInstagram,
@@ -49,6 +49,7 @@ const Others = () => {
     meeting: BiCalendarEvent,
     volunteer: BiDonateHeart,
     others: BiCategory,
+    learning: BiBook,
   };
 
   const socialIconMap = {
