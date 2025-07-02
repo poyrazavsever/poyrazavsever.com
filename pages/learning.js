@@ -85,7 +85,7 @@ const Learning = () => {
         animate={{ opacity: 1, y: 0 }}
         className="max-w-4xl mx-auto"
       >
-        <h1 className="text-4xl font-bold mb-8 text-center">{t('title')}</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center text-neutral-900 dark:text-neutral-100">{t('title')}</h1>
 
         <div className="grid gap-8">
           {learningTracks.map((track, index) => (
@@ -94,15 +94,15 @@ const Learning = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white/50 dark:bg-neutral-800/50 backdrop-blur-sm rounded-xl p-6 border border-neutral-200 dark:border-neutral-700"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white">
+              className="bg-white dark:bg-neutral-800 backdrop-blur-sm rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-lg shadow-neutral-200/50 dark:shadow-neutral-900/50"
+            >                <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/25">
                   <track.icon size={24} />
-                </div>                  <div>
-                  <h2 className="text-2xl font-bold">{track.title}</h2>
-                  <div className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
-                    <BiTime />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">{track.title}</h2>
+                  <div className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
+                    <BiTime className="text-blue-500" />
                     <span>{t('startedOn')} {new Date(track.startDate).toLocaleDateString()}</span>
                   </div>
                 </div>
@@ -111,25 +111,25 @@ const Learning = () => {
               {/* Progress Bar */}
               <div className="mb-6">
                 <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium">{t('progress')}</span>
-                  <span className="text-sm font-medium">{track.progress}%</span>
+                  <span className="text-sm font-medium text-neutral-800 dark:text-neutral-200">{t('progress')}</span>
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{track.progress}%</span>
                 </div>
-                <div className="h-2 bg-neutral-100 dark:bg-neutral-700 rounded-full">
+                <div className="h-2 bg-neutral-200 dark:bg-neutral-700 rounded-full">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${track.progress}%` }}
                     transition={{ duration: 1, delay: index * 0.2 }}
-                    className="h-full bg-blue-500 rounded-full"
+                    className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full shadow-sm"
                   />
                 </div>
               </div>
 
               {/* Current Focus */}
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-3">{t('currentlyLearning')}</h3>
+                <h3 className="text-lg font-semibold mb-3 text-neutral-900 dark:text-neutral-100">{t('currentlyLearning')}</h3>
                 <div className="grid gap-2">
                   {track.currentFocus.map((topic, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm">
+                    <div key={i} className="flex items-center gap-2 text-sm text-neutral-800 dark:text-neutral-200">
                       <BiCheckCircle className="text-blue-500 flex-shrink-0" />
                       <span>{topic}</span>
                     </div>
@@ -139,11 +139,11 @@ const Learning = () => {
 
               {/* Next Topics */}
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-3">{t('comingUpNext')}</h3>
+                <h3 className="text-lg font-semibold mb-3 text-neutral-900 dark:text-neutral-100">{t('comingUpNext')}</h3>
                 <div className="grid gap-2">
                   {track.nextTopics.map((topic, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
-                      <BiBook className="flex-shrink-0" />
+                    <div key={i} className="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-400">
+                      <BiBook className="text-blue-500/70 flex-shrink-0" />
                       <span>{topic}</span>
                     </div>
                   ))}
@@ -152,7 +152,7 @@ const Learning = () => {
 
               {/* Resources */}
               <div>
-                <h3 className="text-lg font-semibold mb-3">{t('learningResources')}</h3>
+                <h3 className="text-lg font-semibold mb-3 text-neutral-900 dark:text-neutral-100">{t('learningResources')}</h3>
                 <div className="grid gap-2">
                   {track.resources.map((resource, i) => (
                     <a
@@ -160,7 +160,7 @@ const Learning = () => {
                       href={resource.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                      className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
                     >
                       <BiLink className="flex-shrink-0" />
                       <span>{resource.title}</span>
