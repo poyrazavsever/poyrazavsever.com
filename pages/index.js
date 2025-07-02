@@ -73,17 +73,32 @@ export default function Home() {
         <motion.div 
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={sectionVariants}
-          className="my-10 max-w-6xl w-full flex flex-col gap-4"
+          className="my-12 max-w-6xl w-full flex flex-col gap-6"
         >
-          <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('popularProject')}</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-0 sm:justify-between">
+            <h2 className="text-xl font-semibold text-blue-500 dark:text-blue-300">
+              {t('popularProject')}
+            </h2>
+            <Link 
+              href='/projects' 
+              className='inline-flex items-center justify-center text-blue-600 dark:text-blue-400 text-sm border border-blue-200 dark:border-blue-800 
+                px-4 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all duration-300 w-full sm:w-auto'
+            >
+              {t("all")}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center sm:justify-between">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
             {populerProjects.map((project, idx) => (
               <motion.div
                 key={idx}
                 variants={itemVariants}
+                className="w-full"
               >
                 <ProjectCard
                   imageSrc={project.image}
@@ -94,8 +109,6 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-
-          <Link href='/projects' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>{t("all")}</Link>
         </motion.div>
       )}
 
@@ -103,16 +116,30 @@ export default function Home() {
         <motion.div 
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={sectionVariants}
           className="my-10 max-w-6xl w-full flex flex-col gap-4"
         >
-          <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t('blog')}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center sm:justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-0 sm:justify-between">
+            <h2 className="text-xl font-semibold text-blue-500 dark:text-blue-300">{t('blog')}</h2>
+            <Link 
+              href='/blog' 
+              className='inline-flex items-center justify-center text-blue-600 dark:text-blue-400 text-sm border border-blue-200 dark:border-blue-800 
+                px-4 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all duration-300 w-full sm:w-auto'
+            >
+              {t("all")}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
             {latestPosts.map(post => (
               <motion.div
                 key={post.id}
                 variants={itemVariants}
+                className="w-full"
               >
                 <BlogCard
                   cardImage={post.cardImage}
@@ -123,18 +150,17 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-          <Link href='/blog' className='bg-neutral-600 w-fit text-white px-4 py-2 rounded-md text-sm dark:hover:bg-neutral-700 hover:bg-neutral-800 transition cursor-pointer'>{t("all")}</Link>
         </motion.div>
       )}
 
       <motion.div 
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={sectionVariants}
-        className='flex flex-col items-start gap-8 w-full py-24'
+        className='flex flex-col items-start gap-8 w-full py-24 px-4 sm:px-6 md:px-0'
       >
-        <h2 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">{t("usedTech")}</h2>
+        <h2 className="text-xl font-semibold text-blue-500 dark:text-blue-300">{t("usedTech")}</h2>
         <TechStack />
       </motion.div>
     </div>

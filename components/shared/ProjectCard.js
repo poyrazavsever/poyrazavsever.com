@@ -22,7 +22,7 @@ const ProjectCard = ({ imageSrc, title, description, slug }) => {
         <h3 className="text-sm text-neutral-800 dark:text-neutral-200 font-semibold transition-colors duration-300 group-hover:text-blue-700 dark:group-hover:text-blue-300">
           {title}
         </h3>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1 line-clamp-4 break-words whitespace-normal">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1 line-clamp-2 break-words whitespace-normal">
           {description}
         </p>
         <Link
