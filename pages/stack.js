@@ -50,7 +50,7 @@ const Stack = () => {
       {/* Tech Stack Section */}
       <section className="w-full">
         <motion.h2 
-          className="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mb-8"
+          className="text-2xl font-semibold text-blue-500 dark:text-blue-300 mb-8"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -63,7 +63,7 @@ const Stack = () => {
       {/* GitHub Language Stats */}
       <section className="w-full">
         <motion.h2 
-          className="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mb-6"
+          className="text-2xl font-semibold text-blue-500 dark:text-blue-300 mb-6"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -79,16 +79,16 @@ const Stack = () => {
           {githubStats.map((lang, index) => (
             <motion.div 
               key={lang.language}
-              className="relative bg-neutral-100 dark:bg-neutral-900 p-4 rounded-lg"
+              className="relative border border-blue-100 dark:border-blue-900 rounded-lg p-4"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex justify-between mb-2">
-                <span className="text-neutral-800 dark:text-neutral-200 font-medium">{lang.language}</span>
-                <span className="text-neutral-600 dark:text-neutral-400">{lang.percentage}%</span>
+                <span className="text-blue-900 dark:text-blue-100 font-medium">{lang.language}</span>
+                <span className="text-blue-600 dark:text-blue-400">{lang.percentage}%</span>
               </div>
-              <div className="h-2 bg-neutral-200 dark:bg-neutral-700 rounded-full overflow-hidden">
+              <div className="h-2 bg-blue-50 dark:bg-blue-950 rounded-full overflow-hidden">
                 <motion.div 
                   className="h-full rounded-full"
                   style={{ backgroundColor: lang.color }}
@@ -105,7 +105,7 @@ const Stack = () => {
       {/* Coding Statistics */}
       <section className="w-full">
         <motion.h2 
-          className="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mb-6"
+          className="text-2xl font-semibold text-blue-500 dark:text-blue-300 mb-6"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -116,20 +116,20 @@ const Stack = () => {
           {codingStats.map((stat, index) => (
             <motion.div
               key={stat.title}
-              className="bg-neutral-100 dark:bg-neutral-900 rounded-lg p-6 text-center"
+              className="border border-blue-100 dark:border-blue-900 rounded-lg p-6 text-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
             >
               <motion.h3 
-                className="text-3xl font-bold text-neutral-900 dark:text-neutral-200 mb-2"
+                className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ type: "spring", stiffness: 100, delay: 0.6 + index * 0.1 }}
               >
                 {stat.value}
               </motion.h3>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">{stat.title}</p>
+              <p className="text-sm text-blue-900/70 dark:text-blue-100/70">{stat.title}</p>
             </motion.div>
           ))}
         </div>
@@ -138,7 +138,7 @@ const Stack = () => {
       {/* Development Tools */}
       <section className="w-full">
         <motion.h2 
-          className="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mb-6"
+          className="text-2xl font-semibold text-blue-500 dark:text-blue-300 mb-6"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -149,7 +149,7 @@ const Stack = () => {
           {developmentTools.map((tool, index) => (
             <motion.div
               key={tool.name}
-              className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-6 shadow-sm"
+              className="border border-blue-100 dark:border-blue-900 rounded-lg p-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
@@ -158,8 +158,8 @@ const Stack = () => {
               <div className="flex items-start gap-4">
                 <img src={tool.icon} alt={tool.name} className="w-8 h-8" />
                 <div>
-                  <h3 className="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-1">{tool.name}</h3>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400">{tool.description}</p>
+                  <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400 mb-1">{tool.name}</h3>
+                  <p className="text-sm text-blue-900/70 dark:text-blue-100/70">{tool.description}</p>
                 </div>
               </div>
             </motion.div>
@@ -170,7 +170,7 @@ const Stack = () => {
       {/* GitHub Activity Calendar */}
       <section className="w-full">
         <motion.h2 
-          className="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mb-6"
+          className="text-2xl font-semibold text-blue-500 dark:text-blue-300 mb-6"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
@@ -178,15 +178,15 @@ const Stack = () => {
           {t('stack:githubActivity')}
         </motion.h2>
         <motion.div 
-          className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-6 shadow-sm"
+          className="border border-blue-100 dark:border-blue-900 rounded-lg p-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
         >
           <img 
-            src={`https://ghchart.rshah.org/poyrazavsever`} 
+            src={`https://ghchart.rshah.org/0969DA/poyrazavsever`} 
             alt="GitHub Contribution Graph"
-            className="w-full dark:invert"
+            className="w-full dark:opacity-90"
           />
         </motion.div>
       </section>
