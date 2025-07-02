@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BiHomeAlt2, BiUser, BiFolder, BiMessageDetail, BiDotsHorizontalRounded, 
   BiBookBookmark, BiImage, BiCertification, BiPalette, BiCode, BiHeadphone,
-  BiNote, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory } from 'react-icons/bi';
+  BiNote, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory, BiBook } from 'react-icons/bi';
 import { LuSun, LuMoonStar, LuMonitor } from 'react-icons/lu';
 import { FaLanguage, FaLinkedin, FaInstagram, FaMedium, FaYoutube, FaBehance, FaGithub } from 'react-icons/fa6';
 import { PiCoffeeBold } from 'react-icons/pi';
@@ -26,6 +26,7 @@ const menuIcons = {
   meeting: BiCalendarEvent,
   volunteer: BiDonateHeart,
   others: BiCategory,
+  learning: BiBook,
 };
 
 const menuKeys = [
@@ -40,6 +41,7 @@ const menuKeys = [
   'medium',
   'meeting',
   'volunteer',
+  'learning',
   'others',
 ];
 
