@@ -85,7 +85,7 @@ const About = () => {
         variants={itemVariants}
         className="mt-12 p-6 bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm rounded-xl border border-neutral-200/50 dark:border-neutral-700/50"
       >
-        <h2 className="text-lg font-semibold mb-3 text-blue-600 dark:text-blue-400">
+        <h2 className="text-lg font-semibold mb-3 text-blue-950 dark:text-blue-200">
           {t('aboutTitle')}
         </h2>
         <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
@@ -98,7 +98,7 @@ const About = () => {
         variants={itemVariants}
         className="mt-10 p-6 bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm rounded-xl border border-neutral-200/50 dark:border-neutral-700/50"
       >
-        <h2 className="text-lg font-semibold mb-4 text-blue-600 dark:text-blue-400">
+        <h2 className="text-lg font-semibold mb-4 text-blue-950 dark:text-blue-200">
           {t('educationTitle')}
         </h2>
         <ul className="space-y-6">
@@ -126,7 +126,7 @@ const About = () => {
         variants={itemVariants}
         className="mt-10 p-6 bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm rounded-xl border border-neutral-200/50 dark:border-neutral-700/50"
       >
-        <h2 className="text-lg font-semibold mb-4 text-neutral-800 dark:text-neutral-200">
+        <h2 className="text-lg font-semibold mb-4 text-blue-950 dark:text-blue-200">
           {t('experienceTitle')}
         </h2>
         <ul className="space-y-6">
@@ -153,7 +153,7 @@ const About = () => {
         variants={itemVariants}
         className="mt-10 p-6 bg-white/50 dark:bg-neutral-900/30 backdrop-blur-sm rounded-xl border border-neutral-200/50 dark:border-neutral-700/50"
       >
-        <h2 className="text-lg font-semibold mb-3 text-blue-600 dark:text-blue-400">
+        <h2 className="text-lg font-semibold mb-3 text-blue-950 dark:text-blue-200">
           {t('careerTitle')}
         </h2>
         <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
