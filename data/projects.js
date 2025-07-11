@@ -11,6 +11,16 @@ export const projects = {
             category:"web",
         },
         {
+            image: "/project/pixelsinav.png",
+            bannerImage: "/project/pixelsinav-banner.png",
+            title: "Pixel Sınav",
+            desc: "Pixel Sınav , sınavlara hazırlanan öğrenciler için hazırlanmış bir web platformudur. Bu platformda, sınavlara yönelik sorulara ve çözümlerine kolaylıkla ulaşabilirsiniz. Ders içerikleri de mevcuttur.",
+            slug:"pixelsinav",
+            contentFolder: "pixelsinav",
+            populer: true,
+            category:"web",
+        },
+        {
             image: "/project/marslar.png",
             bannerImage: "/project/marslar-banner.png",
             title: "Marşlarımızın Anlamı",
@@ -57,7 +67,7 @@ export const projects = {
             desc: "Arc Foreign Trade, staj yaptığım firmanın web platformudur. Bu platformda firmanın yaptığı ihracat ve ithalat işlemlerini takip edebilirsiniz.",
             slug:"arcforeign",
             contentFolder:"arcforeign",
-            populer: true,
+            populer: false,
             category:"web",
         },
         {
@@ -123,6 +133,16 @@ export const projects = {
           category: "web",
         },
         {
+          "image": "/project/pixelsinav.png",
+          "bannerImage": "/project/pixelsinav-banner.png",
+          "title": "Pixel Sınav",
+          "desc": "Pixel Sınav is a web platform designed for students preparing for exams. You can easily access exam-oriented questions and solutions on this platform. Course materials are also available.",
+          "slug": "pixelsinav",
+          "contentFolder": "pixelsinav",
+          "populer": true,
+          "category": "web"
+        },
+        {
           image: "/project/deprembilinci.png",
           bannerImage: "/project/deprembilinci-banner.png",
           title: "Earthquake Awareness",
@@ -149,7 +169,7 @@ export const projects = {
           desc: "Arc Foreign Trade is the web platform of the company where I did my internship. You can follow the company's export and import activities here.",
           slug: "arcforeign",
           contentFolder: "arcforeign",
-          populer: true,
+          populer: false,
           category: "web",
         },
         {
@@ -226,6 +246,17 @@ export const projects = {
           category: "web",
         },
         {
+          "image": "/project/pixelsinav.png",
+          "bannerImage": "/project/pixelsinav-banner.png",
+          "title": "Pixel Sınav",
+          "desc": "Pixel Sınav ist eine Webplattform für Schüler, die sich auf Prüfungen vorbereiten. Auf dieser Plattform findest du leicht prüfungsorientierte Fragen und Lösungen. Auch Kursinhalte sind verfügbar.",
+          "slug": "pixelsinav",
+          "contentFolder": "pixelsinav",
+          "populer": true,
+          "category": "web"
+        },
+
+        {
           image: "/project/ertech.png",
           bannerImage: "/project/ertech-banner.png",
           title: "Er Tecnology",
@@ -242,7 +273,7 @@ export const projects = {
           desc: "Arc Foreign Trade ist die Webplattform des Unternehmens, bei dem ich mein Praktikum gemacht habe. Hier können Sie die Export- und Importaktivitäten des Unternehmens verfolgen.",
           slug: "arcforeign",
           contentFolder: "arcforeign",
-          populer: true,
+          populer: false,
           category: "web",
         },
         {
@@ -319,6 +350,17 @@ export const projects = {
           category: "web",
         },
         {
+          "image": "/project/pixelsinav.png",
+          "bannerImage": "/project/pixelsinav-banner.png",
+          "title": "Pixel Sınav",
+          "desc": "Pixel Sınav es una plataforma web diseñada para estudiantes que se preparan para exámenes. En esta plataforma puedes acceder fácilmente a preguntas y soluciones orientadas a los exámenes. También hay contenidos de cursos disponibles.",
+          "slug": "pixelsinav",
+          "contentFolder": "pixelsinav",
+          "populer": true,
+          "category": "web"
+        },
+
+        {
           image: "/project/ertech.png",
           bannerImage: "/project/ertech-banner.png",
           title: "Er Tecnology",
@@ -335,7 +377,7 @@ export const projects = {
           desc: "Arc Foreign Trade es la plataforma web de la empresa donde realicé mis prácticas. Aquí puedes seguir sus actividades de exportación e importación.",
           slug: "arcforeign",
           contentFolder: "arcforeign",
-          populer: true,
+          populer: false,
           category: "web",
         },
         {
