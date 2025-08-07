@@ -4,29 +4,24 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BiHomeAlt2, BiUser, BiFolder, BiMessageDetail, BiDotsHorizontalRounded, 
-  BiBookBookmark, BiImage, BiCertification, BiPalette, BiCode, BiHeadphone,
-  BiNote, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory, BiBook } from 'react-icons/bi';
-import { LuSun, LuMoonStar, LuMonitor } from 'react-icons/lu';
-import { FaLanguage, FaLinkedin, FaInstagram, FaMedium, FaYoutube, FaBehance, FaGithub } from 'react-icons/fa6';
-import { PiCoffeeBold } from 'react-icons/pi';
+import { Icon } from '@iconify/react';
 import { US, TR, DE, ES } from 'country-flag-icons/react/3x2';
 import { useTranslation } from 'next-i18next';
 
 const menuIcons = {
-  blog: BiNote,
-  gallery: BiImage,
-  certificates: BiCertification,
-  designs: BiPalette,
-  gear: BiHeadphone,
-  bookmarks: BiBookBookmark,
-  stack: BiCode,
-  references: BiGroup,
-  medium: BiNews,
-  meeting: BiCalendarEvent,
-  volunteer: BiDonateHeart,
-  others: BiCategory,
-  learning: BiBook,
+  blog: 'hugeicons:block-game',
+  gallery: 'hugeicons:image-03',
+  certificates: 'hugeicons:certificate-01',
+  designs: 'hugeicons:pen-02',
+  gear: 'hugeicons:keyboard',
+  bookmarks: 'hugeicons:all-bookmark',
+  stack: 'hugeicons:server-stack-03',
+  references: 'hugeicons:user-group',
+  medium: 'hugeicons:medium',
+  meeting: 'hugeicons:meeting-room',
+  volunteer: 'hugeicons:love-korean-finger',
+  others: 'hugeicons:text-align-justify-right',
+  learning: 'hugeicons:online-learning-01',
 };
 
 const menuKeys = [
@@ -47,14 +42,14 @@ const menuKeys = [
 
 // Social media links array
 const socialLinks = [
-  { href: 'https://www.linkedin.com/in/poyrazavsever/', icon: FaLinkedin, label: 'LinkedIn' },
-  { href: 'https://www.instagram.com/pavori_/', icon: FaInstagram, label: '@Pavori_' },
-  { href: 'https://medium.com/@poyrazavsever', icon: FaMedium, label: 'Medium' },
-  { href: 'https://www.instagram.com/patitekno/', icon: FaInstagram, label: '@PatiTekno' },
-  { href: 'http://youtube.com/@patitekno', icon: FaYoutube, label: '@PatiTekno' },
-  { href: 'https://www.behance.net/slayeras', icon: FaBehance, label: 'Behance' },
-  { href: 'https://www.buymeacoffee.com/poyrazavsever', icon: PiCoffeeBold, label: 'Buy Me a Coffee' },
-  { href: 'https://www.github.com/poyrazavsever', icon: FaGithub, label: 'GitHub' }
+  { href: 'https://www.linkedin.com/in/poyrazavsever/', icon: 'skill-icons:linkedin', label: 'LinkedIn' },
+  { href: 'https://www.instagram.com/pavori_/', icon: 'skill-icons:instagram', label: '@Pavori_' },
+  { href: 'https://www.instagram.com/poyraz_avsever/', icon: 'skill-icons:instagram', label: '@Poyraz_Avsever' },
+  { href: 'http://youtube.com/@poyrazavsever', icon: 'logos:youtube-icon', label: 'Youtube' },
+  { href: 'https://medium.com/@poyrazavsever', icon: 'logos:medium-icon', label: 'Medium' },
+  { href: 'https://www.behance.net/poyrazavsever', icon: 'devicon:behance', label: 'Behance' },
+  { href: 'https://www.buymeacoffee.com/poyrazavsever', icon: 'simple-icons:buymeacoffee', label: 'Buy Me a Coffee' },
+  { href: 'https://www.github.com/poyrazavsever', icon: 'skill-icons:github-dark', label: 'GitHub' }
 ];
 
 const Navbar = () => {
@@ -74,16 +69,16 @@ const Navbar = () => {
   const { pathname } = router;
 
   const navigationItems = [
-    { href: '/', icon: BiHomeAlt2, label: t('nav.home') },
-    { href: '/projects', icon: BiFolder, label: t('nav.projects') },
-    { href: '/about', icon: BiUser, label: t('nav.about') },
-    { href: '/contact', icon: BiMessageDetail, label: t('nav.contact') }
+    { href: '/', icon: 'mdi:home-variant', label: t('nav.home') },
+    { href: '/projects', icon: 'mdi:folder-multiple', label: t('nav.projects') },
+    { href: '/about', icon: 'mdi:account-circle', label: t('nav.about') },
+    { href: '/contact', icon: 'mdi:message-text', label: t('nav.contact') }
   ];
 
   const themes = [
-    { id: 'light', icon: LuSun },
-    { id: 'dark', icon: LuMoonStar },
-    { id: 'system', icon: LuMonitor }
+    { id: 'light', icon: 'mdi:weather-sunny' },
+    { id: 'dark', icon: 'mdi:weather-night' },
+    { id: 'system', icon: 'mdi:monitor' }
   ];
 
   const languages = [
@@ -140,25 +135,25 @@ const Navbar = () => {
   return (
     <>
     
-      <nav className="fixed bottom-0 left-0 w-full z-40 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-lg border-t border-neutral-200 dark:border-neutral-800">
-        <div className="max-w-screen-lg mx-auto px-4">
+      <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-40">
+        <div className="bg-white/95 dark:bg-neutral-900/95 backdrop-blur-lg border border-neutral-200 dark:border-neutral-800 rounded-full px-4 py-2 shadow-lg">
           {/* Ana Navigasyon */}
-          <div className="flex items-center justify-between py-2">
-            <div className="flex-1 flex justify-between max-w-[400px] sm:max-w-[500px] mx-auto">
+          <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1">
               {navigationItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex flex-col items-center gap-1 p-2 rounded-lg transition-all duration-200 ${
+                    className={`flex items-center gap-2 p-2 rounded-full transition-all duration-200 ${
                       isActive
-                        ? 'text-blue-500 dark:text-blue-400 scale-105'
-                        : 'text-neutral-600 dark:text-neutral-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-105'
+                        ? 'text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-500/10'
+                        : 'text-neutral-600 dark:text-neutral-400 hover:bg-red-50 dark:hover:bg-red-500/10'
                     }`}
                   >
-                    <item.icon size={24} className="sm:w-6 sm:h-6" />
-                    <span className="hidden sm:block sm:text-sm font-medium">{item.label}</span>
+                    <Icon icon={item.icon} className="w-5 h-5" />
+                    <span className="text-sm font-medium hidden sm:block">{item.label}</span>
                   </Link>
                 );
               })}
@@ -166,10 +161,10 @@ const Navbar = () => {
               {/* More Menu Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="flex flex-col items-center gap-1 p-2 rounded-lg transition-all duration-200 text-neutral-600 dark:text-neutral-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-105"
+                className="flex items-center gap-2 p-2 rounded-full transition-all duration-200 text-neutral-600 dark:text-neutral-400 hover:bg-red-50 dark:hover:bg-red-500/10"
               >
-                <BiDotsHorizontalRounded size={24} className="sm:w-6 sm:h-6" />
-                <span className="hidden sm:block sm:text-sm font-medium">{t('menu.others.label')}</span>
+                <Icon icon="mdi:dots-horizontal" className="w-5 h-5" />
+                <span className="hidden sm:block text-sm font-medium">{t('menu.others.label')}</span>
               </button>
             </div>
           </div>
@@ -187,18 +182,16 @@ const Navbar = () => {
                 transition={{ duration: 0.2, type: "spring", stiffness: 500, damping: 30 }}
                 className="fixed inset-x-4 bottom-24 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-md rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700 max-h-[70vh] overflow-y-auto w-[calc(100%-2rem)] sm:w-[460px] sm:mx-auto"
               >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 p-2">
-                  {menuKeys.map((key) => {
-                    const Icon = menuIcons[key];
-                    return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 p-3">
+                  {menuKeys.map((key) => (
                       <Link
                         key={key}
                         href={`/${key}`}
                         onClick={() => setIsMenuOpen(false)}
-                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50/50 dark:hover:bg-blue-900/20 hover:border-blue-100 dark:hover:border-blue-800 border border-transparent transition-all group"
+                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-red-50 dark:hover:bg-red-500/10 border border-transparent transition-all group"
                       >
-                        <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/25 dark:shadow-blue-500/10 group-hover:scale-110 transition-transform">
-                          <Icon size={20} />
+                        <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg shadow-red-500/10">
+                          <Icon icon={menuIcons[key]} className="w-5 h-5" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200 truncate">
@@ -209,8 +202,7 @@ const Navbar = () => {
                           </p>
                         </div>
                       </Link>
-                    );
-                  })}
+                  ))}
                 </div>
               </motion.div>
             )}
@@ -229,7 +221,7 @@ const Navbar = () => {
           }}
           className="p-2 rounded-lg bg-white/90 dark:bg-neutral-800/90 backdrop-blur-md border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-lg transition-all duration-200 cursor-pointer"
         >
-          <LuMoonStar size={20} className="text-neutral-600 dark:text-neutral-300 sm:w-5 sm:h-5" />
+          <Icon icon="mdi:weather-night" className="text-neutral-600 dark:text-neutral-300 w-5 h-5" />
         </button>
         <AnimatePresence>
           {isThemeOpen && (
@@ -249,11 +241,11 @@ const Navbar = () => {
                   }}
                   className={`w-full p-2 rounded-lg flex items-center gap-3 ${
                     activeTheme === theme.id
-                      ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
+                      ? 'bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400'
                       : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700'
                   }`}
                 >
-                  <theme.icon size={18} />
+                  <Icon icon={theme.icon} className="w-5 h-5" />
                   <span className="text-sm font-medium">
                     {t(`themes.${theme.id}`)}
                   </span>
@@ -273,7 +265,7 @@ const Navbar = () => {
           }}
           className="p-2 rounded-lg bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-lg transition-all duration-200 cursor-pointer"
         >
-          <FaLanguage size={20} className="text-neutral-600 dark:text-neutral-300" />
+          <Icon icon="mdi:translate" className="text-neutral-600 dark:text-neutral-300 w-5 h-5" />
         </button>
         <AnimatePresence>
           {isLangOpen && (
@@ -295,7 +287,7 @@ const Navbar = () => {
                     }}
                     className={`w-full p-2 rounded-lg flex items-center gap-3 ${
                       activeLang === lang.id
-                        ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
+                        ? 'bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400'
                         : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700'
                     }`}
                   >
@@ -319,7 +311,7 @@ const Navbar = () => {
           }}
           className="p-2 rounded-lg bg-white/90 dark:bg-neutral-800/90 backdrop-blur-md border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-lg transition-all duration-200 cursor-pointer"
         >
-          <BiCategory size={20} className="text-neutral-600 dark:text-neutral-300 sm:w-5 sm:h-5" />
+          <Icon icon="mdi:share-variant" className="text-neutral-600 dark:text-neutral-300 w-5 h-5" />
         </button>
 
         <AnimatePresence>
@@ -340,7 +332,7 @@ const Navbar = () => {
                   className="w-full p-2 rounded-lg flex items-center gap-3 text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                   title={link.label}
                 >
-                  <link.icon size={18} />
+                  <Icon icon={link.icon} className="w-5 h-5" />
                   <span className="text-sm font-medium">{link.label}</span>
                 </a>
               ))}
