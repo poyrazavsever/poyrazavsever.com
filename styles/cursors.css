@@ -1,0 +1,54 @@
+/* Custom Cursors */
+:root {
+  --cursor-default: url('/cursors/default.png'), auto;
+  --cursor-pointer: url('/cursors/pointer.png'), pointer;
+  --cursor-text: url('/cursors/text.png'), text;
+  --cursor-grab: url('/cursors/grab.png'), grab;
+  --cursor-grabbing: url('/cursors/grabbing.png'), grabbing;
+}
+
+* {
+  cursor: var(--cursor-default);
+}
+
+a, 
+button, 
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"],
+.btn,
+.link,
+.cursor-pointer,
+.cursor-pointer *,
+a *,
+button *,
+[type="button"] *,
+[type="reset"] *,
+[type="submit"] *,
+[role="button"] * {
+  cursor: var(--cursor-pointer) !important;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea,
+[contenteditable="true"],
+.cursor-text {
+  cursor: var(--cursor-text);
+}
+
+[draggable="true"],
+.cursor-grab {
+  cursor: var(--cursor-grab);
+}
+
+[draggable="true"]:active,
+.cursor-grabbing {
+  cursor: var(--cursor-grabbing);
+}
