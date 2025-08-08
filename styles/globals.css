@@ -2,6 +2,49 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+::selection {
+  background-color: rgb(220 38 38); /* bg-red-600 */
+  color: white;
+}
+
+::-moz-selection {
+  background-color: rgb(220 38 38); /* bg-red-600 */
+  color: white;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #262626; /* neutral-800 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(220 38 38); /* bg-red-600 */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(185 28 28); /* bg-red-700 */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(220 38 38) #f1f1f1;
+}
+
+.dark * {
+  scrollbar-color: rgb(220 38 38) #262626; /* red-600 neutral-800 */
+}
+
+
 /* === Markdown Custom Style === */
 .mdCustom {
     @apply leading-relaxed text-[15px] sm:text-base text-neutral-800 dark:text-neutral-200;
