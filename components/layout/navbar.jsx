@@ -164,7 +164,6 @@ const Navbar = () => {
                 className="flex items-center gap-2 p-2 rounded-full transition-all duration-200 text-neutral-600 dark:text-neutral-400 hover:bg-red-50 dark:hover:bg-red-500/10"
               >
                 <Icon icon="mdi:dots-horizontal" className="w-5 h-5" />
-                <span className="hidden sm:block text-sm font-medium">{t('menu.others.label')}</span>
               </button>
             </div>
           </div>
