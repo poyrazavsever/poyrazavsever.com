@@ -44,6 +44,30 @@
   scrollbar-color: rgb(220 38 38) #262626; /* red-600 neutral-800 */
 }
 
+/* Cursor Style */
+* {
+  cursor: none;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(220 38 38);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: center;
+  z-index: 9999;
+  background: rgba(220, 38, 38, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.cursor.hover {
+  transform: scale(1.5);
+  background: rgba(220, 38, 38, 0.2);
+}
 
 /* === Markdown Custom Style === */
 .mdCustom {

@@ -2,6 +2,7 @@ import Navbar from './navbar';
 import { Toaster } from 'react-hot-toast';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const metaData = {
   index: {
@@ -76,8 +77,37 @@ const Layout = ({ children }) => {
   const routeKey = router.pathname.replace('/', '') || 'index';
   const meta = metaData[routeKey] || metaData['index'];
 
+  useEffect(() => {
+    const cursor = document.querySelector('.cursor');
+    
+    const moveCursor = (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    };
+
+    const addHoverClass = () => cursor.classList.add('hover');
+    const removeHoverClass = () => cursor.classList.remove('hover');
+
+    document.addEventListener('mousemove', moveCursor);
+    
+    const clickables = document.querySelectorAll('a, button, input, textarea');
+    clickables.forEach(element => {
+      element.addEventListener('mouseenter', addHoverClass);
+      element.addEventListener('mouseleave', removeHoverClass);
+    });
+
+    return () => {
+      document.removeEventListener('mousemove', moveCursor);
+      clickables.forEach(element => {
+        element.removeEventListener('mouseenter', addHoverClass);
+        element.removeEventListener('mouseleave', removeHoverClass);
+      });
+    };
+  }, []);
+
   return (
     <div className="max-w-6xl mx-auto min-h-screen flex flex-col relative px-4 md:px-0 pb-16">
+      <div className="cursor" />
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
