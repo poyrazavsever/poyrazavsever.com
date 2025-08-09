@@ -6,6 +6,8 @@ import toast from 'react-hot-toast';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { supabase } from '@/lib/supabaseClient';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 const Meeting = () => {
   const { t } = useTranslation('meeting');
@@ -22,6 +24,8 @@ const Meeting = () => {
   const [token, setToken] = useState('');
   const captchaRef = useRef(null);
   const [captchaTheme, setCaptchaTheme] = useState('light');
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [availableTimeSlots, setAvailableTimeSlots] = useState([]);
 
   useEffect(() => {
     const localTheme = localStorage.getItem('theme');
@@ -92,127 +96,161 @@ const Meeting = () => {
 
   const timeSlots = ['18:00 - 18:30', '18:30 - 19:00', '19:00 - 19:30', '19:30 - 20:00'];
 
-  const oneWeekFromNow = () => {
-    const today = new Date();
-    return Array.from({ length: 7 }, (_, i) => {
-      const d = new Date(today);
-      d.setDate(d.getDate() + i);
-      return d.toISOString().split('T')[0];
-    });
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    setForm({ ...form, meeting_date: date.toISOString().split('T')[0] });
+    // Burada normalde backend'den müsait saatleri çekebilirsiniz
+    setAvailableTimeSlots(timeSlots);
+  };
+
+  const tileDisabled = ({ date, view }) => {
+    if (view === 'month') {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      const maxDate = new Date();
+      maxDate.setDate(today.getDate() + 7);
+      
+      return date < today || date > maxDate || date.getDay() === 0; // Pazar günleri kapalı
+    }
   };
 
   return (
     <div className="w-full flex justify-center py-16">
-      <div className="w-full max-w-6xl">
-        <h1 className="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-8">{t('title')}</h1>
+      <div className="w-full max-w-7xl">
+        <h1 className="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-8">
+          {t("title")}
+        </h1>
 
-        <form className="space-y-6" onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">{t('name')}</label>
-              <input
-                type="text"
-                name="full_name"
-                value={form.full_name}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
-                required
+        <form
+          className="flex flex-col lg:flex-row gap-8"
+          onSubmit={handleSubmit}
+        >
+          {/* Sol Taraf - Takvim ve Saat Seçimi */}
+          <div className="lg:w-1/2 space-y-6">
+            <div className="bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-700">
+              <Calendar
+                onChange={handleDateChange}
+                value={selectedDate}
+                tileDisabled={tileDisabled}
+                minDate={new Date()}
+                maxDate={(() => {
+                  const d = new Date();
+                  d.setDate(d.getDate() + 7);
+                  return d;
+                })()}
+                className="w-full rounded-lg border-none"
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">{t('phone')}</label>
-              <input
-                type="tel"
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-                placeholder="+90 555 123 4567"
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
-                required
+            {selectedDate && (
+              <div className="bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-700">
+                <h3 className="text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-3">
+                  {t("time")} - {selectedDate.toLocaleDateString("tr-TR")}
+                </h3>
+                <div className="grid grid-cols-2 gap-2">
+                  {availableTimeSlots.map((slot) => (
+                    <button
+                      key={slot}
+                      type="button"
+                      onClick={() =>
+                        setForm({ ...form, meeting_time_slot: slot })
+                      }
+                      className={`p-2 text-sm rounded-lg transition-colors ${
+                        form.meeting_time_slot === slot
+                          ? "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300"
+                          : "bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 hover:bg-blue-50 dark:hover:bg-blue-900/50"
+                      }`}
+                    >
+                      {slot}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-700">
+              <HCaptcha
+                sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
+                onVerify={handleVerify}
+                ref={captchaRef}
+                theme={captchaTheme}
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">{t('email')}</label>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="mail@ornek.com"
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
-                required
-              />
+          {/* Sağ Taraf - Form Alanları */}
+          <div className="lg:w-1/2 space-y-6">
+            <div className="bg-white dark:bg-neutral-800 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-700">
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+                    {t("name")}
+                  </label>
+                  <input
+                    type="text"
+                    name="full_name"
+                    value={form.full_name}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+                    {t("phone")}
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleChange}
+                    placeholder="+90 555 123 4567"
+                    className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+                    {t("email")}
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="mail@example.com"
+                    className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+                    {t("reason")}
+                  </label>
+                  <textarea
+                    name="reason"
+                    rows={4}
+                    value={form.reason}
+                    onChange={handleChange}
+                    placeholder={t("reason_placeholder")}
+                    className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
+                    required
+                  />
+                </div>
+              </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">{t('date')}</label>
-              <select
-                name="meeting_date"
-                value={form.meeting_date}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
-                required
-              >
-                <option value="">{t('select_date')}</option>
-                {oneWeekFromNow().map((date) => (
-                  <option key={date} value={date}>
-                    {new Date(date).toLocaleDateString('tr-TR')}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">{t('reason')}</label>
-            <textarea
-              name="reason"
-              rows={3}
-              value={form.reason}
-              onChange={handleChange}
-              placeholder={t('reason_placeholder')}
-              className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">{t('time')}</label>
-            <select
-              name="meeting_time_slot"
-              value={form.meeting_time_slot}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-md bg-white dark:bg-neutral-900/10 text-neutral-800 dark:text-neutral-100"
-              required
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors duration-200 flex items-center justify-center gap-2"
             >
-              <option value="">{t('select_time')}</option>
-              {timeSlots.map((slot) => (
-                <option key={slot} value={slot}>
-                  {slot}
-                </option>
-              ))}
-            </select>
+              {t("submit")}
+            </button>
           </div>
-
-          <div className="rounded-md border border-neutral-300 dark:border-neutral-600 p-4 bg-neutral-50 dark:bg-neutral-800">
-            <HCaptcha
-              sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY}
-              onVerify={handleVerify}
-              ref={captchaRef}
-              theme={captchaTheme}
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="bg-neutral-800 dark:bg-neutral-100 text-white dark:text-neutral-900 px-6 py-3 rounded-md text-sm font-medium hover:opacity-90 transition"
-          >
-            {t('submit')}
-          </button>
         </form>
       </div>
     </div>

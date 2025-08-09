@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import './flip-card.css';
+@import './calendar-custom.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
