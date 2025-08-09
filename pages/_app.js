@@ -2,7 +2,6 @@
 import { appWithTranslation } from 'next-i18next';
 import Layout from '@/components/layout/layout';
 import '../styles/globals.css';
-import '../styles/cursors.css';
 
 function MyApp({ Component, pageProps }) {
 
