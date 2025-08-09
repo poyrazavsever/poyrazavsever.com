@@ -148,8 +148,8 @@ const Navbar = () => {
                     href={item.href}
                     className={`flex items-center gap-2 p-2 rounded-full transition-all duration-200 ${
                       isActive
-                        ? 'text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-500/10'
-                        : 'text-neutral-600 dark:text-neutral-400 hover:bg-red-50 dark:hover:bg-red-500/10'
+                        ? 'text-blue-500 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10'
+                        : 'text-neutral-600 dark:text-neutral-400 hover:bg-blue-50 dark:hover:bg-blue-500/10'
                     }`}
                   >
                     <Icon icon={item.icon} className="w-5 h-5" />
@@ -161,7 +161,7 @@ const Navbar = () => {
               {/* More Menu Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="flex items-center gap-2 p-2 rounded-full transition-all duration-200 text-neutral-600 dark:text-neutral-400 hover:bg-red-50 dark:hover:bg-red-500/10"
+                className="flex items-center gap-2 p-2 rounded-full transition-all duration-200 text-neutral-600 dark:text-neutral-400 hover:bg-blue-50 dark:hover:bg-blue-500/10"
               >
                 <Icon icon="mdi:dots-horizontal" className="w-5 h-5" />
               </button>
@@ -187,9 +187,9 @@ const Navbar = () => {
                         key={key}
                         href={`/${key}`}
                         onClick={() => setIsMenuOpen(false)}
-                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-red-50 dark:hover:bg-red-500/10 border border-transparent transition-all group"
+                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-500/10 border border-transparent transition-all group"
                       >
-                        <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg shadow-red-500/10">
+                        <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/10">
                           <Icon icon={menuIcons[key]} className="w-5 h-5" />
                         </div>
                         <div className="flex-1 min-w-0">
@@ -240,7 +240,7 @@ const Navbar = () => {
                   }}
                   className={`w-full p-2 rounded-lg flex items-center gap-3 ${
                     activeTheme === theme.id
-                      ? 'bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400'
+                      ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
                       : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700'
                   }`}
                 >
@@ -286,7 +286,7 @@ const Navbar = () => {
                     }}
                     className={`w-full p-2 rounded-lg flex items-center gap-3 ${
                       activeLang === lang.id
-                        ? 'bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400'
+                        ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
                         : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700'
                     }`}
                   >
