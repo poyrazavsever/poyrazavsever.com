@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Creemos Algo Increíble Juntos",
+  "pageDescription": "Transformando ideas en realidad con tecnologías modernas y prácticas de código limpio",
+  
+  "rateCard": {
+    "title": "Tarifa por hora: $10/hora",
+    "description": "Precios flexibles y soporte dedicado para proyectos a largo plazo",
+    "button": "Iniciar Conversación"
+  },
+
+  "services": {
+    "fullstack": {
+      "title": "Desarrollo Full-stack",
+      "description": "Aplicaciones web modernas y escalables con las últimas tecnologías",
+      "features": [
+        "React & Next.js",
+        "Node.js & Express",
+        "MongoDB & PostgreSQL",
+        "APIs RESTful"
+      ]
+    },
+    "uiux": {
+      "title": "Diseño UI/UX",
+      "description": "Soluciones de diseño responsivo y amigable para el usuario",
+      "features": [
+        "Diseño UI Moderno",
+        "Diseño Responsivo",
+        "Prototipos Interactivos",
+        "Sistemas de Diseño"
+      ]
+    },
+    "mobile": {
+      "title": "Desarrollo Móvil",
+      "description": "Aplicaciones móviles multiplataforma",
+      "features": [
+        "React Native",
+        "UI/UX Móvil",
+        "Características Nativas",
+        "Publicación en App Store"
+      ]
+    }
+  },
+
+  "experience": {
+    "title": "Mi Trayectoria",
+    "description": "Me apasiona el desarrollo de software y el diseño desde los 14 años. A lo largo de este viaje, he desarrollado numerosos proyectos y he expandido continuamente mis habilidades en varias tecnologías."
+  },
+
+  "social": {
+    "instagram": "Sígueme en Instagram",
+    "youtube": "Suscríbete en YouTube"
+  },
+
+  "cta": {
+    "title": "¿Listo para Comenzar tu Proyecto?",
+    "button": "Comenzar"
+  }
+}

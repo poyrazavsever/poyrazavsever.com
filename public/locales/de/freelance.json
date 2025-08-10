@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Lassen Sie uns gemeinsam etwas Großartiges erschaffen",
+  "pageDescription": "Verwandeln Sie Ideen in Realität mit modernen Technologien und sauberen Code-Praktiken",
+  
+  "rateCard": {
+    "title": "Stundensatz: $10/Stunde",
+    "description": "Flexible Preisgestaltung und dedizierte Unterstützung für langfristige Projekte",
+    "button": "Gespräch beginnen"
+  },
+
+  "services": {
+    "fullstack": {
+      "title": "Full-stack Entwicklung",
+      "description": "Moderne und skalierbare Webanwendungen mit neuesten Technologien",
+      "features": [
+        "React & Next.js",
+        "Node.js & Express",
+        "MongoDB & PostgreSQL",
+        "RESTful APIs"
+      ]
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "Benutzerfreundliche und responsive Design-Lösungen",
+      "features": [
+        "Modernes UI Design",
+        "Responsive Layout",
+        "Interaktive Prototypen",
+        "Design Systeme"
+      ]
+    },
+    "mobile": {
+      "title": "Mobile Entwicklung",
+      "description": "Plattformübergreifende mobile Anwendungen",
+      "features": [
+        "React Native",
+        "Mobile UI/UX",
+        "Native Funktionen",
+        "App Store Veröffentlichung"
+      ]
+    }
+  },
+
+  "experience": {
+    "title": "Meine Reise",
+    "description": "Seit meinem 14. Lebensjahr beschäftige ich mich leidenschaftlich mit Softwareentwicklung und Design. Auf diesem Weg habe ich zahlreiche Projekte entwickelt und meine Fähigkeiten in verschiedenen Technologien kontinuierlich erweitert."
+  },
+
+  "social": {
+    "instagram": "Auf Instagram folgen",
+    "youtube": "Auf YouTube abonnieren"
+  },
+
+  "cta": {
+    "title": "Bereit, Ihr Projekt zu starten?",
+    "button": "Loslegen"
+  }
+}

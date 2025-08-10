@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Let's Create Something Amazing Together",
+  "pageDescription": "Transforming ideas into reality with modern technologies and clean code practices",
+  
+  "rateCard": {
+    "title": "Hourly Rate: $10/hour",
+    "description": "Flexible pricing and dedicated support for long-term projects",
+    "button": "Start Discussion"
+  },
+
+  "services": {
+    "fullstack": {
+      "title": "Full-stack Development",
+      "description": "Modern and scalable web applications with latest technologies",
+      "features": [
+        "React & Next.js",
+        "Node.js & Express",
+        "MongoDB & PostgreSQL",
+        "RESTful APIs"
+      ]
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "User-friendly and responsive design solutions",
+      "features": [
+        "Modern UI Design",
+        "Responsive Layout",
+        "Interactive Prototypes",
+        "Design Systems"
+      ]
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile applications",
+      "features": [
+        "React Native",
+        "Mobile UI/UX",
+        "Native Features",
+        "App Store Deploy"
+      ]
+    }
+  },
+
+  "experience": {
+    "title": "My Journey",
+    "description": "I've been passionate about software development and design since I was 14 years old. Throughout this journey, I've developed numerous projects and continuously expanded my skill set in various technologies."
+  },
+
+  "social": {
+    "instagram": "Follow on Instagram",
+    "youtube": "Subscribe on YouTube"
+  },
+
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "button": "Get Started"
+  }
+}

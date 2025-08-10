@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Harika Bir Şeyler Yaratalım",
+  "pageDescription": "Modern teknolojiler ve temiz kod pratikleri ile fikirleri gerçeğe dönüştürüyoruz",
+  
+  "rateCard": {
+    "title": "Saatlik Ücret: $10/saat",
+    "description": "Uzun vadeli projeler için esnek fiyatlandırma ve özel destek",
+    "button": "Görüşmeye Başla"
+  },
+
+  "services": {
+    "fullstack": {
+      "title": "Full-stack Geliştirme",
+      "description": "En son teknolojilerle modern ve ölçeklenebilir web uygulamaları",
+      "features": [
+        "React & Next.js",
+        "Node.js & Express",
+        "MongoDB & PostgreSQL",
+        "RESTful API'ler"
+      ]
+    },
+    "uiux": {
+      "title": "UI/UX Tasarım",
+      "description": "Kullanıcı dostu ve responsive tasarım çözümleri",
+      "features": [
+        "Modern UI Tasarımı",
+        "Responsive Düzen",
+        "İnteraktif Prototipler",
+        "Tasarım Sistemleri"
+      ]
+    },
+    "mobile": {
+      "title": "Mobil Geliştirme",
+      "description": "Çoklu platform mobil uygulamalar",
+      "features": [
+        "React Native",
+        "Mobil UI/UX",
+        "Native Özellikler",
+        "App Store Yayınlama"
+      ]
+    }
+  },
+
+  "experience": {
+    "title": "Yolculuğum",
+    "description": "14 yaşımdan beri yazılım ve tasarım tutkusuyla ilgileniyorum. Bu süreçte birçok proje geliştirdim ve çeşitli teknolojilerde kendimi sürekli geliştirdim."
+  },
+
+  "social": {
+    "instagram": "Instagram'da Takip Et",
+    "youtube": "YouTube'da Abone Ol"
+  },
+
+  "cta": {
+    "title": "Projenize Başlamaya Hazır mısınız?",
+    "button": "Hemen Başla"
+  }
+}
