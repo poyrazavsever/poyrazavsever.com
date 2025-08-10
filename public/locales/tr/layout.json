@@ -60,6 +60,10 @@
         "label": "Öğrenme Yolculuğum",
         "description": "Şu an öğrenmekte olduğum teknolojiler"
       },
+      "freelance": {
+        "label": "Freelance",
+        "description": "Benimle Çalışmak İster Misiniz?"
+      },
       "others": {
         "label": "Diğerleri",
         "description": "Bütün linkleri görüntüle"

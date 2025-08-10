@@ -56,6 +56,10 @@
         "label": "Volunteer Work",
         "description": "Organizations I volunteered for"
       },
+      "freelance": {
+        "label": "Freelance",
+        "description": "Would you like to work with me?"
+      },
       "learning": {
         "label": "My Learning Journey",
         "description": "Resources and progress in my learning"

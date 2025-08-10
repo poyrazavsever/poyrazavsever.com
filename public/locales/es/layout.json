@@ -56,6 +56,10 @@
       "label": "Trabajo Voluntario",
       "description": "Organizaciones con las que colaboro"
     },
+    "freelance": {
+      "label": "Freelance",
+      "description": "¿Quieres trabajar conmigo?"
+    },
     "learning": {
       "label": "Mi Camino de Aprendizaje",
       "description": "Recursos y progreso en mi aprendizaje"

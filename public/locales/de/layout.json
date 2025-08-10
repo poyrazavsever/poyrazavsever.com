@@ -56,6 +56,10 @@
       "label": "Freiwilligenarbeit",
       "description": "Organisationen, bei denen ich freiwillig arbeite"
     },
+    "freelance": {
+      "label": "Freelance",
+      "description": "Möchtest du mit mir arbeiten?"
+    },
     "learning": {
       "label": "Meine Lernreise",
       "description": "Ressourcen und Fortschritt in meinem Lernen"
