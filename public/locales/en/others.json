@@ -5,27 +5,29 @@
       "social": "Social"
     },
     "pages": [
-      { "label": "Blog", "href": "/blog", "description": "My personal posts and notes" },
-      { "label": "Gallery", "href": "/gallery", "description": "Photos and videos I've taken" },
-      { "label": "Certificates", "href": "/certificates", "description": "My education and achievement documents" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Gallery", "href": "/gallery" },
+      { "label": "Certificates", "href": "/certificates" },
       { "label": "UI/UX Works", "href": "/designs", "description": "My interface designs" },
       { "label": "My Gear", "href": "/gear", "description": "Hardware and software I use" },
       { "label": "My Bookmarks", "href": "/bookmarks", "description": "My favorite links" },
       { "label": "My Tech Stack", "href": "/stack", "description": "Technologies I use in my projects" },
       { "label": "References", "href": "/references", "description": "What others say about me" },
-      { "label": "My Medium Articles", "href": "/medium", "description": "My published articles on Medium" },
-      { "label": "Schedule a Meeting", "href": "/meeting", "description": "Plan a meeting with me" },
-      { "label": "Volunteer Work", "href": "/volunteer", "description": "Organizations I volunteered for" }
+      { "label": "My Medium Articles", "href": "/medium" },
+      { "label": "Schedule a Meeting", "href": "/meeting" },
+      { "label": "Volunteer Work", "href": "/volunteer" },
+      { "label": "Freelance", "href": "/freelance" },
+      { "label": "My Learning Journey", "href": "/learning" }
     ],
     "social": [
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/poyrazavsever" },
-      { "label": "@Pavori_", "href": "https://www.instagram.com/pavori_" },
-      { "label": "Medium", "href": "https://medium.com/@poyrazavsever" },
-      { "label": "@PatiTekno", "href": "https://www.instagram.com/patitekno" },
-      { "label": "@PatiTekno", "href": "http://youtube.com/@patitekno" },
-      { "label": "Behance", "href": "https://www.behance.net/slayeras" },
-      { "label": "Buy Me a Coffee", "href": "https://www.buymeacoffee.com/poyrazavsever" },
-      { "label": "GitHub", "href": "https://www.github.com/poyrazavsever" }
+      { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/poyrazavsever/" },
+      { "id": "pavori", "label": "@Pavori_", "href": "https://www.instagram.com/pavori_/" },
+      { "id": "poyraz", "label": "@Poyraz_Avsever", "href": "https://www.instagram.com/poyraz_avsever/" },
+      { "id": "youtube", "label": "Youtube", "href": "http://youtube.com/@poyrazavsever" },
+      { "id": "medium", "label": "Medium", "href": "https://medium.com/@poyrazavsever" },
+      { "id": "behance", "label": "Behance", "href": "https://www.behance.net/poyrazavsever" },
+      { "id": "coffee", "label": "Buy Me a Coffee", "href": "https://www.buymeacoffee.com/poyrazavsever" },
+      { "id": "github", "label": "GitHub", "href": "https://www.github.com/poyrazavsever" }
     ]
   }
   

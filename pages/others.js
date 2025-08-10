@@ -1,22 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import { BiLink, BiNote, BiImage, BiCertification, BiPalette, BiCode, BiHeadphone,
-  BiBookBookmark, BiGroup, BiNews, BiCalendarEvent, BiDonateHeart, BiCategory, BiBook } from 'react-icons/bi';
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaMedium,
-  FaYoutube,
-  FaBehance,
-  FaGithub,
-  FaSearch,
-  FaTimes
-} from 'react-icons/fa';
-import { PiCoffeeBold } from 'react-icons/pi';
+import { BiLink } from 'react-icons/bi';
+import { FaSearch, FaTimes } from 'react-icons/fa';
+import { Icon } from '@iconify/react';
 
 const Others = () => {
   const { t } = useTranslation('others');
@@ -36,30 +26,32 @@ const Others = () => {
   const pageItems = t('pages', { returnObjects: true });
   const socialItems = t('social', { returnObjects: true });
 
-  const menuIcons = {
-    blog: BiNote,
-    gallery: BiImage,
-    certificates: BiCertification,
-    designs: BiPalette,
-    gear: BiHeadphone,
-    bookmarks: BiBookBookmark,
-    stack: BiCode,
-    references: BiGroup,
-    medium: BiNews,
-    meeting: BiCalendarEvent,
-    volunteer: BiDonateHeart,
-    others: BiCategory,
-    learning: BiBook,
+  const pageIcons = {
+    blog: "hugeicons:block-game",
+    gallery: "hugeicons:image-03",
+    certificates: "hugeicons:certificate-01",
+    designs: "hugeicons:pen-02",
+    gear: "hugeicons:keyboard",
+    bookmarks: "hugeicons:all-bookmark",
+    stack: "hugeicons:server-stack-03",
+    references: "hugeicons:user-group",
+    medium: "hugeicons:medium",
+    meeting: "hugeicons:meeting-room",
+    volunteer: "hugeicons:love-korean-finger",
+    others: "hugeicons:text-align-justify-right",
+    freelance: "hugeicons:french-fries-02",
+    learning: "hugeicons:online-learning-01"
   };
 
-  const socialIconMap = {
-    LinkedIn: FaLinkedin,
-    '@Pavori_': FaInstagram,
-    Medium: FaMedium,
-    '@PatiTekno': FaYoutube,
-    Behance: FaBehance,
-    GitHub: FaGithub,
-    'Buy Me a Coffee': PiCoffeeBold
+  const socialIcons = {
+    linkedin: 'skill-icons:linkedin',
+    pavori: 'skill-icons:instagram',
+    poyraz: 'skill-icons:instagram',
+    youtube: 'logos:youtube-icon',
+    medium: 'logos:medium-icon',
+    behance: 'devicon:behance',
+    coffee: 'simple-icons:buymeacoffee',
+    github: 'skill-icons:github-dark'
   };
 
   // Get items based on active tab
@@ -163,13 +155,9 @@ const Others = () => {
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/25 dark:shadow-blue-500/10 group-hover:scale-110 transition-transform">
                   {activeTab === t('tabs.social') ? (
-                    <span className="text-xl">
-                      {socialIconMap[item.label] && React.createElement(socialIconMap[item.label])}
-                    </span>
+                    <Icon icon={socialIcons[item.id]} className="w-5 h-5" />
                   ) : (
-                    <span className="text-xl">
-                      {menuIcons[item.href.slice(1)] && React.createElement(menuIcons[item.href.slice(1)])}
-                    </span>
+                    <Icon icon={pageIcons[item.href.slice(1)]} className="w-5 h-5" />
                   )}
                 </div>
                 <h3 className="font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-blue-500 dark:group-hover:text-blue-400">

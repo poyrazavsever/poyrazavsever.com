@@ -4,28 +4,31 @@
       "pages": "Sayfalar",
       "social": "Sosyal"
     },
+    "noResults": "Sonuç bulunamadı",
     "pages": [
-      { "label": "Blog", "href": "/blog", "description": "Kişisel yazılarım ve notlarım" },
-      { "label": "Galeri", "href": "/gallery", "description": "Çektiğim fotoğraf ve videolar" },
-      { "label": "Sertifikalar", "href": "/certificates", "description": "Eğitim ve Başarı belgelerim" },
-      { "label": "UI/UX Çalışmalarım", "href": "/designs", "description": "Arayüz tasarımlarım" },
-      { "label": "Ekipmanlarım", "href": "/gear", "description": "Kullandığım donanım ve yazılımlar" },
-      { "label": "Bookmarklarım", "href": "/bookmarks", "description": "Favori bağlantılarım" },
-      { "label": "Teknoloji Yığınım", "href": "/stack", "description": "Projelerde kullandığım teknolojiler" },
-      { "label": "Referanslar", "href": "/references", "description": "Hakkımda söylenenler" },
-      { "label": "Medium Yazılarım", "href": "/medium", "description": "Medium’da yayımlanan yazılarım" },
-      { "label": "Toplantı Ayarla", "href": "/meeting", "description": "Benimle toplantı planlayın" },
-      { "label": "Gönüllü Çalışmalar", "href": "/volunteer", "description": "Gönüllü çalıştığım organizasyonlar" }
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Galeri", "href": "/gallery" },
+      { "label": "Sertifikalar", "href": "/certificates" },
+      { "label": "UI/UX Çalışmalarım", "href": "/designs" },
+      { "label": "Ekipmanlarım", "href": "/gear" },
+      { "label": "Bookmarklarım", "href": "/bookmarks" },
+      { "label": "Teknoloji Yığınım", "href": "/stack" },
+      { "label": "Referanslar", "href": "/references" },
+      { "label": "Medium Yazılarım", "href": "/medium" },
+      { "label": "Toplantı Ayarla", "href": "/meeting" },
+      { "label": "Gönüllü Çalışmalar", "href": "/volunteer" },
+      { "label": "Freelance", "href": "/freelance" },
+      { "label": "Öğrenme Yolculuğum", "href": "/learning" }
     ],
     "social": [
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/poyrazavsever" },
-      { "label": "@Pavori_", "href": "https://www.instagram.com/pavori_" },
-      { "label": "Medium", "href": "https://medium.com/@poyrazavsever" },
-      { "label": "@PatiTekno", "href": "https://www.instagram.com/patitekno" },
-      { "label": "@PatiTekno", "href": "http://youtube.com/@patitekno" },
-      { "label": "Behance", "href": "https://www.behance.net/slayeras" },
-      { "label": "Buy Me a Coffee", "href": "https://www.buymeacoffee.com/poyrazavsever" },
-      { "label": "GitHub", "href": "https://www.github.com/poyrazavsever" }
+      { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/poyrazavsever/" },
+      { "id": "pavori", "label": "@Pavori_", "href": "https://www.instagram.com/pavori_/" },
+      { "id": "poyraz", "label": "@Poyraz_Avsever", "href": "https://www.instagram.com/poyraz_avsever/" },
+      { "id": "youtube", "label": "Youtube", "href": "http://youtube.com/@poyrazavsever" },
+      { "id": "medium", "label": "Medium", "href": "https://medium.com/@poyrazavsever" },
+      { "id": "behance", "label": "Behance", "href": "https://www.behance.net/poyrazavsever" },
+      { "id": "coffee", "label": "Buy Me a Coffee", "href": "https://www.buymeacoffee.com/poyrazavsever" },
+      { "id": "github", "label": "GitHub", "href": "https://www.github.com/poyrazavsever" }
     ]
   }
   
