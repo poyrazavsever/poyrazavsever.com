@@ -111,7 +111,7 @@ MIT
 ## 📷 Preview
 
 <p align="center">
-  <img src="public/avatar.png" alt="Poyraz Avsever" width="120" style="border-radius:50%;" />
+  <img src="public/preview.png" alt="Poyraz Avsever" width="120" style="border-radius:50%;" />
 </p>
 
 ---
